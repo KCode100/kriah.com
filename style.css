@@ -6,6 +6,7 @@ body,
 html{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -40,7 +41,8 @@ html{
 .header-container{
     max-width: 75%;
     margin: auto;
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
     font-family: sans-serif;
 }
 
@@ -55,6 +57,7 @@ a{
     font-size: 32px;
     letter-spacing: 8px;
     display: inline-block;
+    flex: 50%;
 }
 
 .first-letter{
@@ -62,29 +65,71 @@ a{
 }
 
 .nav-links-container{
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
     /* margin-left: 20%; */
-    vertical-align: 5px;
-}
-
-.nav-links{
-    /* display: flex; */
-    /* padding: 10px; */
+    /* vertical-align: 5px; */
+    /* margin-left: 200px; */
+    flex: 50%;
+    /* margin-left: auto; */
     font-size: 13px;
     font-weight: lighter;
     letter-spacing: 1px;
+    text-align: right;
+    padding-top: 7px;
+    /* height: 50%; */
 }
 
-.nav-links a{
+.nav-links-container div{
+    padding: 10px;
+}
+
+/* .nav-links{ */
+    /* display: flex; */
+    /* padding: 10px; */
+    /* font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-align: right;
+    height: 50%; */
+/* } */
+
+.nav-links-container a{
     /* padding: 15px; */
     flex: 1;
-    margin: 20px;
+    margin: 10px;
+}
+
+.nav-links-container a:hover{
+    color: white;
 }
 
 .login{
     border-left: solid 1px var(--theme);
-    padding-left: 20px;
+    /* border-right: solid  4px var(--theme);
+    border-top: solid 1px var(--theme);
+    border-bottom: solid 1px var(--theme); */
+    /* padding: 8px 20px 8px 20px; */
+    font-weight: 700;
+    margin-left: 40px;
+    padding: 8px;
+    /* border-radius: 7px; */
+    /* background-color: black; */
+    /* opacity: 1; */
+    /* box-shadow: ; */
 }
+
+/* .login a:hover{
+
+} */
+
+/* .login span:hover{
+    background-color: rgb(151, 150, 150);
+    color: var(--theme);
+} */
 
 .main{
     max-width: 80%;
@@ -95,6 +140,7 @@ a{
 .main-container{
     max-width: 58%;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .main-inner{
@@ -110,7 +156,7 @@ a{
     letter-spacing: 10px;
     font-weight: 200;
     line-height: 40px;
-    margin: 20px 0px 60px;
+    margin: 20px 0px 0px;
 }
 
 .bottom-banner{
@@ -124,9 +170,9 @@ a{
 .bottom-banner-inner{
     font-size: 26px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    max-width: 77%;
+    max-width: 80%;
     margin: auto;
-    padding: 18px 15px 10px;
+    padding: 18px 15px 10px 25px;
 }
 
 .bottom-banner-inner a{
@@ -147,6 +193,85 @@ h3{
     margin: auto;
 }
 
-.lorem{
-    min-height: 100vh;
+.blogs-container{
+    max-width: 75%;
+    margin: 0px auto;
 }
+
+.blogs-header{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 85px;
+    margin: 0px;
+    padding: 0px;
+    margin: 50px 0px 0px 0px;
+    /* margin-bottom: 10px; */
+}
+
+.blog{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.blog-container{
+    display: flex;
+    padding: 40px 0px;
+}
+
+.blog-image,
+.blog-text{
+    flex: 50%;
+}
+
+.blog-text{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 20px 35px;
+}
+
+.blog-image{
+    background: url('https://images.pexels.com/photos/4034447/pexels-photo-4034447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')center/cover no-repeat;
+    border-radius: 2px;
+}
+
+.blog-text-header{
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.read-more a{
+    padding-top: 30px;
+    transition: all 0.5s;
+}
+
+.read-more a:hover{
+    background-color: black;
+}
+
+.read-more a{
+    padding: 9px 18px;
+    background-color: #ebc380;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 2px;
+}
+
+.contact-image{
+    background: url('https://images.pexels.com/photos/5118002/pexels-photo-5118002.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')center/cover no-repeat;
+    height: 100vh;
+    margin-top: 80px;
+}
+/* ================
+===================
+ MEDIA QUERIES
+==================
+================ */
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
