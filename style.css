@@ -24,82 +24,79 @@ html{
 
 .bg-img{
     min-height: 98vh;
-    /* width: 100%; */
     background-color: lightgray;
     background: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')center/cover no-repeat;
     position: relative;
 }
 
 .nav{
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: #000000;
     padding: 22px 0;
     opacity: 0.8;
     margin-bottom: 70px;
-}
-
-.header-container{
-    max-width: 75%;
-    margin: auto;
+    font-family: sans-serif;
     display: flex;
     flex-wrap: wrap;
-    font-family: sans-serif;
 }
+
+div.hamberger i{
+    color: white;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 18px;  
+    margin-top: -9px;
+    cursor: pointer;
+}
+
+.nav div{
+    display: inline-block;
+}
+
+.header-container{ 
+    /* max-width: 80%;
+    margin: auto; */
+} 
 
 a{
     text-decoration: none;
     color: var(--theme);
-    /* display: inline-block; */
 }
 
 .logo{
     font-family: serif;
-    font-size: 32px;
-    letter-spacing: 8px;
+    font-size: 38px;
+    letter-spacing: 6px;
     display: inline-block;
-    flex: 50%;
+    text-align: center;
 }
 
 .first-letter{
-    font-size: 42px;
+    font-size: 46px;
 }
 
 .nav-links-container{
-    /* display: inline-block; */
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     flex-wrap: wrap;
-    /* margin-left: 20%; */
-    /* vertical-align: 5px; */
-    /* margin-left: 200px; */
-    flex: 50%;
-    /* margin-left: auto; */
     font-size: 13px;
     font-weight: lighter;
     letter-spacing: 1px;
-    text-align: right;
-    padding-top: 7px;
-    /* height: 50%; */
+    margin-left: 380px;
 }
 
 .nav-links-container div{
     padding: 10px;
 }
 
-/* .nav-links{ */
-    /* display: flex; */
-    /* padding: 10px; */
-    /* font-size: 13px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    text-align: right;
-    height: 50%; */
-/* } */
+.nav-links-container div.login{
+    padding: 7px 10px;
+}
 
 .nav-links-container a{
-    /* padding: 15px; */
-    flex: 1;
     margin: 10px;
 }
 
@@ -109,27 +106,35 @@ a{
 
 .login{
     border-left: solid 1px var(--theme);
-    /* border-right: solid  4px var(--theme);
-    border-top: solid 1px var(--theme);
-    border-bottom: solid 1px var(--theme); */
-    /* padding: 8px 20px 8px 20px; */
     font-weight: 700;
-    margin-left: 40px;
-    padding: 8px;
-    /* border-radius: 7px; */
-    /* background-color: black; */
-    /* opacity: 1; */
-    /* box-shadow: ; */
+    margin-left: 30px;
 }
 
-/* .login a:hover{
+/* ==================================
+==================================
+SMALL SCREEN NAVBAR
+==================================
+================================== */
 
-} */
-
-/* .login span:hover{
-    background-color: rgb(151, 150, 150);
+div.drop-menu{
+    display: none;
+    background-color: #000000;
     color: var(--theme);
-} */
+    font-size: 14px;
+    font-weight: lighter;
+    margin: -15px 0 70px 0;
+    padding-bottom: 15px;
+    transition: 1s;
+}
+
+.drop-menu ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0 20px;
+    line-height: 3;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .main{
     max-width: 80%;
@@ -264,14 +269,72 @@ h3{
     height: 100vh;
     margin-top: 80px;
 }
+
+
 /* ================
 ===================
  MEDIA QUERIES
 ==================
 ================ */
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+@media only screen and (max-width: 1200px) {
+    .nav-links-container{
+        margin-left: 100px;
     }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .nav-links-container{
+        flex: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .nav{
+        opacity: 1;
+    }
+
+    .nav-links-container div.login{
+        padding: 4px 10px;
+    }
+  }
+
+  @media only screen and (max-width: 480px){
+      .logo{
+          font-size: 25px;
+          letter-spacing: 3px;
+      }
+      .logo span{
+          font-size: 30px;
+      }
+  }
+
+
+
+  /* =======================
+  =======================
+  drop-down-menu for small screens
+  =======================
+  ======================= */
+  @media only screen and (max-width: 800px){
+      .nav-links-container div{
+        display: none;
+    }
+
+    div.nav{
+        display:block;
+        /* text-align: center; */
+        position: relative;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    div.hamberger i{
+        display: inline-block;      
+    }
+
+    /* div.drop-menu{
+        display: block;
+    } */
+
   }
