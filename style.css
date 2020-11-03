@@ -57,10 +57,10 @@ div.hamberger i{
     display: inline-block;
 }
 
-.header-container{ 
+/* .header-container{  */
     /* max-width: 80%;
     margin: auto; */
-} 
+/* }  */
 
 a{
     text-decoration: none;
