@@ -1,20 +1,27 @@
-window.onload = function () {
-    document.querySelector('.page').classList.remove('page');
-}
+// window.onload = function () {
+//     document.querySelector('.page').classList.remove('page');
+// }
 
 // function showPage(){
 //     document.querySelector('.page').classList.remove('page');
 // }
 
-const menuIcon = document.querySelector('.hamberger');
+// const menuIcon = document.querySelector('.hamberger');
 
-menuIcon.addEventListener('click', showMenu);
+const body = document.querySelector('body');
 
-function showMenu(){
+body.addEventListener('click', function(e){
     const dropMenu = document.querySelector('div.drop-menu');
-    if (dropMenu.style.display == 'none'){
-        dropMenu.style.display = 'block';
-    } else {
-        dropMenu.style.display = 'none';
-    }
-}
+
+    if (e.target.classList.contains('menu')){
+        if (dropMenu.style.display == 'none'){
+            dropMenu.style.display = 'block';
+        } else {
+            dropMenu.style.display = 'none';
+        }
+
+        // console.log('clicked!');
+        
+    };
+});
+
