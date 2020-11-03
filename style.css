@@ -149,7 +149,7 @@ div.drop-menu{
 }
 
 .main-inner{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue',sans-serif;
     line-height: 80px;
     font-size: 90px;
     letter-spacing: -2px;
@@ -204,7 +204,7 @@ h3{
 }
 
 .blogs-header{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 85px;
     margin: 0px;
     padding: 0px;

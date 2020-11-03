@@ -11,5 +11,10 @@ const menuIcon = document.querySelector('.hamberger');
 menuIcon.addEventListener('click', showMenu);
 
 function showMenu(){
-    document.querySelector('div.drop-menu').style.display = 'block';
+    const dropMenu = document.querySelector('div.drop-menu');
+    if (dropMenu.style.display == 'none'){
+        dropMenu.style.display = 'block';
+    } else {
+        dropMenu.style.display = 'none';
+    }
 }
