@@ -11,17 +11,16 @@
 const body = document.querySelector('body');
 
 body.addEventListener('click', function(e){
-    const dropMenu = document.querySelector('div.drop-menu');
-
-    if (e.target.classList.contains('menu')){
-        if (dropMenu.style.display == 'none'){
-            dropMenu.style.display = 'block';
-        } else {
-            dropMenu.style.display = 'none';
-        }
-
-        // console.log('clicked!');
-        
+    // const ul = document.querySelector('div.drop-menu ul');
+    
+    if (e.target.classList.className ='hamberger'){
+        const dropMenu = document.querySelector('div.drop-menu');
+        // if (dropMenu.classList.contains('hide')){
+        //     dropMenu.classList.remove('hide');
+        // } else {
+        //     dropMenu.classList.add('hide');
+        // }
+        dropMenu.classList.toggle('reveal');
     };
 });
 

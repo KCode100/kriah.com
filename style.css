@@ -113,15 +113,21 @@ SMALL SCREEN NAVBAR
 ==================================
 ================================== */
 
-div.drop-menu{
-    display: none;
+.drop-menu{
     background-color: #000000;
     color: var(--theme);
     font-size: 14px;
     font-weight: lighter;
     margin: -15px 0 70px 0;
     padding-bottom: 15px;
-    transition: 1s;
+    min-width: 100%;
+    z-index: 1;
+    position: fixed;
+    /* transition: 1s; */
+    /* max-height: 200px; */
+    height: 0px;
+    overflow-y: hidden;
+    transition: height 0.4s linear;
 }
 
 .drop-menu ul{
@@ -130,6 +136,13 @@ div.drop-menu{
     padding: 0 20px;
     line-height: 3;
     font-family: 'Roboto', sans-serif;
+}
+
+.reveal{
+    /* max-height: 0; */
+    /* max-height: 0px; */
+    /* visibility: hidden; */
+    height: 200px;
 }
 
 .drop-menu a:hover{
@@ -336,7 +349,6 @@ h3{
 
     div.nav{
         display:block;
-        /* text-align: center; */
         position: relative;
         text-align: center;
         margin-bottom: 0px;
@@ -356,7 +368,7 @@ h3{
   /* main body text */
   @media only screen and (max-width: 770px){
       .bg-img{
-          min-height: 90vh;
+          min-height: 100vh;
       }
       .main{
           max-width: 100%;
@@ -406,6 +418,17 @@ h3{
   @media only screen and (max-width: 400px){
       .main-inner{
           font-size: 35px;
+          letter-spacing: -1px;
+          line-height: 1;
+      }
+  }
+
+  @media only screen and (min-width: 400px){
+      .bg-img{
+          min-height: 130vh;
+      }
+      .main-inner{
+          font-size: 60px;
           letter-spacing: -1px;
           line-height: 1;
       }
