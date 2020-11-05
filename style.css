@@ -7,6 +7,7 @@ html{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    /* min-width: 100vw; */
 }
 
 *{
@@ -17,16 +18,18 @@ html{
     visibility: hidden;;
 } */
 
-.black{
+/* .black{
     min-height: 100vh;
     background-color: black;
-}
+} */
 
 .bg-img{
-    min-height: 98vh;
+    /* min-height: 98vh; */
     background-color: lightgray;
     background: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')center/cover no-repeat;
     position: relative;
+    padding-top: 130px;
+    min-height: 490px;
 }
 
 .nav{
@@ -37,7 +40,7 @@ html{
     background-color: #000000;
     padding: 22px 0;
     opacity: 0.8;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
     font-family: sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -118,10 +121,10 @@ SMALL SCREEN NAVBAR
     color: var(--theme);
     font-size: 14px;
     font-weight: lighter;
-    margin: -15px 0 70px 0;
+    /* margin: -15px 0 70px 0; */
     min-width: 100%;
     z-index: 1;
-    position: fixed;
+    /* position: fixed; */
     /* transition: 1s; */
     /* max-height: 200px; */
     height: 0px;
@@ -142,7 +145,7 @@ SMALL SCREEN NAVBAR
     /* max-height: 0px; */
     /* visibility: hidden; */
     height: 200px;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .drop-menu a:hover{
@@ -151,11 +154,11 @@ SMALL SCREEN NAVBAR
 }
 
 
-.main{
+/* .main{
     max-width: 80%;
     padding: 60px 15px 15px;
     margin: auto;
-}
+} */
 
 .main-container{
     max-width: 58%;
@@ -303,6 +306,8 @@ h3{
 ==================
 ================ */
 
+
+/* Navbar and hamberger for small screens */
 @media only screen and (max-width: 1200px) {
     .nav-links-container{
         margin-left: 100px;
@@ -335,12 +340,8 @@ h3{
       }
   }
 
-
-
   /* =======================
-  =======================
   drop-down-menu for small screens
-  =======================
   ======================= */
   @media only screen and (max-width: 900px){
       .nav-links-container div{
@@ -358,52 +359,30 @@ h3{
         display: inline-block;      
     }
 
-    /* div.drop-menu{
-        display: block;
-    } */
-
   }
 
 
   /* main body text */
-  @media only screen and (max-width: 770px){
-      .bg-img{
-          min-height: 100vh;
-      }
+  @media only screen and (max-width: 800px){
       .main{
           max-width: 100%;
-          /* padding: 0px; */
       }
       .main-container{
-          /* text-align: center; */
-          /* max-width: 100%; */
-          /* display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap; */
           text-align: center;
           max-width: 75%;
-          margin: 140px auto 50px;
-          /* margin-top: 60px; */
-          /* flex: 100%; */
+          margin: auto;
       }  
       .main-inner{
           display: inline-block;
-        /* flex: 100%; */
       }
       .main-inner-sub{
         display: inline-block;
-        /* flex: 100%; */
-        font-size: 20px;
-        letter-spacing: 5px;
-        word-spacing: 2px;
-        line-height: 1.2;
+
         max-width: 80%;
         margin: 20px auto;
       }
 
       .bottom-banner{
-        /* width: 100%; */
         padding: 0px;
         text-align: center;
       }
@@ -415,7 +394,15 @@ h3{
       }
 }
 
-  @media only screen and (max-width: 400px){
+@media only screen and (max-width: 1100px){
+    .main-inner-sub{
+        font-size: 20px;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        line-height: 1.2;
+    }
+}
+  @media only screen and (max-width: 480px){
       .main-inner{
           font-size: 35px;
           letter-spacing: -1px;
@@ -423,13 +410,35 @@ h3{
       }
   }
 
-  @media only screen and (min-width: 400px){
+  @media only screen and (min-width: 480px){
+    .main-container{
+        max-width: 90%;
+    }
+    .main-inner{
+        font-size: 60px;
+        letter-spacing: -1px;
+        line-height: 1;
+    }
+  }
+
+  @media only screen and (min-width: 800px){
       .bg-img{
-          min-height: 130vh;
+          min-height: 610px;
       }
+  }
+
+  @media only screen and (min-width: 1100px){
       .main-inner{
-          font-size: 60px;
-          letter-spacing: -1px;
-          line-height: 1;
+          font-size: 85px;
+      }
+  }
+
+  @media only screen and (min-width: 770px){
+      .main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 60vw;
       }
   }

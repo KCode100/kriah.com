@@ -6,21 +6,31 @@
 //     document.querySelector('.page').classList.remove('page');
 // }
 
-// const menuIcon = document.querySelector('.hamberger');
+// const body = document.querySelector('body');
 
-const body = document.querySelector('body');
 
-body.addEventListener('click', function(e){
-    // const ul = document.querySelector('div.drop-menu ul');
-    
-    if (e.target.classList.className ='hamberger'){
-        const dropMenu = document.querySelector('div.drop-menu');
-        // if (dropMenu.classList.contains('hide')){
-        //     dropMenu.classList.remove('hide');
-        // } else {
-        //     dropMenu.classList.add('hide');
-        // }
+// menuIcon.addEventListener('click', open);
+// menuIcon.addEventListener('clickout', close);
+
+document.addEventListener('click', check);
+
+
+function check(e){
+    const dropMenu = document.querySelector('div.drop-menu');
+    const menuIcon = document.querySelector('.hamberger');
+
+    // let inside = menuIcon.contains(e.target);
+
+    if (menuIcon.contains(e.target)){
         dropMenu.classList.toggle('reveal');
-    };
-});
+    } else {
+        dropMenu.classList.remove('reveal');
+    }
+}
+
+// function close(){
+//     const dropMenu = document.querySelector('div.drop-menu');
+//     dropMenu.style.height = '0px';
+
+// }
 
