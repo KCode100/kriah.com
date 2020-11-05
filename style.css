@@ -7,26 +7,29 @@ html{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    /* min-width: 100vw; */
 }
 
 *{
     box-sizing: border-box;
 }
 
-.page{
+/* .page{
     visibility: hidden;;
-}
+} */
 
-.black{
+/* .black{
     min-height: 100vh;
     background-color: black;
-}
+} */
 
 .bg-img{
-    min-height: 98vh;
+    /* min-height: 98vh; */
     background-color: lightgray;
     background: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')center/cover no-repeat;
     position: relative;
+    padding-top: 130px;
+    min-height: 490px;
 }
 
 .nav{
@@ -37,7 +40,7 @@ html{
     background-color: #000000;
     padding: 22px 0;
     opacity: 0.8;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
     font-family: sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +59,6 @@ div.hamberger i{
 .nav div{
     display: inline-block;
 }
-
-.header-container{ 
-    /* max-width: 80%;
-    margin: auto; */
-} 
 
 a{
     text-decoration: none;
@@ -86,6 +84,7 @@ a{
     font-weight: lighter;
     letter-spacing: 1px;
     margin-left: 380px;
+    vertical-align: 6px;
 }
 
 .nav-links-container div{
@@ -98,6 +97,7 @@ a{
 
 .nav-links-container a{
     margin: 10px;
+    font-weight: 400;
 }
 
 .nav-links-container a:hover{
@@ -116,15 +116,20 @@ SMALL SCREEN NAVBAR
 ==================================
 ================================== */
 
-div.drop-menu{
-    display: none;
+.drop-menu{
     background-color: #000000;
     color: var(--theme);
     font-size: 14px;
     font-weight: lighter;
-    margin: -15px 0 70px 0;
-    padding-bottom: 15px;
-    transition: 1s;
+    /* margin: -15px 0 70px 0; */
+    min-width: 100%;
+    z-index: 1;
+    /* position: fixed; */
+    /* transition: 1s; */
+    /* max-height: 200px; */
+    height: 0px;
+    overflow-y: hidden;
+    transition: height 0.4s linear;
 }
 
 .drop-menu ul{
@@ -135,12 +140,25 @@ div.drop-menu{
     font-family: 'Roboto', sans-serif;
 }
 
+.reveal{
+    /* max-height: 0; */
+    /* max-height: 0px; */
+    /* visibility: hidden; */
+    height: 200px;
+    /* padding-bottom: 15px; */
+}
 
-.main{
+.drop-menu a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+/* .main{
     max-width: 80%;
     padding: 60px 15px 15px;
     margin: auto;
-}
+} */
 
 .main-container{
     max-width: 58%;
@@ -265,7 +283,8 @@ h3{
 }
 
 .contact-image{
-    background: url('https://images.pexels.com/photos/5118002/pexels-photo-5118002.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')center/cover no-repeat;
+    /* background: url('https://images.pexels.com/photos/5118002/pexels-photo-5118002.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')center/cover no-repeat; */
+    background-image: linear-gradient(to right, #759087 , #232323);
     height: 100vh;
     margin-top: 80px;
 }
@@ -287,6 +306,8 @@ h3{
 ==================
 ================ */
 
+
+/* Navbar and hamberger for small screens */
 @media only screen and (max-width: 1200px) {
     .nav-links-container{
         margin-left: 100px;
@@ -297,7 +318,7 @@ h3{
     .nav-links-container{
         flex: 100%;
         text-align: center;
-        margin-left: 0px;
+        margin-left: auto;
     }
 
     .nav{
@@ -319,21 +340,16 @@ h3{
       }
   }
 
-
-
   /* =======================
-  =======================
   drop-down-menu for small screens
-  =======================
   ======================= */
-  @media only screen and (max-width: 800px){
+  @media only screen and (max-width: 900px){
       .nav-links-container div{
         display: none;
     }
 
     div.nav{
         display:block;
-        /* text-align: center; */
         position: relative;
         text-align: center;
         margin-bottom: 0px;
@@ -343,8 +359,86 @@ h3{
         display: inline-block;      
     }
 
-    /* div.drop-menu{
-        display: block;
-    } */
+  }
 
+
+  /* main body text */
+  @media only screen and (max-width: 800px){
+      .main{
+          max-width: 100%;
+      }
+      .main-container{
+          text-align: center;
+          max-width: 75%;
+          margin: auto;
+      }  
+      .main-inner{
+          display: inline-block;
+      }
+      .main-inner-sub{
+        display: inline-block;
+
+        max-width: 80%;
+        margin: 20px auto;
+      }
+
+      .bottom-banner{
+        padding: 0px;
+        text-align: center;
+      }
+
+      .bottom-banner-inner{
+          max-width: 100%;
+          padding: 20px 15px 10px 15px;
+          font-size: 20px;
+      }
+}
+
+@media only screen and (max-width: 1100px){
+    .main-inner-sub{
+        font-size: 20px;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        line-height: 1.2;
+    }
+}
+  @media only screen and (max-width: 480px){
+      .main-inner{
+          font-size: 35px;
+          letter-spacing: -1px;
+          line-height: 1;
+      }
+  }
+
+  @media only screen and (min-width: 480px){
+    .main-container{
+        max-width: 90%;
+    }
+    .main-inner{
+        font-size: 60px;
+        letter-spacing: -1px;
+        line-height: 1;
+    }
+  }
+
+  @media only screen and (min-width: 800px){
+      .bg-img{
+          min-height: 610px;
+      }
+  }
+
+  @media only screen and (min-width: 1100px){
+      .main-inner{
+          font-size: 85px;
+      }
+  }
+
+  @media only screen and (min-width: 770px){
+      .main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 60vw;
+      }
   }
