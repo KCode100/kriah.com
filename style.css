@@ -223,10 +223,11 @@ h3{
 
 .blogs-header{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 85px;
+    font-size: 55px;
     margin: 0px;
     padding: 0px;
     margin: 50px 0px 0px 0px;
+    line-height: 1;
     /* margin-bottom: 10px; */
 }
 
@@ -529,5 +530,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
         font-size: 60px;
         letter-spacing: -1px;
         line-height: 1;
+    }
+}
+
+@media only screen and (min-width: 1045px){
+    .blogs-header{
+        font-size: 85px;
     }
 }
