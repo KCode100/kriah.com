@@ -14,6 +14,11 @@ html{
     box-sizing: border-box;
 }
 
+::selection{
+    background-color: black;
+    color: white;
+}
+
 /* .page{
     visibility: hidden;;
 } */
@@ -46,14 +51,19 @@ html{
     flex-wrap: wrap;
 }
 
-div.hamberger i{
+div.hamberger{
     color: white;
     display: none;
     position: absolute;
     top: 50%;
-    left: 18px;  
-    margin-top: -9px;
+    left: 0px;  
+    margin-top: -45px;
     cursor: pointer;
+    padding: 40px 20px;
+}
+
+div.hamberger:active{
+    background-color: transparent;
 }
 
 .nav div{
@@ -223,10 +233,11 @@ h3{
 
 .blogs-header{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 85px;
+    font-size: 55px;
     margin: 0px;
     padding: 0px;
     margin: 50px 0px 0px 0px;
+    line-height: 1;
     /* margin-bottom: 10px; */
 }
 
@@ -529,5 +540,35 @@ and (-webkit-min-device-pixel-ratio: 2) {
         font-size: 60px;
         letter-spacing: -1px;
         line-height: 1;
+    }
+}
+
+@media only screen and (min-width: 1045px){
+    .blogs-header{
+        font-size: 85px;
+    }
+}
+
+@media only screen 
+    and (min-width: 770px)
+    and (max-width: 1100px){
+        .bg-img{
+            min-height: 530px;
+        }
+    }
+
+/* blog 2 columns on big screens */
+@media only screen and (min-width: 990px){
+    .blog{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .blog-text{
+        margin-left: 25px;
+    }
+    div.blog-image{
+        margin: 0px;
     }
 }
