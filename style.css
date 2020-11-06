@@ -52,8 +52,10 @@ div.hamberger i{
     position: absolute;
     top: 50%;
     left: 18px;  
-    margin-top: -9px;
+    margin-top: -15px;
     cursor: pointer;
+    padding: 10px;
+    /* padding-left: 7px; */
 }
 
 .nav div{
