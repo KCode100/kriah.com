@@ -14,6 +14,11 @@ html{
     box-sizing: border-box;
 }
 
+::selection{
+    background-color: black;
+    color: white;
+}
+
 /* .page{
     visibility: hidden;;
 } */
@@ -54,9 +59,11 @@ div.hamberger{
     left: 0px;  
     margin-top: -45px;
     cursor: pointer;
-    /* padding: 40px 15px 40px 20px; */
     padding: 40px 20px;
-    /* padding-left: 7px; */
+}
+
+div.hamberger:active{
+    background-color: transparent;
 }
 
 .nav div{
@@ -549,3 +556,19 @@ and (-webkit-min-device-pixel-ratio: 2) {
             min-height: 530px;
         }
     }
+
+/* blog 2 columns on big screens */
+@media only screen and (min-width: 990px){
+    .blog{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .blog-text{
+        margin-left: 25px;
+    }
+    div.blog-image{
+        margin: 0px;
+    }
+}
