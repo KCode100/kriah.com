@@ -456,3 +456,78 @@ div.blog-image{
         max-width: 60vw;
       }
   }
+
+  /* @media only screen and (min-height: 650px){
+    .bg-img{
+        min-height: 610px;
+    }
+    .main-container{
+        max-width: 90%;
+    }
+    .main-inner{
+        font-size: 60px;
+        letter-spacing: -1px;
+        line-height: 1;
+    }
+  } */
+/* ipad */
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .bg-img{
+        min-height: 550px;
+    }
+}
+/* ipad pro */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .bg-img{
+        min-height: 550px;
+    }
+}
+
+
+/* iphone x */
+@media only screen 
+and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+      .bg-img{
+          min-height: 500px;
+    }
+}
+
+/* iphone 6,7,8 */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 550px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    .bg-img{
+        min-height: 500px;
+    }
+    .main-inner{
+        font-size: 35px;
+        letter-spacing: -1px;
+        line-height: 1;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .bg-img{
+        min-height: 700px;
+    }
+    .main-container{
+        max-width: 75%;
+    }
+    .main-inner{
+        font-size: 60px;
+        letter-spacing: -1px;
+        line-height: 1;
+    }
+}
