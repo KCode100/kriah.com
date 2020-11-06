@@ -46,15 +46,16 @@ html{
     flex-wrap: wrap;
 }
 
-div.hamberger i{
+div.hamberger{
     color: white;
     display: none;
     position: absolute;
     top: 50%;
-    left: 18px;  
-    margin-top: -15px;
+    left: 0px;  
+    margin-top: -45px;
     cursor: pointer;
-    padding: 10px;
+    /* padding: 40px 15px 40px 20px; */
+    padding: 40px 20px;
     /* padding-left: 7px; */
 }
 
