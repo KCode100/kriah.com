@@ -19,6 +19,7 @@ html{
     color: white;
 }
 
+
 /* .page{
     visibility: hidden;;
 } */
@@ -477,11 +478,11 @@ footer li:hover{
 footer img.misgeret{
     height: auto;
     max-width: 240px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 footer img.misgeret:hover{
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .misgeret-logo{
@@ -492,7 +493,7 @@ footer img.misgeret:hover{
 footer p{
     vertical-align: middle;
     padding: 0;
-    margin: 0;
+    /* margin: 0; */
 }
 
 footer p:hover{
@@ -500,6 +501,71 @@ footer p:hover{
     color: white;
 }
 
+/* .skiptranslate,
+.goog-te-gadget{
+    width: 100px;
+    margin-left: 15px;
+} */
+
+
+/* LOCATION.HTML */
+div.contact-page-container{
+    max-width: 90%;
+    margin: auto;
+}
+
+div.contact-page-container h2{
+    text-transform: uppercase;
+    font-family: 'Bebas Neue',sans-serif;
+
+}
+
+div.sub-header{
+    font-family: play;
+    font-family: 'Playfair Display', serif;
+
+}
+
+div.map-container{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.map{
+    /* min-width: 600px; */
+    width: 68%;
+    /* margin-right: 15px; */
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+}
+
+div.address{
+    line-height: 1.5;
+    padding: 20px 40px 20px 40px;
+    opacity: 0.9;
+    color: rgb(0, 0, 0);
+    width: 30%;
+}
+
+div.address ul{
+    list-style-type: none;
+    padding: 0 50px;
+}
+
+div.address li{
+    padding-bottom: 20px;
+}
+
+div.address h2{
+    padding: 30px 0 15px 45px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    /* text-align: center; */
+}
 
 
 
