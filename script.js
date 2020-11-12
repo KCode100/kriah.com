@@ -18,7 +18,7 @@ function check(e){
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
   }
-
+  
 
 // // // // // // // //
 // // LOGIN MODAL// //
@@ -29,6 +29,8 @@ const modal = document.querySelector('.login-container');
 const usernameUI = document.querySelector('#username');
 const passwordUI = document.querySelector('#password');
 const submitBtn = document.querySelector('.submit-btn');
+const loginBox = document.querySelector('.login-box');
+const spinner = document.querySelector('.spinner');
 submitBtn.addEventListener('click', checkInput);
 window.addEventListener('click', closeModal);
 
@@ -38,15 +40,18 @@ loginBtn.forEach(function(element){
 })
 
 function openModal(){
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
 }
 
 function closeModal(e){
-    if (e.target == modal){
+    if (e.target == modal || e.target.classList.contains('close-login')){
         modal.style.display = 'none';
+    loginBox.style.border = 'none';
+
     }
 }
 
+// green border with correct username and password //
 passwordUI.addEventListener('input', function(){
     const usernameInput = usernameUI.value.toLowerCase();
     const correctUsername = 'talmidim';
@@ -63,33 +68,33 @@ passwordUI.addEventListener('input', function(){
 function checkInput(){
     const usernameInput = usernameUI.value.toLowerCase();
     const passwordInput = passwordUI.value.toLowerCase();
-    const loginBox = document.querySelector('.login-box');
     const correctUsername = 'talmidim';
     const correctPassword = 'zobin123'
     if (usernameInput === correctUsername && passwordInput === correctPassword){
         setTimeout(clientPage, 1000);
-        loginBox.style.border = '6px solid #62f77b';
+        // loginBox.style.border = '4px solid #62f77b';
     } else {
-        console.log('incorrect username or password');
-        loginBox.style.border = '6px solid red';
-
+        displaySpinner();
     }
+}
+
+function displaySpinner(){
+    setTimeout(border, 1000);
+    spinner.style.display = 'block';
+    submitBtn.style.display = 'none';
+}
+
+function border(){
+    spinner.style.display = 'none';
+    loginBox.style.border = '3px solid red';
+    submitBtn.style.display = 'block';
+    document.querySelector('input[type=password]').value = '';
+    document.querySelector('input[type=text]').value = '';
 }
 
 function clientPage(){
     document.location = 'user.html';
 }
-
-
-// const input = document.querySelector('input');
-// input.addEventListener('focus', function(){
-
-//     this.placeholder = '';
-// });
-// input.addEventListener('blur', function(){
-
-//     this.placeholder = "&#xf007; username";
-// });
 
 
 
