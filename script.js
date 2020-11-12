@@ -46,7 +46,7 @@ function openModal(){
 }
 
 function closeModal(e){
-    if (e.target == modal || e.target.classList.contains('close-login')){
+    if (e.target == modal || e.target.classList.contains('close-icon')){
         modal.style.display = 'none';
         document.querySelector('input[type=password]').value = '';
         document.querySelector('input[type=text]').value = '';
@@ -80,7 +80,7 @@ function checkInput(){
     //     document.querySelector('input[type=password]').style.border = '3px solid red';
     // }
     if (usernameInput === correctUsername && passwordInput === correctPassword){
-        setTimeout(clientPage, 1000);
+        clientPage();
         // loginBox.style.border = '4px solid #62f77b';
     } else {
         displaySpinner();
@@ -96,29 +96,34 @@ function displaySpinner(){
 function border(){
     const usernameInput = usernameUI.value.toLowerCase();
     const passwordInput = passwordUI.value.toLowerCase();
-    setTimeout(clearBorder, 3000);
+    setTimeout(clearBorder, 1000);
     spinner.style.display = 'none';
-    loginBox.style.border = '3px solid red';
+    loginBox.style.border = '2px solid red';
     submitBtn.style.display = 'block';
     document.querySelector('input[type=password]').value = '';
     document.querySelector('input[type=text]').value = '';
     if (usernameInput === ''){
-        setTimeout(2000, clearBorder);
-        document.querySelector('input[type=text]').style.border = '3px solid red';
+        // setTimeout(500, clearBorder);
+        document.querySelector('input[type=text]').style.border = '2px solid red';
+        document.querySelector('input[type=text]').style.transform = 'scale(1.1)';
     }
     if(passwordInput === ''){
-        document.querySelector('input[type=password]').style.border = '3px solid red';
+        document.querySelector('input[type=password]').style.border = '2px solid red';
+        document.querySelector('input[type=password]').style.transform = 'scale(1.1)';
     }
 }
 
 function clearBorder(){
-    loginBox.style.border = 'none';
+    loginBox.style.border = 'black';
     document.querySelector('input[type=password]').style.border = 'none';
     document.querySelector('input[type=text]').style.border = 'none';
+    document.querySelector('input[type=password]').style.transform = 'none';
+    document.querySelector('input[type=text]').style.transform = 'none';
 }
 
 function clientPage(){
-    document.location = 'user.html';
+    window.location.href = 'user.html';
+    console.log('still working');
 }
 
 

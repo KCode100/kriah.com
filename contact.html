@@ -17,6 +17,20 @@
 </head>
 <body>
 
+    <!-- LOGIN FORM -->
+    <div class="login-container">
+    
+        <div class="login-box">
+            <h2 class="login-header">User Login<i class="fas fa-times close-icon"></i></h2>
+            <input type="text" id="username" placeholder="&#xf406; username">
+            <input type="password" id="password" placeholder="&#xf084; password">
+            <div class="spinner">
+                <i class="fa fa-spinner fa-spin" style="font-size:24px; color: black;"></i>
+            </div>
+            <button class="submit-btn">Sign In</button>
+        </div>
+    </div>
+
     <div class="nav nav-other-pages">
         <div class="nav-container">
             <div class="hamberger"><i class="menu fas fa-bars fa-lg"></i></div>
@@ -27,7 +41,7 @@
                 <div><a href="index.html">HOME</a></div>
                 <div><a href="about.html">ABOUT</a></div>
                 <div><a href="#">CONTACT US</a></div>
-                <div class="login"><a href="#"><span>CLIENT ZONE</span></a></div>
+                <div class="login login-button"><a href="#"><span>CLIENT ZONE</span></a></div>
             </div>
         </div>
         <!--small screen navbar-->
@@ -37,7 +51,7 @@
             <a href="index.html"><li>HOME</li></a>
             <a href="about.html"><li>ABOUT</li></a>
             <a href="#"><li>CONTACT US</li></a>
-            <a href="#"><li>CLIENT AREA</li></a>
+            <a class = 'login-button' href="#"><li>CLIENT ZONE</li></a>
         </ul>
     </div>
 
@@ -105,7 +119,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Client Zone</a></li>
+            <li><a class = 'login-button' href="#">Client Zone</a></li>
             <li><a href="#">Testimonials</a></li>
             <li><a href="#">Visit Us</a></li>
         </ul>
