@@ -17,6 +17,23 @@
 </head>
 <body> 
     <div class="page">
+
+
+        <!-- LOGIN FORM -->
+        <div class="login-container">
+            <div class="login-box">
+                <h2 class="login-header">User Login</h2>
+                <!-- <label for="username">Username:</label> -->
+                <!-- <i class="fas fa-user user-img"></i> -->
+                <input type="text" id="username" placeholder="&#xf406; username">
+                <!-- <label for="password">password:</label> -->
+                <input type="password" id="password" placeholder="&#xf084; password">
+                <button class="submit-btn">Sign In</button>
+            </div>
+        </div>
+
+
+
         <div class="nav">
             <div class="nav-container">
                 <div class="hamberger"><i class="menu fas fa-bars fa-lg"></i></div>
@@ -25,9 +42,9 @@
                 </div>
                 <div class="nav-links-container">
                     <div><a href="#">HOME</a></div>
-                    <div><a href="#">ABOUT</a></div>
+                    <div><a href="about.html">ABOUT</a></div>
                     <div><a href="contact.html">CONTACT US</a></div>
-                    <div class="login"><a href="#"><span>CLIENT ZONE</span></a></div>
+                    <div class="login login-button"><a href="#"><span>CLIENT ZONE</span></a></div>
                 </div>
             </div>
             <!--small screen navbar-->
@@ -35,14 +52,14 @@
         <div class="drop-menu">
             <ul>
                 <a href="#"><li>HOME</li></a>
-                <a href="#"><li>ABOUT</li></a>
+                <a href="about.html"><li>ABOUT</li></a>
                 <a href="contact.html"><li>CONTACT US</li></a>
-                <a href="#"><li>CLIENT AREA</li></a>
+                <a href="#" class="login-button"><li>CLIENT AREA</li></a>
             </ul>
         </div>
+
+
         <div class="bg-img">
-            
-            
             <div class="main">
                 <div class="main-container">
                     <div class="main-inner">
@@ -157,9 +174,9 @@
         <footer>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="#">Client Zone</a></li>
+                <li><a href="#" class="login-button">Client Zone</a></li>
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="contact.html#map">Visit Us</a></li>
             </ul>
