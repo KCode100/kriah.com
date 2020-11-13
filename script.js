@@ -115,8 +115,8 @@ function border(){
 
 function clearBorder(){
     loginBox.style.border = 'black';
-    document.querySelector('input[type=password]').style.border = 'none';
-    document.querySelector('input[type=text]').style.border = 'none';
+    document.querySelector('input[type=password]').style.border = 'black';
+    document.querySelector('input[type=text]').style.border = 'black';
     document.querySelector('input[type=password]').style.transform = 'none';
     document.querySelector('input[type=text]').style.transform = 'none';
 }
