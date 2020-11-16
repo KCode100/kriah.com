@@ -6,7 +6,9 @@ const passwordUI = document.querySelector('#password');
 const submitBtn = document.querySelector('.submit-btn');
 const loginBox = document.querySelector('.login-box');
 const spinner = document.querySelector('.spinner');
-submitBtn.addEventListener('click', checkInput);
+if (submitBtn){
+    submitBtn.addEventListener('click', checkInput);
+}
 window.addEventListener('click', closeModal);
 
 
@@ -24,6 +26,15 @@ function check(e){
     } else {
         dropMenu.classList.remove('reveal');
     }
+
+    // about link nav dropdown
+    // const aboutBtn = document.querySelector('.about-link');
+    // const dropdownList = document.querySelector('ul.dropdown');
+    // if (aboutBtn.contains(e.target)){
+    //     dropdownList.classList.toggle('hide-dropdown');
+    // } else{
+    //     dropdownList.classList.add('hide-dropdown');
+    // }
 }
 
 
@@ -54,17 +65,19 @@ function closeModal(e){
 }
 
 // green border with correct username and password //
-passwordUI.addEventListener('input', function(){
-    const usernameInput = usernameUI.value.toLowerCase();
-    const correctUsername = 'talmidim';
-    const loginBox = document.querySelector('.login-box');
-    const passwordInput = passwordUI.value.toLowerCase();
-    const correctPassword = 'zobin123'
-
-    if (usernameInput === correctUsername && passwordInput === correctPassword){
-        loginBox.style.border = '6px solid #62f77b';
-    }
-});
+if (passwordUI){
+    passwordUI.addEventListener('input', function(){
+        const usernameInput = usernameUI.value.toLowerCase();
+        const correctUsername = 'talmidim';
+        const loginBox = document.querySelector('.login-box');
+        const passwordInput = passwordUI.value.toLowerCase();
+        const correctPassword = 'zobin123'
+    
+        if (usernameInput === correctUsername && passwordInput === correctPassword){
+            loginBox.style.border = '6px solid #62f77b';
+        }
+    });
+}
 
 // Login with correct username and password
 function checkInput(){
