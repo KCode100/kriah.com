@@ -24,6 +24,8 @@ function check(e){
     const dropdownContact = document.querySelector('.open-contact');
     const dropdownArrow1 = document.querySelector('.dropdown-arrow1');
     const dropdownArrow2 = document.querySelector('.dropdown-arrow2');
+    // const openAbout = document.querySelector('.open-about');
+    // const openAbout = document.querySelector('.open-about');
     // let inside = menuIcon.contains(e.target);
 
     if (menuIcon.contains(e.target)){
