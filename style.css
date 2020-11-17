@@ -13,6 +13,7 @@ html{
 
 *{
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /*remove blue background on mobile devices when user clicks*/
 }
 
 ::selection{
