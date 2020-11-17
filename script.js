@@ -66,7 +66,7 @@ function googleTranslateElementInit() {
 // // LOGIN MODAL// //
 // // // // // // // //
 
-listen to ALL "client zone" buttons
+// listen to ALL "client zone" buttons
 loginBtn.forEach(function(element){
     element.addEventListener('click', openModal);
 })
