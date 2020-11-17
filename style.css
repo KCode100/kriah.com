@@ -112,8 +112,7 @@ a{
     margin-left: 20px;
 }
 
-.about-link:hover > div,
-.contact-link:hover > div{
+.reveal-dropdown{
     visibility: visible;
     opacity: 1;
     height: 100px;
@@ -122,8 +121,7 @@ a{
 .contact-link > a >i{
     transition: all 0.5s;
 }
-.about-link:hover > a > i,
-.contact-link:hover > a >i{
+.dropdown-spin{
     transform: rotateX(900deg);
 }
 /* a.dropdown-item{
@@ -836,7 +834,7 @@ div.address h2{
 
 /* decrese menu-icon size
 place it after logo in center */
-@media only screen and (max-width:304px){
+@media only screen and (max-width:308px){
     .nav{
         padding: 10px;
     }
@@ -848,6 +846,12 @@ place it after logo in center */
         font-size: 10px;
         width: 100%;
         text-align: center;
+    }
+}
+/* decrease font-size */
+@media only screen and (max-width:320px){
+    .logo{
+        font-size: 24px;
     }
 }
 
