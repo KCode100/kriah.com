@@ -18,12 +18,26 @@ document.addEventListener('click', check);
 function check(e){
     const dropMenu = document.querySelector('div.drop-menu');
     const menuIcon = document.querySelector('.hamberger');
-
+    const smallNavAbout = document.querySelector('.small-nav-about');
+    const smallNavContact = document.querySelector('.small-nav-contact');
+    const dropdownAbout = document.querySelector('.open-about');
+    const dropdownContact = document.querySelector('.open-contact');
+    const dropdownArrow1 = document.querySelector('.dropdown-arrow1');
+    const dropdownArrow2 = document.querySelector('.dropdown-arrow2');
     // let inside = menuIcon.contains(e.target);
 
     if (menuIcon.contains(e.target)){
         dropMenu.classList.toggle('reveal');
-    } else {
+    } else if (smallNavAbout.contains(e.target)){
+        dropMenu.classList.add('reveal');
+        dropdownAbout.classList.toggle('reveal-dropdown');
+        dropdownArrow1.classList.toggle('dropdown-spin');
+    } else if (smallNavContact.contains(e.target)){
+        dropMenu.classList.add('reveal');
+        dropdownContact.classList.toggle('reveal-dropdown');
+        dropdownArrow2.classList.toggle('dropdown-spin');
+    }
+    else {
         dropMenu.classList.remove('reveal');
     }
 
@@ -48,13 +62,13 @@ function googleTranslateElementInit() {
 // // // // // // // //
 
 // listen to ALL "client zone" buttons
-loginBtn.forEach(function(element){
-    element.addEventListener('click', openModal);
-})
+// loginBtn.forEach(function(element){
+//     element.addEventListener('click', openModal);
+// })
 
-function openModal(){
-    modal.style.display = 'flex';
-}
+// function openModal(){
+//     modal.style.display = 'flex';
+// }
 
 function closeModal(e){
     if (e.target == modal || e.target.classList.contains('close-icon')){
