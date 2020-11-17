@@ -25,12 +25,15 @@ function check(e){
     const dropdownArrow1 = document.querySelector('.dropdown-arrow1');
     const dropdownArrow2 = document.querySelector('.dropdown-arrow2');
     // const openAbout = document.querySelector('.open-about');
-    // const openAbout = document.querySelector('.open-about');
+    const openContact = document.querySelector('.open-contact');
     // let inside = menuIcon.contains(e.target);
 
     if (menuIcon.contains(e.target)){
         dropMenu.classList.toggle('reveal');
-    } else if (smallNavAbout.contains(e.target)){
+    } else if (openContact.contains(e.target)){
+        // dropdownArrow1.classList.remove('dropdown-spin');
+        dropdownArrow2.classList.remove('dropdown-spin');
+    }else if (smallNavAbout.contains(e.target)){
         dropMenu.classList.add('reveal');
         dropdownAbout.classList.toggle('reveal-dropdown');
         dropdownArrow1.classList.toggle('dropdown-spin');
@@ -63,14 +66,14 @@ function googleTranslateElementInit() {
 // // LOGIN MODAL// //
 // // // // // // // //
 
-// listen to ALL "client zone" buttons
-// loginBtn.forEach(function(element){
-//     element.addEventListener('click', openModal);
-// })
+listen to ALL "client zone" buttons
+loginBtn.forEach(function(element){
+    element.addEventListener('click', openModal);
+})
 
-// function openModal(){
-//     modal.style.display = 'flex';
-// }
+function openModal(){
+    modal.style.display = 'flex';
+}
 
 function closeModal(e){
     if (e.target == modal || e.target.classList.contains('close-icon')){
