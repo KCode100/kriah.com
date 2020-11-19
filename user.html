@@ -15,7 +15,18 @@
     <title>Misgeret</title>        
 </head>
 <body> 
+
+    <div class="loading-icon">
+        <!-- <h1>PAGE IS LOADING!</h1>
+        blob:https://loading.io/7f3fb33e-ec5b-46b9-b08a-b5391bdb6c0c
+        <img src="https://loading.io/7f3fb33e-ec5b-46b9-b08a-b5391bdb6c0c"> -->
+        <div class="loadingio-spinner-blocks-f0klz66hld"><div class="ldio-qkarwjr2cx">
+            <div style='left:39px;top:39px;animation-delay:0s'></div><div style='left:81px;top:39px;animation-delay:0.0641025641025641s'></div><div style='left:123px;top:39px;animation-delay:0.1282051282051282s'></div><div style='left:39px;top:81px;animation-delay:0.4487179487179487s'></div><div style='left:123px;top:81px;animation-delay:0.1923076923076923s'></div><div style='left:39px;top:123px;animation-delay:0.3846153846153846s'></div><div style='left:81px;top:123px;animation-delay:0.3205128205128205s'></div><div style='left:123px;top:123px;animation-delay:0.2564102564102564s'></div>
+            </div></div>
+    </div>
+
     <div class="page">
+
 
         <!-- LOGIN FORM -->
         <div class="login-container">
@@ -25,52 +36,109 @@
                 <input type="text" id="username" placeholder="&#xf406; username">
                 <input type="password" id="password" placeholder="&#xf084; password">
                 <div class="spinner">
-                    <i class="fa fa-spinner fa-spin" style="font-size:24px; color: black;"></i>
+                    <!-- <i class="fa fa-spinner fa-spin" style="font-size:24px; color: black;"></i> -->
+                    <div class="loadingio-spinner-blocks-8t06s5a3yxe"><div class="ldio-fuwghxpqaho">
+                        <div style='left:19.5px;top:19.5px;animation-delay:0s'></div><div style='left:53.5px;top:19.5px;animation-delay:0.17730496453900707s'></div><div style='left:19.5px;top:53.5px;animation-delay:0.5319148936170213s'></div><div style='left:53.5px;top:53.5px;animation-delay:0.35460992907801414s'></div>
+                        </div></div>
                 </div>
                 <button class="submit-btn">Sign In</button>
             </div>
         </div>
 
-
-        <div class="nav nav-other-pages">
-            <div class="nav-container">
+        <div class="nav">
+            <div class="nav-content">
                 <div class="hamberger"><i class="menu fas fa-bars fa-lg"></i></div>
                 <div class="logo">
                     <a href="#"><span class="first-letter">R</span>ABBI <span class="first-letter">Z</span>VI <span class="first-letter">Z</span>OBIN</a>
                 </div>
                 <div class="nav-links-container">
-                    <div><a href="index.html">HOME</a></div>
-                    <div><a href="about.html">ABOUT</a></div>
-                    <div><a href="contact.html">CONTACT US</a></div>
-                    <div class="login login-button"><a href="#"><span>CLIENT ZONE</span></a></div>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li class="about-link"><a href="#">ABOUT</a>
+                            <div class="dropdown">
+                                <div>
+                                    <a class="dropdown-item"href="#">Why Zobin Method</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item"href="#">The Process</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item"href="#">Testimonials</a>
+                                </div>
+                                <div>
+                                   <a class="dropdown-item" href="#">Haskamas/Approvals</a> 
+                                </div>
+                            </div>
+                        </li>
+                        <li class = "contact-link"><a href="#">CONTACT</a>
+                            <div class="dropdown">
+                                <div>
+                                   <a class="dropdown-item" href="#">How to Contact Us</a> 
+                                </div>
+                                <div>
+                                    <a class="dropdown-item"href="#">Schedule Evaluation</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item"href="#">Visit Us</a>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="login login-button"><a class = "login-icon-button" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            <!--small screen navbar-->
+            <div class="drop-menu">
+                <div>
+                    <a href="#">HOME</a>
+                </div>
+                <div class="about-link small-nav-about">
+                    <a href="#">ABOUT<i class="fas fa-chevron-circle-down dropdown-arrow dropdown-arrow1"></i></a>
+                    <div class="dropdown open-about">
+                        <div>
+                           <a class="dropdown-item" href="#">Why Zobin Method</a> 
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">The Process</a>
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">Testimonials</a>
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">Haskamas/Approvals</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-link small-nav-contact">
+                    <a href="#">CONTACT<i class="fas fa-chevron-circle-down dropdown-arrow dropdown-arrow2"></i></a>
+                    <div class="dropdown open-contact">
+                        <div>
+                           <a class="dropdown-item" href="contact.html">How to Contact Us</a> 
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">Schedule Evaluation</a>
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="login-button">LOGIN</a>
+                </div>
+            </div>
         </div>
-        <div class="drop-menu">
-            <ul>
-                <a href="index.html"><li>HOME</li></a>
-                <a href="about.html"><li>ABOUT</li></a>
-                <a href="contact.html"><li>CONTACT US</li></a>
-                <a href="#" class="login-button"><li>CLIENT AREA</li></a>
-            </ul>
-        </div>
 
 
-        <iframe class = 'resources-pdf' src="all-worksheets.pdf">
-            This browser does not support PDFs. Please download the <a href="all-worksheets.pdf" download>PDF</a>to view it
-        </iframe>
-        <div>
-            Please download the <a href="all-worksheets.pdf" download>PDF</a>to view it
-            <a href="all-worksheets.pdf">CLICK HERE!</a>
-        </div>
-
-        <div>
-            <a href="all-worksheets.pdf"><iframe class = 'resources-pdf' src="all-worksheets.pdf">
-            </iframe><a>
-        </div>
-
-
+            <!-- <div>
+                Please download the <a href="all-worksheets.pdf" download>PDF</a>to view it
+                <a href="all-worksheets.pdf">CLICK HERE!</a>
+            </div> -->
+    
+            <div style="margin: 50px">
+                <a href="all-worksheets.pdf"><iframe class = 'resources-pdf' src="all-worksheets.pdf">
+                </iframe><a>
+            </div>
 
         
         <footer>
