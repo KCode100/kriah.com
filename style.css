@@ -76,8 +76,9 @@ a{
 
 .nav{
     width: 100%;
-    background-color: black;
+    background-color: rgb(46, 45, 45);
     padding: 20px 0;
+    /* opacity: 0.8; */
 }
 
 .nav a{
@@ -120,12 +121,15 @@ a{
     display: none;
 }
 
+.nav-links-container li a{
+    font-weight: 700;
+}
 
 .drop-menu{
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-color: rgb(46, 45, 45);
     color: var(--theme);
     font-size: 14px;
-    font-weight: lighter;
     min-width: 100%;
     z-index: 1;
     height: 0px;
@@ -148,12 +152,14 @@ a{
     flex-direction: column;
     justify-content: space-around;
     margin-left: 20px;
+    
 }
 
 .reveal-dropdown{
     visibility: visible;
     opacity: 1;
     height: 100px;
+    
 }
 .about-link > a > i,
 .contact-link > a >i{
@@ -169,7 +175,9 @@ a{
 a.dropdown-item:hover{
     transform: scale(1.1);
 } */
-
+.drop-menu div a{
+    font-weight: 900;
+}
 
 .reveal{
     height: 250px;
@@ -193,8 +201,9 @@ a.dropdown-item{
     /* min-height: 98vh; */
     background-color: lightgray;
     background: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')center/cover no-repeat;
+    /* background: url(boy-learning.jpg)center/cover no-repeat; */
     position: relative;
-    padding-top: 130px;
+    padding-top: 90px;
     min-height: 490px;
 }
 
@@ -429,11 +438,11 @@ input[type=password]{
 }
 
 .bottom-banner{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     bottom: 0px;
     background-color: #000000;
-    opacity: 0.65;
+    opacity: 0.8;
 }
 
 .bottom-banner-inner{
@@ -441,7 +450,7 @@ input[type=password]{
     font-family: Georgia, 'Times New Roman', Times, serif;
     max-width: 80%;
     margin: auto;
-    padding: 18px 15px 10px 25px;
+    padding: 18px 15px 20px 25px;
 }
 
 .bottom-banner-inner a{
@@ -458,7 +467,7 @@ h3{
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 25px solid #000000;
-    opacity: 0.67;
+    opacity: 0.8;
     margin: auto;
 }
 
@@ -1037,7 +1046,8 @@ display navlinks
         visibility: hidden;
         opacity: 0;
         position: absolute;
-        background-color: black;
+        /* background-color: black; */
+        background-color: rgb(46, 45, 45);
         height: 0px;
         transition:  height 300ms;
         padding: 20px 20px 15px 30px;
@@ -1071,7 +1081,7 @@ display navlinks
         opacity: 1;
         height: 200px;
         pointer-events: all;
-        width: 200px;
+        width: 210px;
     }
 }
 
