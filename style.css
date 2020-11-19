@@ -21,10 +21,9 @@ html{
     color: white;
 }
 
-
-/* .page{
-    visibility: hidden;;
-} */
+.page{
+    visibility: hidden;
+}
 
 /* .black{
     min-height: 100vh;

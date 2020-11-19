@@ -6,14 +6,17 @@ const passwordUI = document.querySelector('#password');
 const submitBtn = document.querySelector('.submit-btn');
 const loginBox = document.querySelector('.login-box');
 const spinner = document.querySelector('.spinner');
+const page = document.querySelector('.page');
 if (submitBtn){
     submitBtn.addEventListener('click', checkInput);
 }
 window.addEventListener('click', closeModal);
-
-
 document.addEventListener('click', check);
 
+window.addEventListener('load', function(){
+    page.style.visibility = 'visible';
+    console.log('window loaded!');
+});
 
 function check(e){
     const dropMenu = document.querySelector('div.drop-menu');
