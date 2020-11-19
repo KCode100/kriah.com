@@ -18,6 +18,7 @@ document.addEventListener('click', check);
 //     console.log('window loaded!');
 // });
 
+
 // page loader icon until page loads
 document.onreadystatechange = function () {
     const state = document.readyState
@@ -28,7 +29,7 @@ document.onreadystatechange = function () {
         //    document.getElementById('interactive');
            document.querySelector('.loading-icon').style.display = 'none';
            document.querySelector('.page').style.display = 'initial';
-        },700);
+        },500);
     }
   }
 
