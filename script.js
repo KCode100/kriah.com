@@ -13,10 +13,28 @@ if (submitBtn){
 window.addEventListener('click', closeModal);
 document.addEventListener('click', check);
 
-window.addEventListener('load', function(){
-    page.style.visibility = 'visible';
-    console.log('window loaded!');
-});
+// window.addEventListener('load', function(){
+//     page.style.visibility = 'visible';
+//     console.log('window loaded!');
+// });
+
+// page loader icon until page loads
+document.onreadystatechange = function () {
+    const state = document.readyState
+    if (state == 'interactive') {
+         document.querySelector('.page').style.display = 'none';
+    } else if (state == 'complete') {
+        setTimeout(function(){
+        //    document.getElementById('interactive');
+           document.querySelector('.loading-icon').style.display = 'none';
+           document.querySelector('.page').style.display = 'initial';
+        },700);
+    }
+  }
+
+
+
+
 
 function check(e){
     const dropMenu = document.querySelector('div.drop-menu');
@@ -96,7 +114,8 @@ if (passwordUI){
         const correctPassword = 'zobin123'
     
         if (usernameInput === correctUsername && passwordInput === correctPassword){
-            loginBox.style.border = '6px solid #62f77b';
+            loginBox.style.border = '4px solid #eed49f';
+            submitBtn.innerText = 'Login';
         }
     });
 }
@@ -123,7 +142,7 @@ function checkInput(){
 }
 
 function displaySpinner(){
-    setTimeout(border, 1000);
+    setTimeout(border, 1300);
     spinner.style.display = 'block';
     submitBtn.style.display = 'none';
 }
@@ -133,16 +152,16 @@ function border(){
     const passwordInput = passwordUI.value.toLowerCase();
     setTimeout(clearBorder, 1000);
     spinner.style.display = 'none';
-    loginBox.style.border = '2px solid red';
     submitBtn.style.display = 'block';
     document.querySelector('input[type=password]').value = '';
     document.querySelector('input[type=text]').value = '';
-    if (usernameInput === ''){
+    if (usernameInput === '' && passwordInput === ''){
+        loginBox.style.border = '2px solid red';
+    } else if (usernameInput === ''){
         // setTimeout(500, clearBorder);
         document.querySelector('input[type=text]').style.border = '2px solid red';
         document.querySelector('input[type=text]').style.transform = 'scale(1.1)';
-    }
-    if(passwordInput === ''){
+    } else if(passwordInput === ''){
         document.querySelector('input[type=password]').style.border = '2px solid red';
         document.querySelector('input[type=password]').style.transform = 'scale(1.1)';
     }
@@ -158,7 +177,6 @@ function clearBorder(){
 
 function clientPage(){
     window.location.href = 'user.html';
-    console.log('still working');
 }
 
 
