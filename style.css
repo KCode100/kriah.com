@@ -562,7 +562,7 @@ div.blog-image{
     /* justify-content: space-evenly; */
     flex-wrap: wrap;
     text-transform: capitalize;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     font-size: 18px;
 }
 .first-blog i{
@@ -570,6 +570,7 @@ div.blog-image{
 }
 .first-blog-text{
     vertical-align: 6px;
+    font-size: 16px;
 }
 .fa-thumbs-o-up{
     color: rgb(21, 211, 21);
@@ -579,6 +580,12 @@ div.blog-image{
 }
 .fa-globe-europe{
     color: rgb(158, 158, 79);
+}
+.fa-file-pdf-o{
+    color: rgb(158, 158, 79);
+}
+.fa-question{
+    color: rgb(71, 155, 194);
 }
 .zoom-icon{
     width: 40px;
