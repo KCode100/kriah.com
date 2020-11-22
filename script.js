@@ -29,6 +29,8 @@ document.onreadystatechange = function () {
         //    document.getElementById('interactive');
            document.querySelector('.loading-icon').style.display = 'none';
            document.querySelector('.page').style.display = 'initial';
+            AOS.init();
+
         },500);
     }
   }
@@ -95,6 +97,7 @@ loginBtn.forEach(function(element){
 
 function openModal(){
     modal.style.display = 'flex';
+    loginBox.classList.add('animate__animated','animate__zoomIn');
 }
 
 function closeModal(e){
@@ -135,7 +138,11 @@ function checkInput(){
     //     document.querySelector('input[type=password]').style.border = '3px solid red';
     // }
     if (usernameInput === correctUsername && passwordInput === correctPassword){
-        clientPage();
+        setTimeout(function(){
+            clientPage();
+        },1000);
+        loginBox.classList.remove('animate__animated','animate__zoomIn');
+        loginBox.classList.add('animate__animated', 'animate__backOutUp');
         // loginBox.style.border = '4px solid #62f77b';
     } else {
         displaySpinner();
@@ -158,6 +165,9 @@ function border(){
     document.querySelector('input[type=text]').value = '';
     if (usernameInput === '' && passwordInput === ''){
         loginBox.style.border = '2px solid red';
+        loginBox.classList.remove('animate__animated','animate__zoomIn');
+        loginBox.classList.add('animate__animated', 'animate__headShake');
+
     } else if (usernameInput === ''){
         // setTimeout(500, clearBorder);
         document.querySelector('input[type=text]').style.border = '2px solid red';
@@ -174,11 +184,18 @@ function clearBorder(){
     document.querySelector('input[type=text]').style.border = 'black';
     document.querySelector('input[type=password]').style.transform = 'none';
     document.querySelector('input[type=text]').style.transform = 'none';
+    loginBox.classList.remove('animate__animated', 'animate__headShake');
 }
 
 function clientPage(){
     window.location.href = 'user.html';
 }
 
+
+// add current year to copyright
+const copyrightYear = document.querySelector('.copyright-year');
+const date = new Date();
+const year = date.getFullYear();
+copyrightYear.innerHTML = year;
 
 
