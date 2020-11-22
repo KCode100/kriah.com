@@ -264,6 +264,8 @@ a.dropdown-item{
     animation-timing-function: linear;
     animation-fill-mode: both; */
     text-transform: uppercase;
+    /* --animate-duration: 0.5s; */
+
 }
 
 .close-icon{
