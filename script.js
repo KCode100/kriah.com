@@ -29,6 +29,8 @@ document.onreadystatechange = function () {
         //    document.getElementById('interactive');
            document.querySelector('.loading-icon').style.display = 'none';
            document.querySelector('.page').style.display = 'initial';
+            AOS.init();
+
         },500);
     }
   }
@@ -179,6 +181,7 @@ function clearBorder(){
 function clientPage(){
     window.location.href = 'user.html';
 }
+
 
 
 
