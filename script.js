@@ -29,8 +29,8 @@ document.onreadystatechange = function () {
         //    document.getElementById('interactive');
            document.querySelector('.loading-icon').style.display = 'none';
            document.querySelector('.page').style.display = 'initial';
-            AOS.init();
-
+            // AOS.init();
+            new WOW().init();
         },500);
     }
   }
