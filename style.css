@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 :root{
     --theme: #eed49f;
 }
@@ -21,9 +23,10 @@ html{
     color: white;
 }
 
-/* .page{
-    visibility: hidden;
-} */
+a{
+    cursor: pointer;
+}
+
 .loading-icon{
     background-color: rgb(238, 237, 237);
     height: 100vh;
@@ -118,10 +121,12 @@ a{
 
 .nav-links-container{
     display: none;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-links-container li a{
-    font-weight: 700;
+    /* font-weight: 900; */
+    font-weight: 500;
 }
 
 .drop-menu{
@@ -135,7 +140,7 @@ a{
     overflow-y: auto;
     transition: height 0.25s linear;
     padding: 0 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -151,7 +156,6 @@ a{
     flex-direction: column;
     justify-content: space-around;
     margin-left: 20px;
-    
 }
 
 .reveal-dropdown{
@@ -175,7 +179,8 @@ a.dropdown-item:hover{
     transform: scale(1.1);
 } */
 .drop-menu div a{
-    font-weight: 900;
+    /* font-weight: 900; */
+    font-weight: 500;
 }
 
 .reveal{
@@ -213,14 +218,11 @@ a.dropdown-item{
     align-items: center;
     z-index: 1;
     position: fixed;
-    /* background: url('https://images.unsplash.com/photo-1519373344801-14c1f9539c9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')center/cover no-repeat; */
-    /* background-color: black; */
     opacity: 1;
     min-height: 100%;
     min-width: 100%;
-    /* height: 100vh; */
     background-image: radial-gradient(white, black);
-
+    /* background: url('original.jpg')center/cover no-repeat; */
 }
 
 /* @keyframes border{
@@ -248,7 +250,7 @@ a.dropdown-item{
     width: 90%;
     max-width: 500px;
     margin: auto;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(238, 238, 238);
     border-radius: 5px;
     /* color: white; */
     /* margin-top: 50vh; */
@@ -388,7 +390,7 @@ input[type=password]{
     outline: none;
     margin: auto;
     color: white;
-    box-shadow: 5px 5px rgb(179, 179, 179);
+    box-shadow: 0px 5px rgb(179, 179, 179);
 }
 
 .submit-btn:active{
@@ -497,7 +499,7 @@ input[type=password]{
     margin-bottom: 40px;
 }
 .services-header-box h1{
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
     font-size: 32px;
     /* margin-top: 40px; */
     /* margin: 20px; */
@@ -521,6 +523,7 @@ input[type=password]{
     height: 50px;
     width: 220px;
     border: none;
+    font-family: 'Ubuntu', sans-serif;
 }
 .services-buttons-container button:hover{
     cursor: pointer;
@@ -563,8 +566,10 @@ button.services-schedule-evaluation:hover{
 }
 .services-icon-text{
     line-height: 1.5;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     padding-right: 27px;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 .fa-thumbs-o-up{
     color: rgb(21, 211, 21);
@@ -610,12 +615,14 @@ img.zoom-img{
     }
   } */
   div.blogs-outer-container{
-    background-color: rgb(236, 236, 236);
+    /* background-color: rgb(236, 236, 236); */
+    /* background-color: #ecfff7; */
+    background-color: #f9f9f9;
     width: 100%;
 }
   
 .blogs-container{
-    max-width: 90%;
+    max-width: 85%;
     margin: 0px auto;
 }
 
@@ -624,14 +631,17 @@ img.zoom-img{
     font-size: 55px;
     margin: 0px;
     padding: 0px;
-    padding: 50px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
     line-height: 1;
     /* margin-bottom: 10px; */
+}
+.blogs-header span{
+    color: var(--theme);
 }
 
 .blog{
     border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
     /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -660,7 +670,9 @@ div.blog-image{
     line-height: 1.6;
 }
 
-
+.blog-text-content{
+    font-family: 'Ubuntu', sans-serif;
+}
 
 .blog-text-header{
     font-family: 'Playfair Display', serif;
@@ -675,17 +687,29 @@ div.blog-image{
 
 .read-more a:hover{
     background-color: black;
+    border: none;
+    color: var(--theme);
 }
 
 .read-more a{
     transition: all 0.5s;
     padding: 12px 35px;
-    background-color: #ebc380;
+    background-color: white;
+    border: 1px solid #9FB9EE;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    /* color: white; */
+    /* color: #e6c174; */
+    color: #8CADF1;
     border-radius: 3px;
 }
+
+.shadow-image{
+    width: 100%;
+    background: url('white-shadow.jpg')center top no-repeat;
+    padding: 50px;
+}
+
 
 /* .articles-container{
     background-color: #f9f9f9;
@@ -743,7 +767,7 @@ div.blog-image{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: linear-gradient(#428483, #26292e);
+    background-image: linear-gradient(#396269, #242222);
     margin-top: 80px;
     padding-bottom: 150px;
     /* align-items: center; */
@@ -771,6 +795,7 @@ div.blog-image{
     font-size: 18px;
     line-height: 1.6;
     margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 div.inner-contact-image{
@@ -796,6 +821,7 @@ div.contact-buttons{
     align-items: center;
     max-width: 100%;
     margin-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
 }
 div.contact-buttons *{
     display: inline-block;
@@ -809,9 +835,11 @@ div.read-more-lower{
     margin-bottom: 15px;
 }
 .read-more-lower a{
+    background-color: #d3b073;
     color: black;
     padding: 12px 16px;
     font-size: 16px;
+    border: none;
 }
 .read-more-lower a:hover{
     color: white;
@@ -827,11 +855,11 @@ div.contact-icons p{
     /* margin: 0px 10px 10px 10px; */
 }
 div.contact-icons i{
-    border-radius: 7px;
+    border-radius: 50%;
     border: 0.5px solid gray;
-    padding: 6px 15px;
+    padding: 12px;
     transition: all 500ms;
-    font-size: 20px;
+    font-size: 18px;
     color: #ebc380;
     background-color: transparent;
     /* margin: 0px 0px 5px 5px; */
@@ -1398,6 +1426,8 @@ display navlinks
 @media only screen and (min-width: 1045px){
     .blogs-header{
         font-size: 85px;
+        max-width: 90%;
+        margin: auto;
     }
 }
 
@@ -1469,7 +1499,7 @@ display navlinks
         /* background-image: linear-gradient(to right, #9aebc9 ,#585656, rgb(34, 34, 34)); */
         /* background-image: linear-gradient(to right, , #26292e); */
         /* background-image: linear-gradient(to right, #26292e, #428483); */
-        background-image: linear-gradient(to right, #428483, #26292e);
+        background-image: linear-gradient(to right, #396269, #242222);
 
         padding-bottom: 250px;
     }
