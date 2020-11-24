@@ -25,13 +25,14 @@ document.onreadystatechange = function () {
     if (state == 'interactive') {
          document.querySelector('.page').style.display = 'none';
     } else if (state == 'complete') {
-        setTimeout(function(){
-        //    document.getElementById('interactive');
-           document.querySelector('.loading-icon').style.display = 'none';
-           document.querySelector('.page').style.display = 'initial';
-            // AOS.init();
-            new WOW().init();
-        },500);
+        // setTimeout(function(){
+        //    document.querySelector('.loading-icon').style.display = 'none';
+        //    document.querySelector('.page').style.display = 'initial';
+        //     new WOW().init();
+        // },500);
+        document.querySelector('.loading-icon').style.display = 'none';
+        document.querySelector('.page').style.display = 'initial';
+        new WOW().init();
     }
   }
 
@@ -97,7 +98,7 @@ loginBtn.forEach(function(element){
 
 function openModal(){
     modal.style.display = 'flex';
-    loginBox.classList.add('animate__animated','animate__zoomIn');
+    loginBox.classList.add('animate__animated','animate__zoomIn', 'animate__faster');
 }
 
 function closeModal(e){
@@ -108,7 +109,7 @@ function closeModal(e){
     }
 }
 
-// green border with correct username and password //
+// theme border with correct username and password //
 if (passwordUI){
     passwordUI.addEventListener('input', function(){
         const usernameInput = usernameUI.value.toLowerCase();
@@ -118,7 +119,7 @@ if (passwordUI){
         const correctPassword = 'zobin123'
     
         if (usernameInput === correctUsername && passwordInput === correctPassword){
-            loginBox.style.border = '4px solid #eed49f';
+            loginBox.style.border = '2px solid #eed49f';
             submitBtn.innerText = 'Login';
         }
     });
