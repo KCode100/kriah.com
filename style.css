@@ -105,6 +105,7 @@ a{
     text-align: center;
     font-size: 26px;
     letter-spacing: 3px;
+    font-family: serif;
 }
 
 .first-letter{
@@ -688,7 +689,8 @@ div.blog-image{
 .read-more a:hover{
     background-color: black;
     border: none;
-    color: var(--theme);
+    /* color: var(--theme); */
+    color: white;
 }
 
 .read-more a{
@@ -704,11 +706,24 @@ div.blog-image{
     border-radius: 3px;
 }
 
-.shadow-image{
+.shadow-image,
+.wall-shadow{
     width: 100%;
-    background: url('white-shadow.jpg')center top no-repeat;
     padding: 50px;
 }
+.shadow-image{
+    background: url('white-shadow.jpg')center top no-repeat;
+}
+.shadow-image{
+    background: url('wall-shadow.jpg')center top no-repeat;
+}
+.books-header{
+    height: 40vh;
+    width: 100%;
+    background: url('triangle-bg.png')center/cover no-repeat;
+
+}
+
 
 
 /* .articles-container{
@@ -1532,3 +1547,4 @@ display navlinks
         margin-top: 15px;
     }
 }
+

@@ -33,6 +33,20 @@ document.onreadystatechange = function () {
         document.querySelector('.loading-icon').style.display = 'none';
         document.querySelector('.page').style.display = 'initial';
         new WOW().init();
+
+
+        var swiper = new Swiper('.swiper-container', {
+            cssMode: true,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+              el: '.swiper-pagination'
+            },
+            mousewheel: true,
+            keyboard: true,
+          });
     }
   }
 
@@ -198,5 +212,4 @@ const copyrightYear = document.querySelector('.copyright-year');
 const date = new Date();
 const year = date.getFullYear();
 copyrightYear.innerHTML = year;
-
 
