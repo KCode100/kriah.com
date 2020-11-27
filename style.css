@@ -488,6 +488,11 @@ input[type=password]{
     margin: auto;
 }
 
+.services-outer{
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
 .services-container{
     /* padding: 0 32px; */
     padding: 5em 32px;
@@ -616,9 +621,8 @@ img.zoom-img{
     }
   } */
   div.blogs-outer-container{
-    /* background-color: rgb(236, 236, 236); */
-    /* background-color: #ecfff7; */
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background-color: white;
     width: 100%;
 }
   
@@ -714,9 +718,9 @@ div.blog-image{
 .shadow-image{
     background: url('white-shadow.jpg')center top no-repeat;
 }
-.shadow-image{
+/* .shadow-image{
     background: url('wall-shadow.jpg')center top no-repeat;
-}
+} */
 .books-header{
     height: 40vh;
     width: 100%;
@@ -724,7 +728,9 @@ div.blog-image{
 
 }
 
-
+div.testimonials{
+    padding-top: 50px;
+}
 
 /* .articles-container{
     background-color: #f9f9f9;
