@@ -520,21 +520,6 @@ img.zoom-img{
 }
 
 
-
-
-/* div.personal-read-more{
-    margin-bottom: 30px;
-} */
-
-/* [data-aos="spin-zoom"] {
-    transform: skewX(45deg);
-    opacity: 0;
-    transition-property: transform, opacity;
-    &.aos-animate {
-      transform: skewX(0);
-      opacity: 1;
-    }
-  } */
   div.blogs-outer-container{
     /* background-color: #f9f9f9; */
     background-color: white;
@@ -629,13 +614,18 @@ div.blog-image{
 .wall-shadow{
     width: 100%;
     padding: 50px;
+    height: 600px;
 }
 .shadow-image{
     background: url('white-shadow.jpg')center top no-repeat;
 }
-/* .shadow-image{
+.wall-shadow{
     background: url('wall-shadow.jpg')center top no-repeat;
-} */
+}
+
+
+
+/* books.html */
 .books-header{
     height: 40vh;
     width: 100%;

@@ -192,6 +192,10 @@ function border(){
     } else if(passwordInput === ''){
         document.querySelector('input[type=password]').style.border = '2px solid red';
         document.querySelector('input[type=password]').style.transform = 'scale(1.1)';
+    } else {
+        loginBox.style.border = '2px solid red';
+        loginBox.classList.remove('animate__animated','animate__zoomIn');
+        loginBox.classList.add('animate__animated', 'animate__headShake');
     }
 }
 
