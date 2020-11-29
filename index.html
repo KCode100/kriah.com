@@ -10,6 +10,8 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4e31ef7c0f.js" crossorigin="anonymous"></script>
         <link rel="icon" href="misgeret.jpg" type="misgeret/jpg">
+        <!-- swiper.js -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="style.css">
         <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5580eb104f7bf241e80b907e8/81d01c73817ab4410f64112bc.js");</script>
 
@@ -23,10 +25,13 @@
 </head>
 <body> 
 
-    <div class="loading-icon">
+    <!-- <div class="loading-icon">
         <div class="loadingio-spinner-blocks-bigec3kb91b"><div class="ldio-xqlmhc073ca">
             <div style='left:21.599999999999998px;top:21.599999999999998px;animation-delay:0s'></div><div style='left:48px;top:21.599999999999998px;animation-delay:0.125s'></div><div style='left:74.39999999999999px;top:21.599999999999998px;animation-delay:0.25s'></div><div style='left:21.599999999999998px;top:48px;animation-delay:0.875s'></div><div style='left:74.39999999999999px;top:48px;animation-delay:0.375s'></div><div style='left:21.599999999999998px;top:74.39999999999999px;animation-delay:0.75s'></div><div style='left:48px;top:74.39999999999999px;animation-delay:0.625s'></div><div style='left:74.39999999999999px;top:74.39999999999999px;animation-delay:0.5s'></div>
             </div></div>
+    </div> -->
+    <div class="loader">
+        <img src="loader.svg" alt="">
     </div>
 
     <div class="page">
@@ -39,12 +44,9 @@
                 <h2 class="login-header">User Login<i class="fas fa-times close-icon"></i></h2>
                 <input type="text" id="username" placeholder="&#xf406; username">
                 <input type="password" id="password" placeholder="&#xf084; password">
-                <div class="spinner">
-                    <!-- <i class="fa fa-spinner fa-spin" style="font-size:24px; color: black;"></i> -->
-                    <div class="loadingio-spinner-blocks-8t06s5a3yxe"><div class="ldio-fuwghxpqaho">
-                        <div style='left:19.5px;top:19.5px;animation-delay:0s'></div><div style='left:53.5px;top:19.5px;animation-delay:0.17730496453900707s'></div><div style='left:19.5px;top:53.5px;animation-delay:0.5319148936170213s'></div><div style='left:53.5px;top:53.5px;animation-delay:0.35460992907801414s'></div>
-                        </div></div>
-                </div>
+                    <div class="small-loader">
+                        <img src="small-loader.svg" alt="">
+                    </div>
                 <button class="submit-btn">Sign In</button>
             </div>
         </div>
@@ -270,29 +272,26 @@
         </div>
         <!-- <div class="arrow-down-white"></div> -->
 
-        <div class = "testimonials shadow-image">
-            <!-- <img src="white-shadow.jpg" alt="shadow"> -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptas, quas fugit odio aliquid labore quam itaque. Fuga laborum reprehenderit placeat sunt. Consequatur quod repellat enim amet debitis dolor ipsa.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eligendi ea id iure atque ipsam blanditiis excepturi cupiditate, quae perferendis aliquid qui ex inventore recusandae velit quos repellat. Natus, voluptate.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eligendi ea id iure atque ipsam blanditiis excepturi cupiditate, quae perferendis aliquid qui ex inventore recusandae velit quos repellat. Natus, voluptate.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eligendi ea id iure atque ipsam blanditiis excepturi cupiditate, quae perferendis aliquid qui ex inventore recusandae velit quos repellat. Natus, voluptate.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eligendi ea id iure atque ipsam blanditiis excepturi cupiditate, quae perferendis aliquid qui ex inventore recusandae velit quos repellat. Natus, voluptate.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eligendi ea id iure atque ipsam blanditiis excepturi cupiditate, quae perferendis aliquid qui ex inventore recusandae velit quos repellat. Natus, voluptate.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eligendi ea id iure atque ipsam blanditiis excepturi cupiditate, quae perferendis aliquid qui ex inventore recusandae velit quos repellat. Natus, voluptate.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eligendi ea id iure atque ipsam blanditiis excepturi cupiditate, quae perferendis aliquid qui ex inventore recusandae velit quos repellat. Natus, voluptate.
-        </div>
-        
-        <!-- <div class="testimonials">
-            <div class="testimonial testimonial1">
-                he started saying the shema before he goes to bed from a siddur, including vehaya and vayomer. also capitl chof in tehillim every day and he read a full page of pirkei avos on shabbos. all on his own, we didn't ask him to. he is so excited that it's starting to get easier for him to read and we are so happy, I can't even tell you! so thank you. May hashem will give you all the brochos you need, you are a shliach of hashem to work this miracle out with kids and it's amazing!
-            </div>
-            <div class="testimonial testimonial2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit voluptatibus laboriosam amet quasi dignissimos dolor vero, maiores nam ullam earum deleniti quibusdam, cumque voluptate illum, consequuntur velit assumenda hic.
-            </div>
-            <div class="testimonial testimonial3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit voluptatibus laboriosam amet quasi dignissimos dolor vero, maiores nam ullam earum deleniti quibusdam, cumque voluptate illum, consequuntur velit assumenda hic.
+        <!-- <div class = "testimonials shadow-image">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
             </div>
         </div> -->
+        <div class="wall-shadow">
+
+        </div>
+        
         <!-- <div class="contact-area"> -->
             <!-- <img src="https://2vkwmk3jbw1b4bccan18qetm-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/frankkern.png" alt=""> -->
             <div class="inner-contact-area">
@@ -374,6 +373,8 @@
 
 
      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+     <!-- swiper.js -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
      <script src="wow.min.js"></script>
     <script src="script.js"></script>    
 </body>

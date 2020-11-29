@@ -5,7 +5,7 @@ const usernameUI = document.querySelector('#username');
 const passwordUI = document.querySelector('#password');
 const submitBtn = document.querySelector('.submit-btn');
 const loginBox = document.querySelector('.login-box');
-const spinner = document.querySelector('.spinner');
+const smallLoader = document.querySelector('.small-loader');
 const page = document.querySelector('.page');
 if (submitBtn){
     submitBtn.addEventListener('click', checkInput);
@@ -30,7 +30,7 @@ document.onreadystatechange = function () {
         //    document.querySelector('.page').style.display = 'initial';
         //     new WOW().init();
         // },500);
-        document.querySelector('.loading-icon').style.display = 'none';
+        document.querySelector('.loader').style.display = 'none';
         document.querySelector('.page').style.display = 'initial';
         new WOW().init();
 
@@ -74,10 +74,12 @@ function check(e){
         dropdownArrow2.classList.remove('dropdown-spin');
     }else if (smallNavAbout.contains(e.target)){
         dropMenu.classList.add('reveal');
+        dropdownContact.classList.remove('reveal-dropdown');
         dropdownAbout.classList.toggle('reveal-dropdown');
         dropdownArrow1.classList.toggle('dropdown-spin');
     } else if (smallNavContact.contains(e.target)){
         dropMenu.classList.add('reveal');
+        dropdownAbout.classList.remove('reveal-dropdown');
         dropdownContact.classList.toggle('reveal-dropdown');
         dropdownArrow2.classList.toggle('dropdown-spin');
     }
@@ -166,7 +168,7 @@ function checkInput(){
 
 function displaySpinner(){
     setTimeout(border, 1300);
-    spinner.style.display = 'block';
+    smallLoader.style.display = 'block';
     submitBtn.style.display = 'none';
 }
 
@@ -174,7 +176,7 @@ function border(){
     const usernameInput = usernameUI.value.toLowerCase();
     const passwordInput = passwordUI.value.toLowerCase();
     setTimeout(clearBorder, 1000);
-    spinner.style.display = 'none';
+    smallLoader.style.display = 'none';
     submitBtn.style.display = 'block';
     document.querySelector('input[type=password]').value = '';
     document.querySelector('input[type=text]').value = '';
@@ -190,6 +192,10 @@ function border(){
     } else if(passwordInput === ''){
         document.querySelector('input[type=password]').style.border = '2px solid red';
         document.querySelector('input[type=password]').style.transform = 'scale(1.1)';
+    } else {
+        loginBox.style.border = '2px solid red';
+        loginBox.classList.remove('animate__animated','animate__zoomIn');
+        loginBox.classList.add('animate__animated', 'animate__headShake');
     }
 }
 
@@ -207,9 +213,35 @@ function clientPage(){
 }
 
 
+// initialize swiper.js
+// var swiper = new Swiper('.swiper-container', {
+//     effect: 'cube',
+//     grabCursor: true,
+//     cubeEffect: {
+//       shadow: true,
+//       slideShadows: true,
+//       shadowOffset: 20,
+//       shadowScale: 0.94,
+//     },
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev'
+//     },
+//     autoplay: {
+//     delay: 5000,
+//     stopOnLastSLide: false,
+//     disableOnInteraction: false,
+//     },
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+//   });
+
+
 // add current year to copyright
 const copyrightYear = document.querySelector('.copyright-year');
 const date = new Date();
 const year = date.getFullYear();
 copyrightYear.innerHTML = year;
+
 
