@@ -540,7 +540,7 @@ img.zoom-img{
     line-height: 1;
     /* margin-bottom: 10px; */
 }
-.blogs-header span{
+span.colored{
     color: var(--theme);
 }
 
@@ -631,45 +631,42 @@ div.blog-image{
 .wall-image{
     background: url('original.jpg')center/cover no-repeat;
 }
-.test-text{
-    width: 30%;
-    text-align: center;
-}
-.test-text2{
-    margin-left: auto;
-}
+
 .testimonials{
     width: 100%;
-    background-color: black;
-    background-color: #161719;
     background-color: rgb(3, 3, 31);
-    padding: 80px;
+    padding: 2em 1em;
 }
-h1.test-header{
+.testimonials h1{
     color: white;
-    font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    letter-spacing: 3.5px;
-    font-size: 50px;
+    letter-spacing: 1.8px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
 }
 .arrow-down-light{
     border-top: 25px solid #f9f9f9;
 }
 .speech-bubble {
+    padding: 0.8em 0.8em 1em;
+    margin: 2em 0;
 	position: relative;
-    /* background-color: #866a39; */
-    background-color: #282a2e;
-    background-color: #0c1830;
-    color: white;
-    width: 70%;
-    line-height: 1.8;
-    padding: 50px;
-    font-size: 20px;
+    color: whitesmoke;
+    line-height: 1.6;
     font-family: 'ubuntu', sans-serif;
-    padding: 2em 3em;
-    margin: 90px 0;
+    font-size: 16px;
+    letter-spacing: 0.8px;
 }
-
+.speech-bubble p{
+    text-indent: 40px;
+    margin: 0;
+    width: 100%;
+}
+span.quote-from{
+    font-style: italic;
+    margin-left: auto;
+}
 .speech-bubble-piece-left{
     content: '';
 	position: absolute;
@@ -678,13 +675,12 @@ h1.test-header{
 	width: 0;
 	height: 0;
 	border: 42px solid transparent;
-	/* border-top-color: #866a39; */
-	border-top-color: #282a2e;
 	border-top-color: #0c1830;
 	border-bottom: 0;
 	border-right: 0;
 	margin-left: -21px;
     margin-bottom: -42px;
+    display: none;
 }
 
 .speech-bubble-piece-right {
@@ -701,27 +697,24 @@ h1.test-header{
 	border-left: 0;
 	margin-left: -21px;
     margin-bottom: -42px;
+    display: none;
 }
 
 .speech1{
-    border-left: 10px solid #9FB9EE;
-    border-left: 10px solid #3269DB;
-    margin-right: auto;
+    border-left: 5px solid #3269DB;
+    /* margin-right: auto; */
 }
 .speech2{
-    border-right: 10px solid #EED49F;
-    border-right: 10px solid #DB32BE;
-    margin-left: auto;
+    border-right: 5px solid #DB32BE;
+    /* margin-left: auto; */
 }
 .speech3{
-    border-left: 10px solid #9FEEAD;
-    border-left: 10px solid #DBA332;
-    margin-right: auto;
+    border-left: 5px solid #DBA332;
+    /* margin-right: auto; */
 }
 .speech4{
-    border-right: 10px solid #EE9FE1;
-    border-right: 10px solid #32DB4E;
-    margin-left: auto;
+    border-right: 5px solid #32DB4E;
+    /* margin-left: auto; */
 }
 
 
@@ -1561,3 +1554,110 @@ display navlinks
     }
 }
 
+
+
+/* TESTIMONIALS */
+@media only screen and (min-width: 480px){
+    .speech-bubble{
+    font-size: 18px;
+    margin: 3em 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .speech-bubble{
+        line-height: 1.8;
+        background-color: #0e172e;
+    }
+    .speech-bubble-piece-left{
+        display: block;
+        border-top-color: #0e172e;
+    }
+    .speech-bubble-piece-right{
+        display: block;
+        border-top-color: #0e172e;
+    }
+    .speech1{
+        border-left: 10px solid #3269DB;
+        margin-right: auto;
+    }
+    .speech2{
+        border-right: 10px solid #DB32BE;
+        margin-left: auto;
+    }
+    .speech3{
+        border-left: 10px solid #DBA332;
+        margin-right: auto;
+    }
+    .speech4{
+        border-right: 10px solid #32DB4E;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    
+.testimonials{
+    /* width: 100%; */
+    background-color: rgb(3, 3, 31);
+    padding: 80px;
+}
+.testimonials h1{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    letter-spacing: 3.5px;
+    font-size: 60px;
+}
+.arrow-down-light{
+    border-top: 25px solid #f9f9f9;
+}
+.speech-bubble {
+	position: relative;
+    background-color: #0e172e;
+    color: white;
+    line-height: 1.8;
+    padding: 50px;
+    font-size: 20px;
+    font-family: 'ubuntu', sans-serif;
+    padding: 2em 3em;
+    margin: 90px 0;
+}
+.speech-bubble p{
+    text-indent: 50px;
+    margin: 0;
+}
+span.quote-from{
+    font-style: italic;
+}
+.speech-bubble-piece-left{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+	width: 0;
+	height: 0;
+	border: 42px solid transparent;
+	border-top-color: #0c1830;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -21px;
+    margin-bottom: -42px;
+}
+
+.speech-bubble-piece-right {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 80%;
+	width: 0;
+	height: 0;
+	border: 42px solid transparent;
+	border-top-color: #0c1830;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -21px;
+    margin-bottom: -42px;
+}
+
+}
