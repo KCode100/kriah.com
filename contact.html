@@ -20,219 +20,223 @@
 </head>
 <body>
 
-    <!-- LOGIN FORM -->
-    <div class="login-container">
-    
-        <div class="login-box">
-            <h2 class="login-header">User Login<i class="fas fa-times close-icon"></i></h2>
-            <input type="text" id="username" placeholder="&#xf406; username">
-            <input type="password" id="password" placeholder="&#xf084; password">
-            <div class="spinner">
-                <i class="fa fa-spinner fa-spin" style="font-size:24px; color: black;"></i>
-            </div>
-            <button class="submit-btn">Sign In</button>
-        </div>
+    <div class="loader">
+        <img src="loader.svg" alt="">
     </div>
 
-    <div class="nav">
-        <div class="nav-content">
-            <div class="hamberger"><i class="menu fas fa-bars fa-lg"></i></div>
-            <div class="logo">
-                <a href="#"><span class="first-letter">R</span>ABBI <span class="first-letter">Z</span>VI <span class="first-letter">Z</span>OBIN</a>
-            </div>
-            <div class="nav-links-container">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li class="about-link"><a href="#">ABOUT</a>
-                        <div class="dropdown">
-                            <div>
-                                <a class="dropdown-item"href="#">Why Zobin Method</a>
-                            </div>
-                            <div>
-                                <a class="dropdown-item"href="#">The Process</a>
-                            </div>
-                            <div>
-                                <a class="dropdown-item"href="#">Testimonials</a>
-                            </div>
-                            <div>
-                               <a class="dropdown-item" href="#">Haskamas/Approvals</a> 
-                            </div>
-                        </div>
-                    </li>
-                    <li class = "contact-link"><a href="#">CONTACT</a>
-                        <div class="dropdown">
-                            <div>
-                               <a class="dropdown-item" href="#">How to Contact Us</a> 
-                            </div>
-                            <div>
-                                <a class="dropdown-item"href="#">Schedule Evaluation</a>
-                            </div>
-                            <div>
-                                <a class="dropdown-item"href="#">Visit Us</a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="login login-button"><a class = "login-icon-button" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="drop-menu">
-            <div>
-                <a href="#">HOME</a>
-            </div>
-            <div class="about-link small-nav-about">
-                <a href="#">ABOUT<i class="fas fa-chevron-circle-down dropdown-arrow dropdown-arrow1"></i></a>
-                <div class="dropdown open-about">
-                    <div>
-                       <a class="dropdown-item" href="#">Why Zobin Method</a> 
-                    </div>
-                    <div>
-                        <a class="dropdown-item"href="#">The Process</a>
-                    </div>
-                    <div>
-                        <a class="dropdown-item"href="#">Testimonials</a>
-                    </div>
-                    <div>
-                        <a class="dropdown-item"href="#">Haskamas/Approvals</a>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-link small-nav-contact">
-                <a href="#">CONTACT<i class="fas fa-chevron-circle-down dropdown-arrow dropdown-arrow2"></i></a>
-                <div class="dropdown open-contact">
-                    <div>
-                       <a class="dropdown-item" href="contact.html">How to Contact Us</a> 
-                    </div>
-                    <div>
-                        <a class="dropdown-item"href="#">Schedule Evaluation</a>
-                    </div>
-                    <div>
-                        <a class="dropdown-item"href="#">Visit Us</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <a href="#" class="login-button">LOGIN</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="contact-page-container">
-        <div class="method-list">
-            <h2>need help? We've got you covered.</h2>
-            <div class="sub-header">
-                Here are four ways to reach us:
-            </div>
-    
-            <div class="contact-method">
-                <p><strong>1. For the fastest reply, please submit a form <a href="https://mailchi.mp/ff536e8d01a3/zobin-method">here.</a></strong></p>
-                <p><em>Our support team is in-house and 100% U.S. based …and using that ticketing system helps make sure you don’t fall through the cracks.</em></p>
-            </div>
-            <div class="contact-method">
-                <p><strong>2. Or you can call us at [00972]583287531. Our office hours are Sunday through Thursday from 9-5, IST time.</strong></p>
-                <p><em>In the event you get voice mail, please be sure to leave your email address as well as your call-back number.</p>
-                <p>The reason why is because your customer record is tied to your email address and we’ll be able to look you up in the system before we call you back …and therefore save you time.</em></p>
-            </div>
-            <div class="contact-method">
-                <p><strong>3. You can also email us at <a href="mailto:machonkriah@gmail.com">machonkriah@gmail.com</a>.</strong></p>
-                <!-- <p><em>Our support team is in-house and 100% U.S. based …and using that ticketing system helps make sure you don’t fall through the cracks.</em></p> -->
-            </div>
-            <div class="contact-method">
-                <p><strong>4. Or you can "snail mail us at:</strong></p>
-                
-                <p class="mail-address">
-                    Machon Misgeret<br>
-                    Haham Shmuel Bruchim St 9<br>
-                    Jerusalem<br>
-                    Israel
-                </p>
-                <!-- <p><em>Our support team is in-house and 100% U.S. based …and using that ticketing system helps make sure you don’t fall through the cracks.</em></p> -->
-            </div>
-        </div>
-        <div class="contact-page-image">
-            <img src="https://images.pexels.com/photos/910616/pexels-photo-910616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="random-image">
-            <p class="text-in-image">I will place Rabbi Zobin's<br> picture here....!</p>
-        </div>
+    <div class="page">
+        <!-- LOGIN FORM -->
+        <div class="login-container">
             
+            <div class="login-box">
+                <h2 class="login-header">User Login<i class="fas fa-times close-icon"></i></h2>
+                <input type="text" id="username" placeholder="&#xf406; username">
+                <input type="password" id="password" placeholder="&#xf084; password">
+                    <div class="small-loader">
+                        <img src="small-loader.svg" alt="">
+                    </div>
+                <button class="submit-btn">Sign In</button>
+            </div>
         </div>
-        <div class="map-container">
-            <!-- add extra address??? -->
-            <!-- <div class="address">
-                <h2>
-                    Visit us at:
-                </h2>
-                <div class="address-content">
+
+        <div class="nav">
+            <div class="nav-content">
+                <div class="hamberger"><i class="menu fas fa-bars fa-lg"></i></div>
+                <div class="logo">
+                    <a href="#"><span class="first-letter">R</span>ABBI <span class="first-letter">Z</span>VI <span class="first-letter">Z</span>OBIN</a>
+                </div>
+                <div class="nav-links-container">
                     <ul>
-                        <li>Haham Shmuel Bruchim St 9,</li>
-                        <li>Jerusalem,</li>
-                        <li>Israel</li>
+                        <li><a href="#">HOME</a></li>
+                        <li class="about-link"><a href="#">ABOUT</a>
+                            <div class="dropdown">
+                                <div>
+                                    <a class="dropdown-item"href="#">Why Zobin Method</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item"href="#">The Process</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item"href="#">Testimonials</a>
+                                </div>
+                                <div>
+                                   <a class="dropdown-item" href="#">Haskamas/Approvals</a> 
+                                </div>
+                            </div>
+                        </li>
+                        <li class = "contact-link"><a href="#">CONTACT</a>
+                            <div class="dropdown">
+                                <div>
+                                   <a class="dropdown-item" href="#">How to Contact Us</a> 
+                                </div>
+                                <div>
+                                    <a class="dropdown-item"href="#">Schedule Evaluation</a>
+                                </div>
+                                <div>
+                                    <a class="dropdown-item"href="#">Visit Us</a>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="login login-button"><a class = "login-icon-button" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-            </div> -->
-            <div class="map" id="map">
-                <iframe class = "map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqXnkCOApAxURLPs6dZQkpsU&key=AIzaSyDGeC-k5aYv9I-Lv1J1M3ttM9aMpmQq-ms" allowfullscreen></iframe>
+            </div>
+            <div class="drop-menu">
+                <div>
+                    <a href="#">HOME</a>
+                </div>
+                <div class="about-link small-nav-about">
+                    <a href="#">ABOUT<i class="fas fa-chevron-circle-down dropdown-arrow dropdown-arrow1"></i></a>
+                    <div class="dropdown open-about">
+                        <div>
+                           <a class="dropdown-item" href="#">Why Zobin Method</a> 
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">The Process</a>
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">Testimonials</a>
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">Haskamas/Approvals</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-link small-nav-contact">
+                    <a href="#">CONTACT<i class="fas fa-chevron-circle-down dropdown-arrow dropdown-arrow2"></i></a>
+                    <div class="dropdown open-contact">
+                        <div>
+                           <a class="dropdown-item" href="contact.html">How to Contact Us</a> 
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">Schedule Evaluation</a>
+                        </div>
+                        <div>
+                            <a class="dropdown-item"href="#">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="login-button">LOGIN</a>
+                </div>
             </div>
         </div>
+        <div class="contact-page-container">
+            <div class="method-list">
+                <h2>need help? We've got you covered.</h2>
+                <div class="sub-header">
+                    Here are four ways to reach us:
+                </div>
+        
+                <div class="contact-method">
+                    <p><strong>1. For the fastest reply, please submit a form <a href="https://mailchi.mp/ff536e8d01a3/zobin-method">here.</a></strong></p>
+                    <p><em>Our support team is in-house and 100% U.S. based …and using that ticketing system helps make sure you don’t fall through the cracks.</em></p>
+                </div>
+                <div class="contact-method">
+                    <p><strong>2. Or you can call us at [00972]583287531. Our office hours are Sunday through Thursday from 9-5, IST time.</strong></p>
+                    <p><em>In the event you get voice mail, please be sure to leave your email address as well as your call-back number.</p>
+                    <p>The reason why is because your customer record is tied to your email address and we’ll be able to look you up in the system before we call you back …and therefore save you time.</em></p>
+                </div>
+                <div class="contact-method">
+                    <p><strong>3. You can also email us at <a href="mailto:machonkriah@gmail.com">machonkriah@gmail.com</a>.</strong></p>
+                    <!-- <p><em>Our support team is in-house and 100% U.S. based …and using that ticketing system helps make sure you don’t fall through the cracks.</em></p> -->
+                </div>
+                <div class="contact-method">
+                    <p><strong>4. Or you can "snail mail us at:</strong></p>
+                    
+                    <p class="mail-address">
+                        Machon Misgeret<br>
+                        Haham Shmuel Bruchim St 9<br>
+                        Jerusalem<br>
+                        Israel
+                    </p>
+                    <!-- <p><em>Our support team is in-house and 100% U.S. based …and using that ticketing system helps make sure you don’t fall through the cracks.</em></p> -->
+                </div>
+            </div>
+            <div class="contact-page-image">
+                <img src="https://images.pexels.com/photos/910616/pexels-photo-910616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="random-image">
+                <p class="text-in-image">I will place Rabbi Zobin's<br> picture here....!</p>
+            </div>
+                
+            </div>
+            <div class="map-container">
+                <!-- add extra address??? -->
+                <!-- <div class="address">
+                    <h2>
+                        Visit us at:
+                    </h2>
+                    <div class="address-content">
+                        <ul>
+                            <li>Haham Shmuel Bruchim St 9,</li>
+                            <li>Jerusalem,</li>
+                            <li>Israel</li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="map" id="map">
+                    <iframe class = "map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqXnkCOApAxURLPs6dZQkpsU&key=AIzaSyDGeC-k5aYv9I-Lv1J1M3ttM9aMpmQq-ms" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+        <!-- Begin Mailchimp Signup Form -->
+    <!-- <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style> -->
+    
+    
+    <!-- <div id="mc_embed_signup">
+    <form action="https://gmail.us2.list-manage.com/subscribe/post?u=5580eb104f7bf241e80b907e8&amp;id=13c930b723" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+        <h2>Send a Message</h2>
+    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+    <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+    </label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
     </div>
-
-
-
-
-
-
-    <!-- Begin Mailchimp Signup Form -->
-<!-- <style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style> -->
-
-
-<!-- <div id="mc_embed_signup">
-<form action="https://gmail.us2.list-manage.com/subscribe/post?u=5580eb104f7bf241e80b907e8&amp;id=13c930b723" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h2>Send a Message</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label>
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-</div>
-<div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-</div>
-<div class="mc-field-group">
-	<label for="mce-MMERGE3">Full Name Here...  <span class="asterisk">*</span>
-</label>
-	<input type="text" value="" name="MMERGE3" class="required" id="mce-MMERGE3">
-</div>
-<div class="mc-field-group">
-	<label for="mce-MMERGE4">Message </label>
-	<input type="text" value="" name="MMERGE4" class="" id="mce-MMERGE4">
-</div>
-<div class="mc-field-group">
-	<label for="mce-MMERGE5">Untitled </label>
-	<input type="text" value="" name="MMERGE5" class="" id="mce-MMERGE5">
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-    </div>    -->
-     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5580eb104f7bf241e80b907e8_13c930b723" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="mc-field-group">
+        <label for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
     </div>
-</form>
-</div> -->
-
-<!--End mc_embed_signup-->
-
+    <div class="mc-field-group">
+        <label for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+    </div>
+    <div class="mc-field-group">
+        <label for="mce-MMERGE3">Full Name Here...  <span class="asterisk">*</span>
+    </label>
+        <input type="text" value="" name="MMERGE3" class="required" id="mce-MMERGE3">
+    </div>
+    <div class="mc-field-group">
+        <label for="mce-MMERGE4">Message </label>
+        <input type="text" value="" name="MMERGE4" class="" id="mce-MMERGE4">
+    </div>
+    <div class="mc-field-group">
+        <label for="mce-MMERGE5">Untitled </label>
+        <input type="text" value="" name="MMERGE5" class="" id="mce-MMERGE5">
+    </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    -->
+         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5580eb104f7bf241e80b907e8_13c930b723" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div> -->
+    
+    <!--End mc_embed_signup-->
+    </div>
 
 
 
