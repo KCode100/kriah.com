@@ -613,11 +613,7 @@ div.blog-image{
 .shadow-image,
 .wall-image{
     width: 100%;
-    padding: 50px;
-    font-size: 38px;
-    font-family: 'ubuntu', sans-serif;
-    font-weight: 900;
-    padding: 80px;
+    height: 30px;
 }
 .shadow-image{
     background: url('white-shadow.jpg')center top no-repeat;
@@ -679,12 +675,12 @@ span.quote-from{
 	width: 0;
 	height: 0;
 	border: 42px solid transparent;
-	border-top-color: #0c1830;
+	/* border-top-color: #0c1830; */
 	border-bottom: 0;
 	border-right: 0;
 	margin-left: -21px;
     margin-bottom: -42px;
-    /* display: none; */
+    display: none;
 }
 
 .speech-bubble-piece-right {
@@ -695,32 +691,50 @@ span.quote-from{
 	width: 0;
 	height: 0;
 	border: 42px solid transparent;
-    border-top-color: #282a2e;  
-	border-top-color: #0c1830;
+    /* border-top-color: #282a2e;  
+	border-top-color: #0c1830; */
 	border-bottom: 0;
 	border-left: 0;
 	margin-left: -21px;
     margin-bottom: -42px;
-    /* display: none; */
+    display: none;
     display: inline-block;
 }
 
 .speech1{
     border-left: 5px solid #3269DB;
-    /* margin-right: auto; */
 }
 .speech2{
     border-right: 5px solid #DB32BE;
-    /* margin-left: auto; */
 }
 .speech3{
     border-left: 5px solid #DBA332;
-    /* margin-right: auto; */
 }
 .speech4{
     border-right: 5px solid #32DB4E;
-    /* margin-left: auto; */
 }
+
+.testimonials-trainees{
+    background-color: white;
+}
+.testimonials-trainees h1{
+    color: black;
+}
+.testimonials-trainees .speech-bubble{
+    background-color: rgb(255, 238, 206);
+    border-left: 10px solid var(--theme);
+    color: black;
+    font-weight: 600;
+}
+.speech1-trainees,
+.speech2-trainees,
+.speech3-trinees,
+.speech4-traineed{
+    border: none;
+}
+
+
+
 
 
 /* books.html */
@@ -1587,6 +1601,10 @@ display navlinks
     .speech-bubble-piece-right{
         display: block;
         border-top-color: #0e172e;
+    }
+    .speech-bubble-piece-left-trainees,
+    .speech-bubble-piece-right-trainees{
+        border-top-color: rgb(255, 238, 206);
     }
     .testimonials h1{
         /* font-size: 60px; */
