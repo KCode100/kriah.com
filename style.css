@@ -663,9 +663,9 @@ div.blog-image{
     margin: 0;
     width: 100%;
 }
-span.quote-from{
+.quote-from{
     font-style: italic;
-    margin-left: auto;
+    margin-top: 20px;
 }
 .speech-bubble-piece-left{
     content: '';
@@ -734,6 +734,10 @@ span.quote-from{
 }
 
 
+.testimonial-video{
+    width: 30%;
+    height: 300px;
+}
 
 
 
@@ -746,10 +750,10 @@ span.quote-from{
 }
 
 
-.swiper-container {
+/* .swiper-container {
     width: 600px;
     height: 300px;
-}
+} */
 
 /* .articles-container{
     background-color: #f9f9f9;
@@ -789,12 +793,12 @@ span.quote-from{
     /* position: relative; */
 }
 
-.arrow-down-white{
+.arrow-down-dark-blue{
     width: 0; 
     height: 0; 
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-top: 25px solid white;
+    border-top: 25px solid rgb(3, 3, 31);
     opacity: 1;
     /* margin: auto; */
     position: absolute;
