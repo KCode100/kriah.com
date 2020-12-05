@@ -617,7 +617,6 @@ div.blog-image{
 }
 .shadow-image{
     background: url('white-shadow.jpg')center top no-repeat;
-    color: #E3B964;
 }
 .wall-shadow{
     background: url('wall-shadow.jpg')center top no-repeat;
@@ -631,7 +630,7 @@ div.blog-image{
 .testimonials{
     width: 100%;
     background-color: rgb(3, 3, 31);
-    padding: 2em 1em;
+    padding: 2em 0;
 }
 .testimonials h1{
     color: white;
@@ -641,6 +640,7 @@ div.blog-image{
     font-size: 50px;
     line-height: 1.2;
     font-weight: lighter;
+    padding: 0 0.5em;
 }
 .arrow-down-light{
     border-top: 25px solid #f9f9f9;
@@ -702,27 +702,29 @@ div.blog-image{
 }
 
 .speech1{
-    border-left: 5px solid #3269DB;
+    border-left: 7px solid #3269DB;
 }
 .speech2{
-    border-right: 5px solid #DB32BE;
+    border-right: 7px solid #DB32BE;
 }
 .speech3{
-    border-left: 5px solid #DBA332;
+    border-left: 7px solid #DBA332;
 }
 .speech4{
-    border-right: 5px solid #32DB4E;
+    border-right: 7px solid #32DB4E;
 }
 
 .testimonials-trainees{
+    /* background: url('wall.jpg')center; */
     background-color: white;
 }
 .testimonials-trainees h1{
     color: black;
 }
 .testimonials-trainees .speech-bubble{
-    background-color: rgb(255, 238, 206);
-    border-left: 10px solid var(--theme);
+    /* background-color: rgb(255, 238, 206); */
+    background-color: transparent;
+    /* border-left: 10px solid var(--theme); */
     color: black;
     font-weight: 600;
 }
@@ -730,7 +732,7 @@ div.blog-image{
 .speech2-trainees,
 .speech3-trinees,
 .speech4-traineed{
-    border: none;
+    /* border: none; */
 }
 
 
@@ -919,9 +921,7 @@ div.icon-link{
 }
 
 .footer-banner{
-    /* position: absolute; */
     width: 100%;
-    /* bottom: 0px; */
     background-color: #333333;
     opacity: 1;
     margin: 0px;
@@ -929,7 +929,76 @@ div.icon-link{
     border-bottom: 3px solid white;
 }
 
+footer,
+footer a{
+    color: #8e8e8e;
+}
 footer{
+    background-color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 2em 0 3em;
+}
+.footer-container{
+    border-bottom: 1px solid #8e8e8e;
+    max-width: 75%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+footer h3{
+    font-size: 20px;
+    color: #c4c4c4;
+    margin: 30px 0 30px;
+}
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer li{
+    margin-bottom: 15px;
+}
+footer li:hover > a,
+footer p:hover >a{
+    text-decoration: underline;
+    /* color: #c4c4c4; */
+}
+
+.footer-contact p:nth-child(3){
+    margin-bottom: 35px;
+}
+.footer-contact strong{
+    color: #c4c4c4;
+}
+
+.footer-copyright{
+    text-align: center;
+    font-size: 15px;
+    padding: 30px 0;
+}
+img.misgeret{
+    height: auto;
+    max-width: 240px;
+    opacity: 0.7;
+}
+img.misgeret:hover{
+    opacity: 1;
+}
+/* #google_translate_element > div{
+    float: left;
+} */
+.goog-te-gadget,
+.goog-logo-link{
+    font-size: 16px !important;
+
+}
+.goog-te-gadget img{
+    height: 20px;
+    width: 50px;
+}
+
+/* footer{
     padding: 32px 0px;
     background-color: black;
     font-size: 14px;
@@ -976,18 +1045,8 @@ footer p{
     vertical-align: middle;
     padding: 0;
     /* margin: 0; */
-}
 
-footer p:hover{
-    text-decoration: underline;
-    color: white;
-}
 
-/* .skiptranslate,
-.goog-te-gadget{
-    width: 100px;
-    margin-left: 15px;
-} */
 
 
 /* CONTACT.HTML */
@@ -1280,7 +1339,7 @@ display navlinks
         pointer-events: all;
     }
     a.dropdown-item{
-        transition: transform 0.1s;
+        transition: transform 0.05s;
         display: inline-block;
     }
     a.dropdown-item:hover{
@@ -1642,7 +1701,7 @@ display navlinks
 }
 .speech-bubble {
     font-size: 20px;
-    max-width: 70%;
+    max-width: 75%;
 }
 .speech-bubble:nth-child(even){
     margin: 3em auto 6em 2em;
@@ -1654,4 +1713,15 @@ display navlinks
     text-indent: 50px;
 }
 
+}
+
+
+/* FOOTER */
+@media only screen and (min-width: 768px){
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4em 0;
+    }
 }
