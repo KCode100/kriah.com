@@ -3,6 +3,13 @@
 :root{
     --theme: #eed49f;
 }
+.test-video{
+    /* height: 400px; */
+    /* width: 50%; */
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
 
 body,
 html{
@@ -1176,7 +1183,7 @@ display navlinks
         align-items: center;
     }
     .nav li{
-        padding: 15px 35px;
+        padding: 15px 30px;
     }
     li.login{
         position: static;
