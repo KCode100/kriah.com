@@ -6,27 +6,18 @@
     <meta name="keywords" content="learn Hebrew, read Hebrew, zobin kriah method, misgeret">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4e31ef7c0f.js" crossorigin="anonymous"></script>
     <link rel="icon" href="misgeret.jpg" type="misgeret/jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Misgeret</title>        
 </head>
 <body> 
 
-    <div class="loading-icon">
-        <!-- <h1>PAGE IS LOADING!</h1>
-        blob:https://loading.io/7f3fb33e-ec5b-46b9-b08a-b5391bdb6c0c
-        <img src="https://loading.io/7f3fb33e-ec5b-46b9-b08a-b5391bdb6c0c"> -->
-        <div class="loadingio-spinner-blocks-f0klz66hld"><div class="ldio-qkarwjr2cx">
-            <div style='left:39px;top:39px;animation-delay:0s'></div><div style='left:81px;top:39px;animation-delay:0.0641025641025641s'></div><div style='left:123px;top:39px;animation-delay:0.1282051282051282s'></div><div style='left:39px;top:81px;animation-delay:0.4487179487179487s'></div><div style='left:123px;top:81px;animation-delay:0.1923076923076923s'></div><div style='left:39px;top:123px;animation-delay:0.3846153846153846s'></div><div style='left:81px;top:123px;animation-delay:0.3205128205128205s'></div><div style='left:123px;top:123px;animation-delay:0.2564102564102564s'></div>
-            </div></div>
+    <div class="loader">
+        <img src="img/loader.svg" alt="">
     </div>
 
     <div class="page">
-
 
         <!-- LOGIN FORM -->
         <div class="login-container">
@@ -35,12 +26,9 @@
                 <h2 class="login-header">User Login<i class="fas fa-times close-icon"></i></h2>
                 <input type="text" id="username" placeholder="&#xf406; username">
                 <input type="password" id="password" placeholder="&#xf084; password">
-                <div class="spinner">
-                    <!-- <i class="fa fa-spinner fa-spin" style="font-size:24px; color: black;"></i> -->
-                    <div class="loadingio-spinner-blocks-8t06s5a3yxe"><div class="ldio-fuwghxpqaho">
-                        <div style='left:19.5px;top:19.5px;animation-delay:0s'></div><div style='left:53.5px;top:19.5px;animation-delay:0.17730496453900707s'></div><div style='left:19.5px;top:53.5px;animation-delay:0.5319148936170213s'></div><div style='left:53.5px;top:53.5px;animation-delay:0.35460992907801414s'></div>
-                        </div></div>
-                </div>
+                    <div class="small-loader">
+                        <img src="img/small-loader.svg" alt="">
+                    </div>
                 <button class="submit-btn">Sign In</button>
             </div>
         </div>
@@ -57,23 +45,24 @@
                         <li class="about-link"><a href="#">ABOUT</a>
                             <div class="dropdown">
                                 <div>
-                                    <a class="dropdown-item"href="#">Why Zobin Method</a>
+                                    <a class="dropdown-item"href="#services">Why Zobin Method</a>
                                 </div>
                                 <div>
                                     <a class="dropdown-item"href="#">The Process</a>
                                 </div>
                                 <div>
-                                    <a class="dropdown-item"href="#">Testimonials</a>
+                                    <a class="dropdown-item"href="#testimonials">Testimonials</a>
                                 </div>
                                 <div>
                                    <a class="dropdown-item" href="#">Haskamas/Approvals</a> 
                                 </div>
                             </div>
                         </li>
-                        <li class = "contact-link"><a href="#">CONTACT</a>
+                        <li><a href="blogs.html">BLOG</a></li>
+                        <li class = "contact-link"><a href="contact.html">CONTACT</a>
                             <div class="dropdown">
                                 <div>
-                                   <a class="dropdown-item" href="#">How to Contact Us</a> 
+                                   <a class="dropdown-item" href="contact.html">How to Contact Us</a> 
                                 </div>
                                 <div>
                                     <a class="dropdown-item"href="#">Schedule Evaluation</a>
@@ -96,18 +85,21 @@
                     <a href="#">ABOUT<i class="fas fa-chevron-circle-down dropdown-arrow dropdown-arrow1"></i></a>
                     <div class="dropdown open-about">
                         <div>
-                           <a class="dropdown-item" href="#">Why Zobin Method</a> 
+                           <a class="dropdown-item" href="#services">Why Zobin Method</a> 
                         </div>
                         <div>
                             <a class="dropdown-item"href="#">The Process</a>
                         </div>
                         <div>
-                            <a class="dropdown-item"href="#">Testimonials</a>
+                            <a class="dropdown-item"href="#testimonials">Testimonials</a>
                         </div>
                         <div>
                             <a class="dropdown-item"href="#">Haskamas/Approvals</a>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <a href="blogs.html">BLOG</a>
                 </div>
                 <div class="contact-link small-nav-contact">
                     <a href="#">CONTACT<i class="fas fa-chevron-circle-down dropdown-arrow dropdown-arrow2"></i></a>
@@ -128,44 +120,70 @@
                 </div>
             </div>
         </div>
-
-
-            <!-- <div>
-                Please download the <a href="all-worksheets.pdf" download>PDF</a>to view it
-                <a href="all-worksheets.pdf">CLICK HERE!</a>
-            </div> -->
     
-            <div style="margin: 50px">
-                <a href="all-worksheets.pdf"><iframe class = 'resources-pdf' src="all-worksheets.pdf">
-                </iframe><a>
-            </div>
+        <div class="books-header"></div>
+        <div class="shadow-image book-list-container">
+        </div>
+
+
+
+
+
+
+
+
+
 
         
-        <footer>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="#" class="login-button">Client Zone</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="contact.html#map">Visit Us</a></li>
-            </ul>
-            <div class="misgeret-logo">
-                <a href="#"><img class = "misgeret" src="misgeret.jpg" alt="misgeret logo"></a>
+        <div class="footer-banner">
+            <div class="bottom-banner-inner">
+                <h3><a href="#">NEW Webinar: How To Help Your Child/Talmid Succeed In His Learning</a></h3>
             </div>
-            <p class="copyright">
-                <a href="#">Website by : Kivi Corn Copyright 2020</a>
-            </p>
-            <div id="google_translate_element"></div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-navigation">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Why Zobin Method</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">Haskamas/Approvals</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-useful-links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Put Something Here</a></li>
+                        <li><a href="#">Put Something Here</a></li>
+                        <li><a href="#">Put Something Here</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><strong>USA: </strong>718-841-9696</p>
+                    <p><strong>ISR: </strong>+972-533-8939</p>
+                    <strong>Email Us</strong><br>
+                    <p><a href="mailto:machonkriah@gmail.com">machonkriah@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="misgeret-logo">
+                    <a href="#"><img class = "misgeret" src="img/misgeret.jpg" alt="misgeret logo"></a>
+                </div>
+                <!-- <div id="google_translate_element"></div> -->
+                <p class="copyright">
+                    <a href="#">Website by : Kivi Corn Copyright <span class="copyright-year"></span></a>
+                </p>
+            </div>
         </footer>
         
         
-    
-    </div> <!--end page-->
-    
-
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="script.js"></script>
-    
+    </div>
+     <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async defer></script> -->
+    <script src="js/script.js"></script>    
 </body>
 </html>
