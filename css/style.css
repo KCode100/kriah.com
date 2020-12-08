@@ -1065,6 +1065,7 @@ method.HTML
     font-size: 25px;
     font-family: 'Playfair Display', serif;
 }
+
 .fa-check{
     font-size: 20px;
     margin-right: 10px;
@@ -1086,6 +1087,27 @@ p.sign-up-button:nth-child(2){
     color: rgba(0, 103, 138, 0.932);
     text-decoration: underline;
 }
+
+
+/* training.html */
+.method-questions{
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    max-width: 1000px;
+    margin: auto;
+    padding: 0.5em;
+}
+.training-title{
+    padding: 5em 1.1em;
+}
+p.sign-up-training:hover{
+    transform: none;
+}
+
+
 
 /* ================= */
 /* 404 page */
@@ -1580,11 +1602,21 @@ TESTIMONIALS
     font-size: 30px;
     line-height: 1.4;
     }
-    .method-title h1{
+    .method-title h1,
+    .method-questions{
         font-size: 60px;
+        letter-spacing: 2px;
     }
     .method-subtitle,
     .method-section2 p:nth-child(1){
         font-size: 42px;
+    }
+}
+
+/* training.html */
+@media only screen and (min-width: 1000px){
+    .method-questions{
+        font-size: 40px;
+        letter-spacing: 2px;
     }
 }
