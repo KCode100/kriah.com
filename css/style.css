@@ -510,6 +510,7 @@ div.blog-image{
 
 .read-more{
     margin-top: 40px;
+    letter-spacing: 3px;
 }
 
 .read-more a:hover{
@@ -720,7 +721,8 @@ div.blog-image{
     flex-wrap: wrap;
     justify-content: center;
     /* background-image: linear-gradient(#396269, #242222); */
-    background: url('../img/original.jpg')center/cover no-repeat;
+    /* background: url('../img/original.jpg')center/cover no-repeat; */
+    background-color: rgb(4, 70, 70);
     padding-bottom: 150px;
 }
 
@@ -738,7 +740,7 @@ div.blog-image{
 }
 
 .inner-contact-text p{
-    color: black;
+    color: white;
     font-size: 18px;
     line-height: 1.6;
     margin-top: 10px;
@@ -1007,6 +1009,7 @@ iframe{
 =============
 blogs.HTML
 =============*/
+
 .bg-img-blogs{
     background-color: rgb(233, 233, 233);
     background-image: none;
