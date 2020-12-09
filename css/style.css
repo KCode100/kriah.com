@@ -127,8 +127,7 @@ a{
 .reveal-dropdown{
     visibility: visible;
     opacity: 1;
-    height: 100px;
-    
+    height: 150px;
 }
 .about-link > a > i,
 .contact-link > a >i{
@@ -143,7 +142,8 @@ a{
 }
 
 .reveal{
-    height: 250px;
+    /* padding-top: 20px; */
+    height: 420px;
 }
 
 a.dropdown-item{
@@ -696,7 +696,25 @@ div.blog-image{
     height: 40vh;
     width: 100%;
     background: url('../img/triangle-bg.png')center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.books-header h1{
+    color: #a6cdaa;
+    color: #dfdfdf;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 4px;
 
+}
+.books-container{
+    padding: 4em 2em;
+}
+.book-card{
+    box-shadow: 1px 1px 10px rgb(202, 202, 202);
+    padding: 20px;
 }
 
 
@@ -1311,7 +1329,7 @@ display navlinks
     }
     .nav ul{
         margin: 0;
-        padding-top: 15px;
+        padding: 15px 0 0;
         text-align: center;
         font-family: sans-serif;
         font-size: 14px;
@@ -1397,7 +1415,7 @@ display navlinks
         align-items: center;
     }
     .nav li{
-        padding: 15px 30px;
+        padding: 15px 20px;
     }
     li.login{
         position: static;
@@ -1739,3 +1757,12 @@ TESTIMONIALS
         font-size: 26px;
     }
 }
+
+
+/* books.html */
+@media only screen and (min-width: 768px){
+    .books-header h1{
+        font-size: 120px;
+    }
+}
+
