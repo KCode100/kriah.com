@@ -1108,6 +1108,72 @@ p.sign-up-training:hover{
 }
 
 
+/* ad.html */
+.ad-container{
+    background-color: rgb(233, 233, 233);
+}
+.ad-content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 1em 1em;
+    max-width: 800px;
+    margin: auto;
+}
+.ad-title{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0em;
+}
+.ad-subtitle{
+    font-size: 28px;
+}
+.ad-button{
+    background-color: #e61103;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 5px;
+    font-size: 26px;
+}
+
+.ad-form-container{
+    /* min-height: 100vh; */
+    padding-top: 5.5em;
+}
+.ad-pg-footer{
+    background-color: #414247;
+}
+/* 
+.progress {
+    background: rgb(231, 231, 231);
+    justify-content: flex-start;
+    border-radius: 7px;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    display: flex;
+    height: 30px;
+    width: 500px;
+  }
+  
+  .progress-value {
+    animation: load 3s normal forwards;
+    border-radius: 7px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: rgb(0, 184, 0);
+    height: 30px;
+    width: 0;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 68%; }
+  } */
 
 /* ================= */
 /* 404 page */
@@ -1618,5 +1684,18 @@ TESTIMONIALS
     .method-questions{
         font-size: 40px;
         letter-spacing: 2px;
+    }
+}
+
+/* ad.html */
+@media only screen and (min-width: 768px){
+    .ad-title{
+        font-size: 32px;
+    }
+    .ad-subtitle{
+        font-size: 38px;
+    }
+    .ad-button{
+        font-size: 26px;
     }
 }
