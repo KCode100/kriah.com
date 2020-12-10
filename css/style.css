@@ -540,7 +540,6 @@ div.blog-image{
 }
 .wall-shadow{
     background: url('../img/wall-shadow.jpg')center top no-repeat;
-    padding: 60px;
     min-height: 80vh;
 }
 .wall-image{
@@ -707,7 +706,6 @@ div.blog-image{
     font-size: 70px;
     font-weight: bold;
     letter-spacing: 4px;
-
 }
 .books-container{
     padding: 4em 2em;
@@ -715,6 +713,10 @@ div.blog-image{
 .book-card{
     box-shadow: 1px 1px 10px rgb(202, 202, 202);
     padding: 20px;
+}
+.book-card:hover{
+    box-shadow: 1px 1px 5px rgb(202, 202, 202);
+    cursor: pointer;
 }
 
 
@@ -740,7 +742,7 @@ div.blog-image{
     justify-content: center;
     /* background-image: linear-gradient(#396269, #242222); */
     /* background: url('../img/original.jpg')center/cover no-repeat; */
-    background-color: rgb(4, 70, 70);
+    background-color: rgb(25, 39, 44);
     padding-bottom: 150px;
 }
 
@@ -910,10 +912,6 @@ img.misgeret:hover{
 =============
 CONTACT.HTML
 =============*/
-.nav-other-pages{
-    opacity: 1;
-}
-
 div.contact-page-container{
     width: 95%;
     margin: auto;
@@ -921,45 +919,27 @@ div.contact-page-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     max-width: 1200px
 }
 
 div.method-list{
     flex: 1;
     padding: 0 15px;
+    max-width: 800px;
 }
 
-div.contact-page-image img{
+/* div.contact-page-image{
     width: 100%;
     height: 80%;
-    min-width: 300px;
+    min-width: 450px;
 }
 
 div.contact-page-image{
     flex: 1;
     padding: 0 15px;
-    position: relative;
     text-align: center;
-}
-
-.text-in-image{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-155px, -130px);
-    border: 2px solid black;
-    padding: 15px;
-    box-shadow: 15px 15px 15px black;
-    border-radius: 20px;
-    font-style: none;
-    font-size: 20px;
-    font-weight: 900;
-    background-color: rgb(36, 35, 35);
-    color: white;
-    letter-spacing: 1.5px;
-    opacity: 0.8;
-}
+    background-image: url('img/404.jpg');
+} */
 
 .contact-page-container a{
     color: rgb(70, 104, 168);
@@ -980,7 +960,6 @@ div.contact-page-container h2{
 }
 
 div.sub-header{
-    font-family: play;
     font-family: 'Playfair Display', serif;
     margin: 0 0 30px;
     font-size: 26px;
@@ -992,7 +971,6 @@ div.contact-method{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.5;
-
 }
 
 .contact-method p:nth-child(2){
@@ -1766,3 +1744,9 @@ TESTIMONIALS
     }
 }
 
+/* contact.html */
+@media only screen and (min-width: 1150px){
+    div.contact-page-container{
+        margin: 0;
+    }
+}
