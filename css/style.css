@@ -634,7 +634,10 @@ div.blog-image{
 
 
 .load-more{
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s;
+    overflow-anchor: none;
 }
 .load-more-icon{
     text-align: center;
@@ -644,7 +647,7 @@ div.blog-image{
     color: white;
 }
 .reveal-section{
-    display: block;
+    max-height: 3000px;
 }
 
 
