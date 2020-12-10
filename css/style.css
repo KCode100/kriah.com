@@ -632,6 +632,24 @@ div.blog-image{
     border-right: 7px solid #32DB4E;
 }
 
+
+.load-more{
+    display: none;
+}
+.load-more-icon{
+    text-align: center;
+    cursor: pointer;
+}
+.fa-ellipsis-h{
+    color: white;
+}
+.reveal-section{
+    display: block;
+}
+
+
+
+
 .testimonials-trainees{
     background-color: rgb(233, 233, 233);
     /* text-align: center; */
@@ -741,8 +759,7 @@ div.blog-image{
     flex-wrap: wrap;
     justify-content: center;
     /* background-image: linear-gradient(#396269, #242222); */
-    /* background: url('../img/original.jpg')center/cover no-repeat; */
-    background-color: rgb(25, 39, 44);
+    background: url('../img/original.jpg')center/cover no-repeat;
     padding-bottom: 150px;
 }
 
@@ -760,7 +777,7 @@ div.blog-image{
 }
 
 .inner-contact-text p{
-    color: white;
+    color: black;
     font-size: 18px;
     line-height: 1.6;
     margin-top: 10px;
@@ -1567,7 +1584,7 @@ BLOGS
 /*=========
  MEET RABBI ZOBIN
  ============*/
-@media only screen and (min-width: 700px){
+/* @media only screen and (min-width: 700px){
     .inner-contact-text{
         order: 2;
         max-width: 40%;
@@ -1583,7 +1600,7 @@ BLOGS
         margin-bottom: 50px;
     }
     .inner-contact-area{
-        /* background-image: linear-gradient(to right, #396269, #242222); */
+        background-image: linear-gradient(to right, #396269, #242222);
         padding-bottom: 250px;
     }
 
@@ -1612,7 +1629,7 @@ BLOGS
     div.icon-link{
         margin-top: 15px;
     }
-}
+} */
 
 
 /*=============

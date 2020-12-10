@@ -245,3 +245,12 @@ const year = date.getFullYear();
 copyrightYear.innerHTML = year;
 
 
+// testimonial load more
+const loadMoreIcon = document.querySelector('.load-more-icon');
+const addSectionUI = document.querySelector('.load-more');
+
+loadMoreIcon.addEventListener ('click', addSection);
+
+function addSection() {
+    addSectionUI.classList.toggle('reveal-section');
+}
