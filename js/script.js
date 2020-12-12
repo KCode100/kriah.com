@@ -1,4 +1,3 @@
-
 const loginBtn = document.querySelectorAll('.login-button');
 const modal = document.querySelector('.login-container');
 const usernameUI = document.querySelector('#username');
@@ -18,21 +17,21 @@ document.addEventListener('click', check);
 //     console.log('window loaded!');
 // });
 
-
-// page loader icon until page loads
-document.onreadystatechange = function () {
-    const state = document.readyState
-    if (state == 'interactive') {
-         document.querySelector('.page').style.display = 'none';
-    } else if (state == 'complete') {
-        // setTimeout(function(){
-        //    document.querySelector('.loading-icon').style.display = 'none';
-        //    document.querySelector('.page').style.display = 'initial';
-        //     new WOW().init();
-        // },500);
+document.addEventListener("DOMContentLoaded",function () {
         document.querySelector('.loader').style.display = 'none';
         document.querySelector('.page').style.display = 'initial';
         new WOW().init();
+});
+
+// page loader icon until page loads
+// document.onreadystatechange = function () {
+//     const state = document.readyState
+//     if (state == 'interactive') {
+//          document.querySelector('.page').style.display = 'none';
+//     } else if (state == 'complete') {
+//         document.querySelector('.loader').style.display = 'none';
+//         document.querySelector('.page').style.display = 'initial';
+//         new WOW().init();
 
 
         // var swiper = new Swiper('.swiper-container', {
@@ -47,8 +46,6 @@ document.onreadystatechange = function () {
         //     mousewheel: true,
         //     keyboard: true,
         //   });
-    }
-  }
 
 
 
