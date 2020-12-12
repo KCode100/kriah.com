@@ -740,6 +740,13 @@ div.blog-image{
     cursor: pointer;
 }
 
+.dvd-image,
+.zoom-course-image{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
 
 /*=========
  MEET RABBI ZOBIN
