@@ -471,6 +471,7 @@ span.colored{
     color: var(--theme);
 }
 
+
 .blog{
     border-top: 1px solid lightgray;
     padding: 50px 0px;
@@ -997,7 +998,7 @@ div.contact-method{
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .contact-method p:nth-child(2){
@@ -1084,7 +1085,6 @@ method.HTML
     text-align: center;
     background-color: rgb(245, 245, 245);
     padding: 7em 1em;
-    /* border-bottom: 7px solid var(--theme); */
 }
 .method-title h1{
     font-weight: lighter;
@@ -1163,13 +1163,57 @@ p.sign-up-button:nth-child(2){
     margin: auto;
     padding: 0.5em;
 }
+.sub-question{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
 .training-title{
-    padding: 5em 1.1em;
+    padding: 5em 3em;
 }
 p.sign-up-training:hover{
     transform: none;
 }
 
+.haskama-ad-page{
+    background-color: #f4f4f4;
+    padding: 2em 0 2.5em 0;
+}
+.haskama-ad-page2{
+    padding: 2em 0 0 0;
+}
+.haskama-ad-page p{
+    padding-bottom: 0;
+    line-height: 1.6;
+    padding-top: 1em;
+}
+.sign-off{
+    text-align: center;
+}
+.margin-auto{
+    margin: auto auto !important;
+}
+.haskama-title{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 0;
+}
+span.colored-darker{
+    color: #c0a879
+}
+p.haskama-from{
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.method-container-haskama:nth-child(odd){
+    background-color: white;
+    color: rgb(54, 54, 54);
+}
+.extra-quotes p{
+    margin: 50px;
+}
 
 /* ad.html */
 .ad-container{
@@ -1735,6 +1779,7 @@ TESTIMONIALS
     .method-questions{
         font-size: 60px;
         letter-spacing: 2px;
+        line-height: 1.1;
     }
     .method-subtitle,
     .method-section2 p:nth-child(1){
@@ -1744,9 +1789,14 @@ TESTIMONIALS
 
 /* training.html */
 @media only screen and (min-width: 1000px){
-    .method-questions{
+    .sub-question{
         font-size: 40px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
+    }
+}
+@media only screen and (min-width: 1225px){
+    .haskama-ad-page2{
+        padding: 2em 0 5em 0;
     }
 }
 
