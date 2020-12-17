@@ -323,6 +323,14 @@ input[type=password]{
     margin-top: 15px;
 }
 
+.reading-efficiency-link{
+    color: #5384e7;
+}
+.reading-efficiency-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .bottom-banner{
     padding: 15px 0;
     text-align: center;
@@ -1177,7 +1185,7 @@ p.sign-up-training:hover{
 
 .haskama-ad-page{
     background-color: #f4f4f4;
-    padding: 2em 0 2.5em 0;
+    padding: 3em 0 2.5em 0;
 }
 .haskama-ad-page2{
     padding: 2em 0 0 0;
