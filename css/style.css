@@ -683,7 +683,7 @@ div.blog-image{
 p.trainee-sign-off{
     text-indent: 0;
     margin: 20px 0 40px;
-    color: rgb(83, 83, 83);
+    color: rgb(110, 110, 110);
 }
 
 /* .testimonial-videos-container{
@@ -1107,8 +1107,12 @@ method.HTML
 }
 p.sign-up-button{
     font-weight: 600;
-    margin: 2em 0;
+    margin: 1em 0;
     transition: all 0.2s;
+    padding: 0;
+}
+p.sign-up-button:nth-child(2){
+    margin: 2em 0;
 }
 p.sign-up-button:hover{
     transform: scale(1.05);
@@ -1121,6 +1125,32 @@ p.sign-up-button:nth-child(2){
 .sign-up-button a{
     color: rgba(0, 103, 138, 0.932);
     text-decoration: underline;
+}
+.haskama-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+.haskama-box{
+    font-size: 20px;
+    padding: 2em;
+    box-shadow: 1px 1px 5px rgb(153, 153, 153);
+    border-radius: 5px;
+    max-width: 250px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+    margin: 15px;
+    font-family: 'Playfair Display', serif;
+}
+.haskama-box:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgb(153, 153, 153);
+    transform: translateY(-5px);
+}
+.haskama-box:active{
+    transform: translateY(-4px);
+    box-shadow: 2px 2px 7px rgb(153, 153, 153);
 }
 
 
@@ -1179,12 +1209,12 @@ p.haskama-from{
     font-style: italic;
     font-size: 0.9em;
 }
-.method-container-haskama:nth-child(odd){
+.method-container-haskama{
     background-color: white;
     color: rgb(54, 54, 54);
 }
-.extra-quotes p{
-    margin: 50px;
+.extra-quotes{
+    
 }
 
 /* ad.html */
