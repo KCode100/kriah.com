@@ -554,7 +554,7 @@ div.blog-image{
 .testimonials{
     width: 100%;
     background-color: rgb(3, 3, 31);
-    padding: 2em 0;
+    padding: 1.5em 0;
 }
 .testimonials h1{
     color: white;
@@ -658,7 +658,6 @@ div.blog-image{
 
 
 
-
 .testimonials-trainees{
     background-color: rgb(243, 243, 243);
 }
@@ -682,9 +681,18 @@ div.blog-image{
 }
 p.trainee-sign-off{
     text-indent: 0;
-    margin: 20px 0 40px;
+    margin: 20px 0 25px;
     color: rgb(110, 110, 110);
 }
+
+.haskama-boxes-home{
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    padding: 0.1em 2em 5em;
+    margin-top: 0 !important;
+}
+
 
 /* .testimonial-videos-container{
     display: flex;
@@ -1056,6 +1064,7 @@ method.HTML
     font-family: 'Bebas Neue',sans-serif;
     text-align: center;
     background-color: rgb(245, 245, 245);
+    background: url('../img/original.jpg')center/cover no-repeat;
     padding: 7em 1em;
 }
 .method-title h1{
@@ -1122,26 +1131,23 @@ p.sign-up-button:nth-child(2){
     text-align: center;
 }
 
-.sign-up-button a{
+.sign-up-button a,
+.sign-up-training a{
     color: rgba(0, 103, 138, 0.932);
     text-decoration: underline;
 }
 .haskama-boxes{
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 2em;
 }
 .haskama-box{
-    font-size: 20px;
+    font-size: 16px;
     padding: 2em;
     box-shadow: 1px 1px 5px rgb(153, 153, 153);
     border-radius: 5px;
-    max-width: 250px;
     text-transform: uppercase;
     line-height: 1.5;
     text-align: center;
     margin: 15px;
-    font-family: 'Playfair Display', serif;
 }
 .haskama-box:hover{
     cursor: pointer;
@@ -1152,7 +1158,17 @@ p.sign-up-button:nth-child(2){
     transform: translateY(-4px);
     box-shadow: 2px 2px 7px rgb(153, 153, 153);
 }
-
+.haskama-box p:nth-child(1){
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.haskama-box p:nth-child(2){
+    margin-top: 0;
+    font-style: italic;
+    line-height: 1.3;
+}
 
 /* training.html */
 .method-questions{
@@ -1601,6 +1617,16 @@ display navlinks
     }
 }
 
+@media only screen and (max-width:670px){
+    .haskama-boxes-home{
+        display: block;
+    }
+    .haskama-box-home{
+        max-width: 300px;
+        margin: 20px auto;
+    }
+}
+
 
 /* 
 =============
@@ -1717,7 +1743,7 @@ TESTIMONIALS
     font-size: 60px;
     }
     .testimonials{
-        padding: 2em 2em;
+        padding: 0.2em 2em;
     }
 }
 
@@ -1775,6 +1801,11 @@ TESTIMONIALS
     }
 
 }
+@media only screen and (min-width:769px){
+    p.trainee-sign-off{
+        margin: 20px 0 40px;
+    }
+}
 
 
 /* FOOTER */
@@ -1816,6 +1847,15 @@ TESTIMONIALS
 @media only screen and (min-width: 1225px){
     .haskama-ad-page2{
         padding: 2em 0 5em 0;
+    }
+}
+@media only screen and (min-width: 670px){
+    .haskama-boxes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .haskama-box{
+        width: 230px;
     }
 }
 
