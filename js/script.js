@@ -12,40 +12,13 @@ if (submitBtn){
 window.addEventListener('click', closeModal);
 document.addEventListener('click', check);
 
-// window.addEventListener('load', function(){
-//     page.style.visibility = 'visible';
-//     console.log('window loaded!');
-// });
-
 document.addEventListener("DOMContentLoaded",function () {
         document.querySelector('.loader').style.display = 'none';
         document.querySelector('.page').style.display = 'initial';
         new WOW().init();
 });
 
-// page loader icon until page loads
-// document.onreadystatechange = function () {
-//     const state = document.readyState
-//     if (state == 'interactive') {
-//          document.querySelector('.page').style.display = 'none';
-//     } else if (state == 'complete') {
-//         document.querySelector('.loader').style.display = 'none';
-//         document.querySelector('.page').style.display = 'initial';
-//         new WOW().init();
 
-
-        // var swiper = new Swiper('.swiper-container', {
-        //     cssMode: true,
-        //     navigation: {
-        //       nextEl: '.swiper-button-next',
-        //       prevEl: '.swiper-button-prev',
-        //     },
-        //     pagination: {
-        //       el: '.swiper-pagination'
-        //     },
-        //     mousewheel: true,
-        //     keyboard: true,
-        //   });
 
 
 
