@@ -251,3 +251,18 @@ loadMoreIcon.addEventListener ('click', addSection);
 function addSection() {
     addSectionUI.classList.toggle('reveal-section');
 }
+
+
+// haskama boxes
+const box1 = document.querySelector('.box1');
+const box2 = document.querySelector('.box2');
+const boxNames = [box1, box2];
+
+boxNames.forEach(function (boxName){
+    boxName.addEventListener('click', openBox);
+});
+
+function openBox(){
+    this.style.color = 'red';
+}
+
