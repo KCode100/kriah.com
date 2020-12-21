@@ -743,7 +743,9 @@ p.trainee-sign-off{
     max-width: 500px;
     height: auto;
 }
-
+.paypal input{
+    width: 200px;
+}
 
 /*=========
  MEET RABBI ZOBIN
