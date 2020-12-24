@@ -1293,7 +1293,13 @@ p.haskama-from{
     height: auto;
     width: 250px;
 }
-
+.error-pg-msg{
+    background-color: #cccccc;
+    margin: 0;
+    padding-top: 40px;
+    font-size: 20px;
+    text-align: center;
+}
 
 @media only screen and (min-width: 500px){
     .not-found{
