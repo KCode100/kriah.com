@@ -11,7 +11,6 @@
     /* border: 2px solid var(--theme); */
     max-width: 1200px;
     margin: 0 15px;
-    pointer-events: none;
 }
 /* .single-item{
 } */
@@ -43,7 +42,6 @@
     background-color: rgb(231, 231, 231);
     margin: 40px 0;
     letter-spacing: 1.5px;
-    pointer-events: all;
 }
 .haskama-pdf:hover,
 .haskama-pdf:focus{
