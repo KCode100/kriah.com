@@ -183,30 +183,6 @@ function clientPage(){
 }
 
 
-// initialize swiper.js
-// var swiper = new Swiper('.swiper-container', {
-//     effect: 'cube',
-//     grabCursor: true,
-//     cubeEffect: {
-//       shadow: true,
-//       slideShadows: true,
-//       shadowOffset: 20,
-//       shadowScale: 0.94,
-//     },
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev'
-//     },
-//     autoplay: {
-//     delay: 5000,
-//     stopOnLastSLide: false,
-//     disableOnInteraction: false,
-//     },
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-//   });
-
 
 // add current year to copyright
 const copyrightYear = document.querySelector('.copyright-year');
@@ -227,15 +203,14 @@ function addSection() {
 
 
 // haskama boxes
-const box1 = document.querySelector('.box1');
-const box2 = document.querySelector('.box2');
-const boxNames = [box1, box2];
+// const box1 = document.querySelector('.box1');
+// const box2 = document.querySelector('.box2');
+// const boxNames = [box1, box2];
 
-boxNames.forEach(function (boxName){
-    boxName.addEventListener('click', openBox);
-});
+// boxNames.forEach(function (boxName){
+//     boxName.addEventListener('click', openBox);
+// });
 
-function openBox(){
-    this.style.color = 'red';
-}
-
+// function openBox(){
+//     this.style.color = 'red';
+// }

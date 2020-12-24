@@ -3,7 +3,54 @@
 :root{
     --theme: #eed49f;
 }
-
+.slider-container{
+    background-color: #fffaf2;
+    overflow: hidden;
+    padding: 3em 1.8em;
+    line-height: 1.5;
+    /* border: 2px solid var(--theme); */
+    max-width: 1200px;
+    margin: 0 15px;
+    pointer-events: none;
+}
+/* .single-item{
+} */
+.slider-container:hover{
+    cursor: pointer;
+}
+.person-name,
+.person-description{
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 0;
+}
+.person-name{
+    line-height: 1;
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: rgb(39, 39, 39);
+}
+.person-quote{
+    line-height: 1.5;
+    /* font-style: italic; */
+    font-size: 20px;
+}
+.haskama-pdf{
+    border: none;
+    padding: 15px 20px;
+    background-color: rgb(231, 231, 231);
+    margin: 40px 0;
+    letter-spacing: 1.5px;
+    pointer-events: all;
+}
+.haskama-pdf:hover,
+.haskama-pdf:focus{
+    cursor: pointer;
+    background-color: lightgray;
+    outline: none;
+}
 
 body,
 html{
@@ -1089,7 +1136,6 @@ method.HTML
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     max-width: 1200px;
-    /* max-width: 90%; */
     margin: auto;
     line-height: 1.3;
 }
@@ -1138,18 +1184,18 @@ p.sign-up-button:nth-child(2){
     color: rgba(0, 103, 138, 0.932);
     text-decoration: underline;
 }
-.haskama-boxes{
+/* .haskama-boxes{
     margin-top: 2em;
 }
 .haskama-box{
     font-size: 16px;
-    padding: 2em;
+    padding: 1em;
     box-shadow: 1px 1px 5px rgb(153, 153, 153);
     border-radius: 5px;
     text-transform: uppercase;
     line-height: 1.5;
     text-align: center;
-    margin: 15px;
+    margin: 15px 10px;
 }
 .haskama-box:hover{
     cursor: pointer;
@@ -1168,9 +1214,8 @@ p.sign-up-button:nth-child(2){
 }
 .haskama-box p:nth-child(2){
     margin-top: 0;
-    /* font-style: italic; */
     line-height: 1.3;
-}
+} */
 
 /* training.html */
 .method-questions{
@@ -1194,19 +1239,19 @@ p.sign-up-button:nth-child(2){
 p.sign-up-training:hover{
     transform: none;
 }
-
+/* 
 .haskama-ad-page{
     background-color: #f4f4f4;
     padding: 3em 0 2.5em 0;
-}
-.haskama-ad-page2{
+} */
+/* .haskama-ad-page2{
     padding: 2em 0 0 0;
-}
-.haskama-ad-page p{
+} */
+/* .haskama-ad-page p{
     padding-bottom: 0;
     line-height: 1.6;
     padding-top: 1em;
-}
+} */
 .sign-off{
     text-align: center;
 }
@@ -1228,12 +1273,10 @@ p.haskama-from{
     font-size: 0.9em;
 }
 .method-container-haskama{
-    background-color: white;
-    color: rgb(54, 54, 54);
+    /* background-color: white;
+    color: rgb(54, 54, 54); */
 }
-.extra-quotes{
-    
-}
+
 
 /* ad.html */
 .ad-container{
@@ -1293,7 +1336,13 @@ p.haskama-from{
     height: auto;
     width: 250px;
 }
-
+.error-pg-msg{
+    background-color: #cccccc;
+    margin: 0;
+    padding-top: 40px;
+    font-size: 20px;
+    text-align: center;
+}
 
 @media only screen and (min-width: 500px){
     .not-found{
@@ -1817,6 +1866,44 @@ TESTIMONIALS
         font-size: 42px;
     }
 }
+@media only screen and (min-width: 480px){
+    .slider-container{
+        padding: 3em 2em;
+    }
+    .person-name{
+        font-size: 32px;
+    }
+    .person-quote{
+        font-size: 22px;
+    }
+    .haskama-pdf{
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 769px){
+    .slider-container{
+        padding: 3em 5em;
+    }
+}
+@media only screen and (min-width: 1025px){
+    .slider-container{
+        padding: 3em 6em;
+    }
+    .person-name{
+        font-size: 36px;
+    }
+    .person-description{
+        font-size: 22px;
+    }
+    .person-quote{
+        font-size: 26px;
+    }
+}
+@media only screen and (min-width: 1260px){
+    .slider-container{
+        margin: auto;
+    }
+}
 
 /* training.html */
 @media only screen and (min-width: 1000px){
@@ -1830,7 +1917,7 @@ TESTIMONIALS
         padding: 2em 0 5em 0;
     }
 }
-@media only screen and (min-width: 670px){
+/* @media only screen and (min-width: 670px){
     .haskama-boxes{
         display: flex;
         flex-wrap: wrap;
@@ -1838,7 +1925,7 @@ TESTIMONIALS
     .haskama-box{
         width: 230px;
     }
-}
+} */
 
 /* ad.html */
 @media only screen and (min-width: 768px){
