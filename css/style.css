@@ -1238,8 +1238,16 @@ p.sign-up-button:nth-child(2){
     border-radius: 25px;
     font-size: 20px;
 }
+/* @keyframes move-arrow{
+    from{left:0px};
+    to{left:200px};
+} */
 .fa-arrow-right{
     margin-left: 20px;
+    /* animation-name: move-arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;   */
 }
 
 /* training.html */
