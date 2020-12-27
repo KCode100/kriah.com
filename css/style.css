@@ -1167,11 +1167,22 @@ p.sign-up-button:nth-child(2){
     margin-top: 0;
     line-height: 1.3;
 } */
-.method-pg-testimonials{
+.method-pg-testimonials,
+.home-pg-testimonials{
     background-color: rgb(250, 250, 250);
     background: url('../img/original.jpg')center/cover no-repeat;
-    margin-top: 50px;
     padding: 1em 0;
+}
+.method-pg-testimonials{
+    margin-top: 50px;
+}
+/* .method-pg-testimonials2{
+    padding-top: 4em;
+} */
+.home-pg-testimonials{
+    margin-top: 0px;
+    padding-top: 3em;
+    padding-bottom: 5em;
 }
 .slider-container{
     /* background-color: #fffaf2; */
@@ -1807,7 +1818,7 @@ TESTIMONIALS
     font-size: 60px;
     }
     .testimonials{
-        padding: 0.2em 2em;
+        /* padding: 0.2em 2em; */
     }
 }
 
