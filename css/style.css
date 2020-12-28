@@ -70,7 +70,7 @@ a{
     line-height: 0.9;
     padding-top: 5px;
 }
-.nav-subtitle {
+span.nav-subtitle {
     font-size: 14px;
     margin: 0;
     padding: 0;
