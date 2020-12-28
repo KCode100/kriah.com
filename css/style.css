@@ -325,11 +325,14 @@ input[type=password]{
 
 .internal-link{
     color: #5384e7;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
+/* .internal-link-main{
+    letter-spacing: 5px;
+} */
 .internal-link:hover{
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .bottom-banner{
