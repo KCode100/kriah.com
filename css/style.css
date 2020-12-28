@@ -64,9 +64,16 @@ a{
 .logo{
     flex: auto;
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     letter-spacing: 3px;
     font-family: serif;
+    line-height: 0.9;
+    padding-top: 5px;
+}
+.nav-subtitle {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
 
 .first-letter{
@@ -1438,6 +1445,9 @@ increase menu icon margin */
     .logo{
         font-size: 40px;
         letter-spacing: 6px;
+    }
+    .nav-subtitle {
+        font-size: 16px;
     }
     .hamberger{
         margin-top: 16px;
