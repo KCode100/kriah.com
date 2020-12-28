@@ -67,7 +67,7 @@ a{
     font-size: 22px;
     letter-spacing: 3px;
     font-family: serif;
-    line-height: 0.9;
+    line-height: 1;
     padding-top: 5px;
 }
 span.nav-subtitle {
@@ -1448,8 +1448,9 @@ increase menu icon margin */
     .logo{
         font-size: 40px;
         letter-spacing: 6px;
+        line-height: 0.8;
     }
-    .nav-subtitle {
+    span.nav-subtitle {
         font-size: 16px;
     }
     .hamberger{
