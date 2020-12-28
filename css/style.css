@@ -67,7 +67,7 @@ a{
     font-size: 22px;
     letter-spacing: 3px;
     font-family: serif;
-    line-height: 1;
+    line-height: 1.5;
     padding-top: 5px;
 }
 span.nav-subtitle {
@@ -1423,7 +1423,7 @@ p.haskama-from{
 
 /* decrese menu-icon size
 place it after logo in center */
-@media only screen and (max-width:308px){
+@media only screen and (max-width:380px){
     .nav{
         padding: 10px;
     }
@@ -1444,9 +1444,16 @@ place it after logo in center */
     }
 }
 
+@media only screen and (min-width: 380px){
+   div.hamberger{
+      margin-top: 20px; 
+   } 
+
+}
+
 /* increase logo sizes
 increase menu icon margin */
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 520px){
     .logo{
         font-size: 40px;
         letter-spacing: 6px;
