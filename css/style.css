@@ -1620,6 +1620,12 @@ display navlinks
         display: block;
         height: 300px;
         border-radius: 7px;
+        margin: 0 20px 0 50px;
+        border: 5px solid #dfc185;
+        box-shadow: 2px 2px 12px rgb(156, 156, 156);
+    }
+    .main img:hover {
+        box-shadow: 2px 2px 20px 1px rgb(156, 156, 156);
     }
     
     .main-container{
@@ -1663,7 +1669,7 @@ display navlinks
     .main-inner{
         font-family: 'Bebas Neue',sans-serif;
         line-height: 80px;
-        font-size: 80px;
+        font-size: 70px;
         letter-spacing: -2px;
         padding-top: 150px;
     }
