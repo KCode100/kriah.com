@@ -67,13 +67,15 @@ a{
     font-size: 22px;
     letter-spacing: 3px;
     font-family: serif;
-    line-height: 0.9;
+    line-height: 1.5;
     padding-top: 5px;
 }
 span.nav-subtitle {
     font-size: 14px;
     margin: 0;
     padding: 0;
+    color: rgb(201, 201, 201);
+    display: inline-block;
 }
 
 .first-letter{
@@ -562,10 +564,13 @@ div.blog-image{
 .testimonials{
     width: 100%;
     background-color: rgb(3, 3, 31);
+    background-color: rgb(50, 50, 61);
+    background-color: rgb(66, 66, 66);
+
     padding: 1.5em 0;
 }
 .testimonials h1{
-    color: white;
+    color: rgb(236, 236, 236);
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 50px;
@@ -590,7 +595,9 @@ div.blog-image{
     font-size: 16px;
     letter-spacing: 0.8px;
     max-width: 800px;
-    background-color: #0e172e;
+    /* background-color: #0e172e; */
+    /* background-color: rgb(59, 59, 71); */
+    background-color: rgb(77, 77, 77);
 }
 .speech-bubble p{
     text-indent: 40px;
@@ -649,22 +656,23 @@ div.blog-image{
 .load-more{
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1.5s;
+    transition: max-height 1.4s;
     overflow-anchor: none;
+    
 }
 .load-more-icon{
     text-align: center;
     cursor: pointer;
     color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 .fa-ellipsis-h{
     color: white;
 }
 .reveal-section{
-    max-height: 3000px;
+    max-height: 5000px;
 }
-
-
 
 .testimonials-trainees{
     background-color: rgb(243, 243, 243);
@@ -1421,7 +1429,7 @@ p.haskama-from{
 
 /* decrese menu-icon size
 place it after logo in center */
-@media only screen and (max-width:308px){
+@media only screen and (max-width:380px){
     .nav{
         padding: 10px;
     }
@@ -1442,14 +1450,23 @@ place it after logo in center */
     }
 }
 
+@media only screen and (min-width: 380px){
+   div.hamberger{
+      margin-top: 20px; 
+   } 
+
+}
+
 /* increase logo sizes
 increase menu icon margin */
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 520px){
     .logo{
         font-size: 40px;
         letter-spacing: 6px;
+        line-height: 0.7;
+        padding-top: 20px;
     }
-    .nav-subtitle {
+    span.nav-subtitle {
         font-size: 16px;
     }
     .hamberger{
@@ -1603,6 +1620,12 @@ display navlinks
         display: block;
         height: 300px;
         border-radius: 7px;
+        margin: 0 20px 0 50px;
+        border: 5px solid #dfc185;
+        box-shadow: 2px 2px 12px rgb(156, 156, 156);
+    }
+    .main img:hover {
+        box-shadow: 2px 2px 20px 1px rgb(156, 156, 156);
     }
     
     .main-container{
@@ -1646,7 +1669,7 @@ display navlinks
     .main-inner{
         font-family: 'Bebas Neue',sans-serif;
         line-height: 80px;
-        font-size: 80px;
+        font-size: 70px;
         letter-spacing: -2px;
         padding-top: 150px;
     }
@@ -1838,16 +1861,19 @@ TESTIMONIALS
 @media only screen and (min-width: 768px){
     .speech-bubble{
         line-height: 1.8;
-        background-color: #0e172e;
         margin: 3em auto 5em;
     }
     .speech-bubble-piece-left{
         display: block;
-        border-top-color: #0e172e;
+        /* border-top-color: #0e172e; */
+        border-top-color: rgb(77, 77, 77);
+
     }
     .speech-bubble-piece-right{
         display: block;
-        border-top-color: #0e172e;
+        /* border-top-color: #0e172e; */
+        border-top-color: rgb(77, 77, 77);
+
     }
     /* .speech-bubble-piece-left-trainees,
     .speech-bubble-piece-right-trainees{
