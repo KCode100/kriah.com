@@ -198,7 +198,18 @@ const addSectionUI = document.querySelector('.load-more');
 loadMoreIcon.addEventListener ('click', addSection);
 
 function addSection() {
-    addSectionUI.classList.toggle('reveal-section');
+    // addSectionUI.classList.toggle('reveal-section');
+    if (addSectionUI.classList.contains('reveal-section')==false) {
+        addSectionUI.classList.add('reveal-section');
+        loadMoreIcon.innerText = "Less";
+        console.log('now you see more');
+    } else {
+        addSectionUI.classList.remove('reveal-section');
+        setTimeout(function(){
+            loadMoreIcon.innerText = "More";
+        }, 500);
+        console.log('now you see less');
+    }
 }
 
 
