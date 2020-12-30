@@ -1385,6 +1385,20 @@ p.haskama-from{
 } */
 
 
+/* ================= */
+/* webinar-for-teachers.html */
+/* ================= */
+.webinar-video-container,
+.great-deal-container {
+    background-color: #ecedf3;
+}
+.webinar-video {
+    max-width: 900px;
+    margin: auto;
+    padding: 7em 0;
+}
+
+
 
 /* ================= */
 /* 404 page */
@@ -1620,13 +1634,24 @@ display navlinks
         display: block;
         height: 300px;
         border-radius: 7px;
-        margin: 0 20px 0 50px;
+        margin-right: 20px;
+        margin-left: 70px;
+        margin-top: 50px;
         border: 5px solid #dfc185;
         box-shadow: 2px 2px 12px rgb(156, 156, 156);
+        position: relative;
     }
     .main img:hover {
         box-shadow: 2px 2px 20px 1px rgb(156, 156, 156);
     }
+    /* .experience-img {
+        position: absolute;
+        max-width: 150px;
+        max-height: 150px;
+        bottom: 5px;
+        left: 10px;
+        border: none !important;
+    } */
     
     .main-container{
         max-width: 58%;
