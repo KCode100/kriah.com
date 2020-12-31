@@ -305,7 +305,7 @@ input[type=password]{
 .main-container{
     text-align: center;
 }
-.main img{
+.main video{
     display: none;
 }
 
@@ -1389,15 +1389,74 @@ p.haskama-from{
 /* webinar-for-teachers.html */
 /* ================= */
 .webinar-video-container,
-.great-deal-container {
+.webinar-offer {
     background-color: #ecedf3;
+    padding: 0 1em;
 }
+
 .webinar-video {
     max-width: 900px;
     margin: auto;
     padding: 7em 0;
 }
+.offer-question {
+    color: rgb(0, 70, 128);
+}
+.offer-question2 {
+    color: rgb(82, 82, 82);
+}
+.webinar-deal {
+    background-color: white;
+    max-width: 1000px;
+    margin: 3em auto 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100px;
+    padding: 2em 1em;
+}
+.zoom-webinar-logo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 100px;
+    padding: 1em;
+}
+.webinar-deal h2 {
+    text-align: center;
+    margin-right: 100px;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    color: #a37f35;
+}
+.webinar-deal h3{
+    color: #009bff;
+    font-size: 24px;
+}
+.webinar-deal p {
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+.zoom-course-description {
+    padding: 1em;
+}
+.zoom-course-form {
+    padding-top: 2em;
+    background-color: #ecedf3;
 
+}
+@media only screen and (min-width: 480px) {
+    .webinar-deal {
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .webinar-deal h2 {
+        margin-right: 100px;
+    }
+}
 
 
 /* ================= */
@@ -1630,7 +1689,7 @@ display navlinks
         padding-left: 20px;
     }
     
-    .main img{
+    .main video{
         display: block;
         height: 300px;
         border-radius: 7px;
@@ -1641,7 +1700,7 @@ display navlinks
         box-shadow: 2px 2px 12px rgb(156, 156, 156);
         position: relative;
     }
-    .main img:hover {
+    .main video:hover {
         box-shadow: 2px 2px 20px 1px rgb(156, 156, 156);
     }
     /* .experience-img {
@@ -1702,9 +1761,9 @@ display navlinks
         padding: 0;
     }
     
-    .main img{
+    .main video{
         width: auto;
-        height: 400px;
+        height: 350px;
     }
     
     .bottom-banner-inner{
