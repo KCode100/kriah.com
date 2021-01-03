@@ -3,6 +3,27 @@
 :root{
     --theme: #eed49f;
 }
+
+.fixed-sign-up-btn {
+    position: fixed;
+    bottom: 20px;
+    background: rgb(90, 167, 167);
+    padding: 16px;
+    color: white;
+    font-weight: bolder;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.fixed-sign-up-btn:hover {
+    cursor: pointer;
+    width: 350px;
+}
 body,
 html{
     padding: 0;
@@ -1422,7 +1443,7 @@ p.haskama-from{
     border-radius: 100px;
     padding: 1em;
 }
-.webinar-deal h2 {
+h2.join-course {
     text-align: center;
     margin-right: 100px;
     padding: 0;
