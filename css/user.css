@@ -40,13 +40,14 @@ div.content {
     padding: 1px 16px;
 }
 
+/* faq.html */
 
 .faq-content {
     width: 75vw;
     margin-left: auto;
 }
 .faq-content iframe {
-    width: 80vw;
+    width: 75vw;
     height: 100vh;
 }
 
