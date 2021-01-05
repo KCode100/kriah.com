@@ -20,10 +20,6 @@ document.addEventListener("DOMContentLoaded",function () {
 
 
 
-
-
-
-
 function check(e){
     const dropMenu = document.querySelector('div.drop-menu');
     const menuIcon = document.querySelector('.hamberger');
@@ -211,17 +207,3 @@ function addSection() {
         console.log('now you see less');
     }
 }
-
-
-// haskama boxes
-// const box1 = document.querySelector('.box1');
-// const box2 = document.querySelector('.box2');
-// const boxNames = [box1, box2];
-
-// boxNames.forEach(function (boxName){
-//     boxName.addEventListener('click', openBox);
-// });
-
-// function openBox(){
-//     this.style.color = 'red';
-// }
