@@ -1375,10 +1375,6 @@ p.haskama-from{
     font-style: italic;
     font-size: 0.9em;
 }
-.method-container-haskama{
-    /* background-color: white;
-    color: rgb(54, 54, 54); */
-}
 
 
 /* ad.html */
@@ -1497,6 +1493,39 @@ h2.join-course {
         margin-right: 100px;
     }
 }
+
+
+
+/* ================= */
+/* form-complete.html */
+/* ================= */
+.cta-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    padding: 1em;
+}
+.cta-btn {
+    box-shadow: 0 2px 8px lightgray;
+    text-align: center;
+    padding: 1em;
+    margin:1em ;
+    border-radius: 25px;
+    font-size: 22px;
+    font-family: "Playfair Display", serif;
+    background-color: white;
+    transition: all 0.2s;
+}
+.cta-btn:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.cta-btn a {
+    color: black;
+}
+
 
 
 /* ================= */
