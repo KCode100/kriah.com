@@ -14,7 +14,7 @@
 <body> 
 
     <div class="loader">
-        <img src="img/loader.svg" alt="">
+        <img src="img/loader.svg" alt="Loading">
     </div>
 
     <div class="page">
@@ -24,12 +24,16 @@
             
             <div class="login-box">
                 <h2 class="login-header">User Login<i class="fas fa-times close-icon"></i></h2>
-                <input type="text" id="username" placeholder="&#xf406; username">
-                <input type="password" id="password" placeholder="&#xf084; password">
+
+                <form action="authorize.php" method="POST">
+                <input type="text" name = "username"id="username" placeholder="&#xf406; username">
+                <input type="password" name="password" id="password" placeholder="&#xf084; password">
+
                     <div class="small-loader">
                         <img src="img/small-loader.svg" alt="">
                     </div>
                 <button class="submit-btn">Sign In</button>
+            </form>
             </div>
         </div>
 
@@ -39,10 +43,6 @@
                 <div class="logo">
                     <span class="first-letter">R</span>ABBI <span class="first-letter">Z</span>VI <span class="first-letter">Z</span>OBIN
                         <br><span class="nav-subtitle wow animate__slow animate__animated animate__delay-2s animate__rubberBand">The Method
-
-                        <!-- </span> -->
-                        
-                        <!-- <span class=" nav-subtitle"> -->
                             For Hebrew Reading
                         </span>
                 </div>
@@ -136,31 +136,23 @@
             <h1>PRODUCTS</h1>
         </div>
 
-        <div class="shadow-image book-list-container"></div>
-            <div class="books-container">
-                <div class="book-card">
-                    <h2>Feeling For The Reader</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi praesentium debitis facere quas hic amet dignissimos temporibus ipsam consequatur perferendis. Nemo molestias eaque asperiores magni nobis a. Ab, ipsam fugiat.</p>
-                    
-                        <div class="paypal">
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="9NN546Q8NNZM2">
-                                <input type="image" src="https://hermetix.net/wp-content/uploads/2019/01/paypal-logo.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                                <img alt="" border="0" src="img/paypal.png" width="1" height="1">
-                            </form>
-                                
-                        </div>
-                        
-                        
-                </div>
-            </div>
-            
+        <div class="shadow-image"></div>
+           
+        <div>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="9NN546Q8NNZM2">
+                    <input width="200px" height="auto" type="image" src="https://hermetix.net/wp-content/uploads/2019/01/paypal-logo.png"  alt="PayPal – The safer, easier way to pay online!">
+            </form>
+
             <div>
-                
-                <img class = "dvd-image" src="img/zobin-dvd-min.jpg" alt="">
-                <img class="zoom-course-image" src="img/Zoom+Logo.png" alt="">
+                <img width="200px" height="auto" class = "dvd-image" src="img/zobin-dvd-min.jpg" alt="">
+                <img width="200px" height="auto" class="zoom-course-image" src="img/Zoom+Logo.png" alt="">
             </div>
+        </div>
+
+        <div>
+            <iframe src="https://onedrive.live.com/embed?cid=FCB1294E29A7A0C7&resid=FCB1294E29A7A0C7%21741&authkey=AEAvX2uUYYmz9nI&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
         </div>
 
         

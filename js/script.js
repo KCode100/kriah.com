@@ -6,9 +6,9 @@ const submitBtn = document.querySelector('.submit-btn');
 const loginBox = document.querySelector('.login-box');
 const smallLoader = document.querySelector('.small-loader');
 const page = document.querySelector('.page');
-if (submitBtn){
-    submitBtn.addEventListener('click', checkInput);
-}
+// if (submitBtn){
+//     submitBtn.addEventListener('click', checkInput);
+// }
 window.addEventListener('click', closeModal);
 document.addEventListener('click', check);
 
@@ -53,14 +53,6 @@ function check(e){
         dropMenu.classList.remove('reveal');
     }
 
-    // about link nav dropdown
-    // const aboutBtn = document.querySelector('.about-link');
-    // const dropdownList = document.querySelector('ul.dropdown');
-    // if (aboutBtn.contains(e.target)){
-    //     dropdownList.classList.toggle('hide-dropdown');
-    // } else{
-    //     dropdownList.classList.add('hide-dropdown');
-    // }
 }
 
 
@@ -92,91 +84,83 @@ function closeModal(e){
 }
 
 // theme border with correct username and password //
-if (passwordUI){
-    passwordUI.addEventListener('input', function(){
-        const usernameInput = usernameUI.value.toLowerCase();
-        const correctUsername = 'talmidim';
-        const loginBox = document.querySelector('.login-box');
-        const passwordInput = passwordUI.value.toLowerCase();
-        const correctPassword = 'zobin123'
+// if (passwordUI){
+//     passwordUI.addEventListener('input', function(){
+//         const usernameInput = usernameUI.value.toLowerCase();
+//         const correctUsername = 'talmidim';
+//         const loginBox = document.querySelector('.login-box');
+//         const passwordInput = passwordUI.value.toLowerCase();
+//         const correctPassword = 'zobin123'
     
-        if (usernameInput === correctUsername && passwordInput === correctPassword){
-            loginBox.style.border = '2px solid #eed49f';
-            submitBtn.innerText = 'Login';
-        }
-    });
-}
+//         if (usernameInput === correctUsername && passwordInput === correctPassword){
+//             loginBox.style.border = '2px solid #eed49f';
+//             submitBtn.innerText = 'Login';
+//         }
+//     });
+// }
 
 // Login with correct username and password
-function checkInput(){
-    const usernameInput = usernameUI.value.toLowerCase();
-    const passwordInput = passwordUI.value.toLowerCase();
-    const correctUsername = 'talmidim';
-    const correctPassword = 'zobin123'
-    // if (usernameInput === ''){
-    //     setTimeout(2000, clearBorder);
-    //     document.querySelector('input[type=text]').style.border = '3px solid red';
-    // }
-    // if(passwordInput === ''){
-    //     document.querySelector('input[type=password]').style.border = '3px solid red';
-    // }
-    if (usernameInput === correctUsername && passwordInput === correctPassword){
-        setTimeout(function(){
-            clientPage();
-        },1000);
-        loginBox.classList.remove('animate__animated','animate__zoomIn');
-        loginBox.classList.add('animate__animated', 'animate__backOutUp');
-        // loginBox.style.border = '4px solid #62f77b';
-    } else {
-        displaySpinner();
-    }
-}
+// function checkInput(){
+//     const usernameInput = usernameUI.value.toLowerCase();
+//     const passwordInput = passwordUI.value.toLowerCase();
+//     const correctUsername = 'talmidim';
+//     const correctPassword = 'zobin123'
 
-function displaySpinner(){
-    setTimeout(border, 1300);
-    smallLoader.style.display = 'block';
-    submitBtn.style.display = 'none';
-}
+//     if (usernameInput === correctUsername && passwordInput === correctPassword){
+//         // setTimeout(function(){
+//         //     clientPage();
+//         // },1000);
+//         loginBox.classList.remove('animate__animated','animate__zoomIn');
+//         loginBox.classList.add('animate__animated', 'animate__backOutUp');
+//     } else {
+//         displaySpinner();
+//     }
+// }
 
-function border(){
-    const usernameInput = usernameUI.value.toLowerCase();
-    const passwordInput = passwordUI.value.toLowerCase();
-    setTimeout(clearBorder, 1000);
-    smallLoader.style.display = 'none';
-    submitBtn.style.display = 'block';
-    document.querySelector('input[type=password]').value = '';
-    document.querySelector('input[type=text]').value = '';
-    if (usernameInput === '' && passwordInput === ''){
-        loginBox.style.border = '2px solid red';
-        loginBox.classList.remove('animate__animated','animate__zoomIn');
-        loginBox.classList.add('animate__animated', 'animate__headShake');
+// function displaySpinner(){
+//     setTimeout(border, 1300);
+//     smallLoader.style.display = 'block';
+//     submitBtn.style.display = 'none';
+// }
 
-    } else if (usernameInput === ''){
-        // setTimeout(500, clearBorder);
-        document.querySelector('input[type=text]').style.border = '2px solid red';
-        document.querySelector('input[type=text]').style.transform = 'scale(1.1)';
-    } else if(passwordInput === ''){
-        document.querySelector('input[type=password]').style.border = '2px solid red';
-        document.querySelector('input[type=password]').style.transform = 'scale(1.1)';
-    } else {
-        loginBox.style.border = '2px solid red';
-        loginBox.classList.remove('animate__animated','animate__zoomIn');
-        loginBox.classList.add('animate__animated', 'animate__headShake');
-    }
-}
+// function border(){
+//     const usernameInput = usernameUI.value.toLowerCase();
+//     const passwordInput = passwordUI.value.toLowerCase();
+//     setTimeout(clearBorder, 1000);
+//     smallLoader.style.display = 'none';
+//     submitBtn.style.display = 'block';
+//     document.querySelector('input[type=password]').value = '';
+//     document.querySelector('input[type=text]').value = '';
+//     if (usernameInput === '' && passwordInput === ''){
+//         loginBox.style.border = '2px solid red';
+//         loginBox.classList.remove('animate__animated','animate__zoomIn');
+//         loginBox.classList.add('animate__animated', 'animate__headShake');
 
-function clearBorder(){
-    loginBox.style.border = 'black';
-    document.querySelector('input[type=password]').style.border = 'black';
-    document.querySelector('input[type=text]').style.border = 'black';
-    document.querySelector('input[type=password]').style.transform = 'none';
-    document.querySelector('input[type=text]').style.transform = 'none';
-    loginBox.classList.remove('animate__animated', 'animate__headShake');
-}
+//     } else if (usernameInput === ''){
+//         document.querySelector('input[type=text]').style.border = '2px solid red';
+//         document.querySelector('input[type=text]').style.transform = 'scale(1.1)';
+//     } else if(passwordInput === ''){
+//         document.querySelector('input[type=password]').style.border = '2px solid red';
+//         document.querySelector('input[type=password]').style.transform = 'scale(1.1)';
+//     } else {
+//         loginBox.style.border = '2px solid red';
+//         loginBox.classList.remove('animate__animated','animate__zoomIn');
+//         loginBox.classList.add('animate__animated', 'animate__headShake');
+//     }
+// }
 
-function clientPage(){
-    window.location.href = 'user.html';
-}
+// function clearBorder(){
+//     loginBox.style.border = 'black';
+//     document.querySelector('input[type=password]').style.border = 'black';
+//     document.querySelector('input[type=text]').style.border = 'black';
+//     document.querySelector('input[type=password]').style.transform = 'none';
+//     document.querySelector('input[type=text]').style.transform = 'none';
+//     loginBox.classList.remove('animate__animated', 'animate__headShake');
+// }
+
+// function clientPage(){
+//     window.location.href = 'user.html';
+// }
 
 
 
