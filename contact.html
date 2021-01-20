@@ -30,12 +30,16 @@
             
             <div class="login-box">
                 <h2 class="login-header">User Login<i class="fas fa-times close-icon"></i></h2>
-                <input type="text" id="username" placeholder="&#xf406; username">
-                <input type="password" id="password" placeholder="&#xf084; password">
+
+                <form action="authorize.php" method="POST">
+                <input type="text" name = "username"id="username" placeholder="&#xf406; username">
+                <input type="password" name="password" id="password" placeholder="&#xf084; password">
+
                     <div class="small-loader">
                         <img src="img/small-loader.svg" alt="">
                     </div>
                 <button class="submit-btn">Sign In</button>
+            </form>
             </div>
         </div>
 

@@ -6,8 +6,6 @@
         <meta name="description" content="The ZOBIN Method uses a scientific, analytical schedule to pinpoint the precise areas which need upgrading. Therefore, remediation and upgrading is fast">
         <meta name="keywords" content="learn Hebrew, read Hebrew, zobin kriah method, misgeret, kriah help">
 
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="icon" type = "image/png" href="img/favicon16.ico" sizes="16x16">
         <link rel="icon" type = "image/png" href="img/favicon32.ico" sizes="32x32">
@@ -41,12 +39,16 @@
             
             <div class="login-box">
                 <h2 class="login-header">User Login<i class="fas fa-times close-icon"></i></h2>
-                <input type="text" id="username" placeholder="&#xf406; username">
-                <input type="password" id="password" placeholder="&#xf084; password">
+
+                <form action="authorize.php" method="POST">
+                <input type="text" name = "username"id="username" placeholder="&#xf406; username">
+                <input type="password" name="password" id="password" placeholder="&#xf084; password">
+
                     <div class="small-loader">
                         <img src="img/small-loader.svg" alt="">
                     </div>
                 <button class="submit-btn">Sign In</button>
+            </form>
             </div>
         </div>
 
@@ -84,7 +86,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="books.html">PRODUCTS</a></li>
+                        <!-- <li><a href="books.html">PRODUCTS</a></li> -->
                         <li><a href="blogs.html">BLOG</a></li>
                         <li class = "contact-link"><a href="contact.html">CONTACT</a>
                             <div class="dropdown">
@@ -160,11 +162,14 @@
                     <div class="main-inner-sub">IS TO ACHIEVE<br> <a class = "internal-link internal-link-main" href="./resources/Reading effeciency is based on the understanding that reading is essentially a learning tool.pdf">READING EFFICIENCY</a>
                     </div>
                 </div>
-                <div class="boy-img">
-                    <a href="method.html">
+                <div>
+                    <a class="boy-img" href="method.html">
                         <video autoplay loop muted playsinline >
                         <source src="./img/animate.webm" type="video/mp4" >
                         </video>
+                        <div class="click-here">
+                            Click here
+                        </div>
                     </a>
                     <!-- <img class = "experience-img" src="./img/experience.jpg" alt=""> -->
                 </div>
