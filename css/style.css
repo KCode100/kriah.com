@@ -826,6 +826,7 @@ p.trainee-sign-off {
 }
 .book__image {
   text-align: center;
+  cursor: pointer;
 }
 .book-price {
   margin-bottom: 40px;
