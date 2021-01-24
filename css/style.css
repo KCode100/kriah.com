@@ -312,7 +312,8 @@ input[type="password"] {
 .main-container {
   text-align: center;
 }
-.main video {
+.main video,
+.click-here {
   display: none;
 }
 
@@ -794,26 +795,68 @@ p.trainee-sign-off {
   font-weight: bold;
   letter-spacing: 4px;
 }
-.books-container {
-  padding: 4em 2em;
+
+.books {
 }
-.book-card {
-  box-shadow: 1px 1px 10px rgb(202, 202, 202);
-  padding: 20px;
-}
-.book-card:hover {
-  box-shadow: 1px 1px 5px rgb(202, 202, 202);
-  cursor: pointer;
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 5rem 2rem;
 }
 
-/* .dvd-image,
-.zoom-course-image{
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-} */
-.paypal input {
-  width: 200px;
+.book:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+.book-title {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+
+.book__text-box,
+.book__image {
+  flex: 1;
+}
+.book-description {
+  line-height: 1.7;
+}
+.book__image {
+  text-align: center;
+}
+.book-price {
+  margin-bottom: 40px;
+}
+
+.buy-now {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  background-color: teal;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.buy-now:link,
+.buy-now:active,
+.buy-now:visited {
+  color: white;
+}
+.buy-now:hover {
+  background-color: rgb(0, 128, 128, 0.7);
+}
+@media only screen and (min-width: 768px) {
+  .book {
+    padding: 5rem 7rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .book {
+    padding: 5rem 8rem;
+  }
 }
 
 /*=========
@@ -1811,6 +1854,10 @@ display navlinks
     display: flex;
     position: static;
   }
+  div.logo {
+    text-align: left;
+    padding-left: 90px;
+  }
 
   .nav ul {
     padding: 6px 0 0 0;
@@ -1856,6 +1903,9 @@ display navlinks
     position: relative;
     transition: all 0.2s;
     outline-offset: 10px;
+  }
+  .click-here {
+    display: inline;
   }
   .main video:hover {
     box-shadow: 0 2px 20px 1px rgb(156, 156, 156);
@@ -1927,6 +1977,11 @@ display navlinks
 
   .bottom-banner-inner {
     font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-container {
+    margin-right: 90px;
   }
 }
 
