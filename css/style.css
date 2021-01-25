@@ -796,8 +796,82 @@ p.trainee-sign-off {
   letter-spacing: 4px;
 }
 
-.books {
+.products-section {
+  padding: 5rem 2rem;
+  overflow: hidden;
 }
+/* .lessons {
+  background-color: rgb(233, 233, 233);
+} */
+.lessons-title {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  flex: 1;
+}
+.lessons__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  flex-direction: column;
+}
+
+.lessons__card {
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  color: rgb(90, 90, 90);
+  flex: 1;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 1.6rem;
+  text-align: center;
+}
+.highly-recommended {
+  position: absolute;
+  top: -7px;
+  right: -68px;
+  transform: rotate(32deg);
+  width: 200px;
+}
+.card-content {
+  width: 45%;
+}
+.card-image {
+  width: 100px;
+  height: 80px;
+}
+.card-image-assessment {
+  width: 150px;
+}
+.lessons-schedule {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
+  background-color: #777777;
+  color: white;
+  padding: 1rem 4rem;
+  flex: 1;
+}
+
+.lessons-schedule:hover {
+  transform: scale(1.03);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 990px) {
+  .lessons__cards {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .products-section {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
 .book {
   display: flex;
   flex-wrap: wrap;
@@ -808,7 +882,7 @@ p.trainee-sign-off {
 }
 
 .book:nth-child(even) {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(243, 243, 243);
 }
 .book-title {
   font-family: "Bebas Neue", sans-serif;
