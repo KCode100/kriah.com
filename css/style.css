@@ -846,6 +846,17 @@ p.trainee-sign-off {
   font-size: 38px;
   letter-spacing: 1.5px;
   color: #5e606a;
+  margin-bottom: 0;
+}
+.card-read-more {
+  font-size: 20px;
+  color: rgb(15, 135, 175);
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+.card-read-more:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
 }
 
 .card-image {
@@ -1599,7 +1610,7 @@ p.haskama-from {
 }
 
 /* .ad-pg-footer{
-    background-color: #414247;
+  background-color: #414247;
 } */
 
 /* ================= */
@@ -1648,12 +1659,12 @@ h2.join-course {
   color: #a37f35;
 }
 .webinar-deal h3 {
-  color: #009bff;
+  color: rgb(0, 70, 128);
   font-size: 24px;
+  font-family: "Playfair Display", serif;
 }
 .webinar-deal p {
   font-size: 22px;
-  letter-spacing: 1px;
   line-height: 1.8;
 }
 .zoom-course-description {
@@ -1673,7 +1684,35 @@ h2.join-course {
     margin-right: 100px;
   }
 }
+/* ================= */
+/* webinar-for-parents.html */
+/* ================= */
+.great-deal-container {
+  max-width: 1000px;
+  border: 3px solid grey;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+  margin: 100px auto;
+  padding: 2rem 0.8rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.great-deal-header {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 30px;
+}
+.great-deal-sub:link,
+.great-deal-sub:visited,
+.great-deal-sub:active {
+  padding: 0.8rem 1.5rem;
+  background-color: rgb(72, 95, 103);
+  color: white;
+}
+.great-deal-sub:hover {
+  opacity: 0.9;
+}
 /* ================= */
 /* form-complete.html */
 /* ================= */
