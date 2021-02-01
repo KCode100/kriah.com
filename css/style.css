@@ -35,7 +35,6 @@ strong {
 
 a {
   cursor: pointer;
-  /* text-decoration: none; */
 }
 
 .loader {
@@ -361,34 +360,7 @@ div.click-here {
   left: 25px;
   color: orangered;
 }
-/* @keyframes click-move {
-  0% {
-    top: 55px;
-    left: 20px;
-    color: rgb(172, 84, 52);
-  }
-  25% {
-    top: 55px;
-    left: 300px;
-    color: red;
-  }
-  50% {
-    top: 370px;
-    left: 300px;
-    color: lightsalmon;
-  }
-  75% {
-    top: 370px;
-    left: 20px;
-    color: blue;
-  }
 
-  100% {
-    top: 55px;
-    left: 25px;
-    color: rgb(172, 84, 52);
-  }
-} */
 .arrow-angle {
   font-size: 30px;
 }
@@ -764,13 +736,6 @@ p.trainee-sign-off {
   margin-top: 0 !important;
 }
 
-/* .testimonial-videos-container{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px;
-} */
 .testimonial-videos {
   height: 250px;
   width: 250px;
@@ -800,9 +765,7 @@ p.trainee-sign-off {
   padding: 5rem 2rem;
   overflow: hidden;
 }
-/* .lessons {
-  background-color: rgb(233, 233, 233);
-} */
+
 .products__cards {
   display: flex;
   justify-content: space-around;
@@ -1144,6 +1107,14 @@ img.misgeret {
 
 /*============
 =============
+  ABOUT.HTML
+=============*/
+.about-subtitle {
+  font-family: "Playfair Display", serif;
+}
+
+/*============
+=============
 CONTACT.HTML
 =============*/
 div.contact-page-container {
@@ -1250,7 +1221,7 @@ blogs.HTML
   text-align: center;
 }
 .blog-pg-container {
-  max-width: 1200px;
+  max-width: 1100px;
   /* margin-left: 10%; */
   margin: auto;
   font-family: "Ubuntu", sans-serif;
@@ -1263,16 +1234,23 @@ a.blog-title {
   color: #3c83c2;
   font-size: 24px;
   font-weight: bolder;
+  font-family: "Playfair Display", serif;
+  padding: 0.5rem 1.8rem;
+  background-color: rgb(241, 241, 241);
+  display: inline-block;
+  margin-bottom: 3px;
+  border-radius: 3px;
 }
 a.blog-title:hover {
-  color: #214666;
   cursor: pointer;
-  text-decoration: underline;
+  filter: brightness(90%);
 }
-
+.fa-link {
+  margin-right: 10px;
+}
 .blog-pg-container p {
   font-size: 18px;
-  margin: 10px 0;
+  line-height: 1.7;
 }
 .checked {
   color: rgb(255, 223, 78);
@@ -1641,7 +1619,7 @@ p.haskama-from {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  border-radius: 100px;
+  border-radius: 10px;
   padding: 2em 1em;
 }
 .zoom-webinar-logo {
@@ -1662,6 +1640,7 @@ h2.join-course {
   color: rgb(0, 70, 128);
   font-size: 24px;
   font-family: "Playfair Display", serif;
+  text-transform: uppercase;
 }
 .webinar-deal p {
   font-size: 22px;
@@ -1718,30 +1697,35 @@ h2.join-course {
 /* ================= */
 .form-complete-container {
   background-color: rgb(255, 255, 255);
-  transform: skewY(-4deg);
+  /* transform: skewY(-4deg); */
 }
 
 .form-complete {
   max-width: 1160px;
-  margin: -55px auto 0;
-  padding: 10em 1em 3em;
-  transform: skewY(4deg);
+  margin: 0 auto;
+  padding: 5em 1em 3em;
+  /* transform: skewY(4deg); */
 }
 .form-complete h3 {
   margin: 0;
 }
 .cta-btn-container {
   background-color: rgb(235, 235, 235);
+  padding: 7em 1em 4rem;
+  transform: skewY(-3deg);
+  margin-top: -250px;
+}
+.cta-btns {
+  transform: skewY(3deg);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 5em 1em 15em;
 }
 
 .message-p {
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1757,15 +1741,17 @@ h2.join-course {
   text-align: center;
   padding: 1em;
   margin: 1em;
-  border-radius: 25px;
-  font-size: 18px;
+  border-radius: 5px;
+  font-size: 16px;
   font-family: "Playfair Display", serif;
   background-color: white;
   transition: all 0.2s;
+  box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
 }
 .cta-btn:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.03);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
 }
 .cta-btn-container a,
 .cta-btn-container a:active,
@@ -1773,36 +1759,61 @@ h2.join-course {
   color: rgb(66, 66, 66);
 }
 i.fa-info-circle {
-  height: 100px;
+  height: 70px;
   color: rgb(154, 154, 214);
+  color: rgb(218, 113, 113);
 }
-.small-testimonial-area {
+.grey-space {
+  background-color: rgb(235, 235, 235);
+  padding: 60px;
+  margin-top: -60px;
+}
+
+.bookme-container {
   background-color: rgb(73, 73, 73);
-  transform: skewY(-4deg);
-  padding: 10em 1em;
-  color: rgb(241, 241, 241);
+  background-color: rgb(235, 235, 235);
+  /* transform: skewY(-4deg); */
+  clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
+  padding: 3em 1em 10rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Bebas Neue", sans-serif;
 }
-.small-testimonial-area div {
-  transform: skewY(4deg);
+.bookme-container-white {
+  background-color: white;
+  color: rgb(68, 68, 68);
+}
+.bookme-container div {
+  /* transform: skewY(4deg); */
   max-width: 1100px;
   margin: auto;
   line-height: 1.7;
   font-size: 20px;
 }
-.small-testimonial-area h3 {
+.bookme-container h3 {
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
   text-transform: uppercase;
-  letter-spacing: 1.8px;
+  letter-spacing: 5px;
 }
-.small-testimonial-area p:not(:last-child) {
+.bookme-container p:not(:last-child) {
   border-bottom: 3px solid rgb(145, 139, 233);
   padding: 20px 0 40px;
 }
-.grey-space {
-  background-color: rgb(73, 73, 73);
-  padding: 70px;
-  margin-top: -60px;
+
+/* ================= */
+/* Schedule complete.html */
+/* ================= */
+.lecture-description {
+  margin: 0 auto;
+  padding-top: 3rem;
+  max-width: 1000px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: capitalize;
+  line-height: 1.7;
+}
+.video-without-margin {
+  padding-top: 50px;
 }
 
 /* ================= */
@@ -2366,7 +2377,7 @@ TESTIMONIALS
 @media only screen and (min-width: 1000px) {
   .method-container,
   .method-section2 {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1.4;
   }
   .method-title h1,
