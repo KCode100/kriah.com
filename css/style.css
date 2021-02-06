@@ -1,8 +1,23 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+/* ================
+1   NAVBAR - 66
+2   LOGIN MODAL -190
+3   USER.HTML - 300
+4   INDEX.HTML - 311
+5   BOOKS.HTML - 752
+6   ABOUT.HTML - 1097
+7   CONTACT.HTML - 1100
+8   BLOGS.HTML - 1185
+9   METHOD.HTML - 1235
+10  TRAINING.HTML - 1430
+11  AD.HTML - 1473
+12  WEBINAR FOR TEACHERS.HTML - 1515
+13  WEBINAR FOR PARENTS.HTML - 1585
+14  FORM COMPLETE.HTML - 1615
+15  SCHEDULE COMPLETE.HTML - 1745
+16  404 PAGE - 1760
+17  MEDIA QUERIES - 1800
+======================*/
+
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;700&family=Ubuntu:wght@300;400;500&display=swap");
 
 :root {
@@ -35,7 +50,12 @@ strong {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
+
+/* =================
+  NAVBAR
+================== */
 
 .loader {
   background-color: rgb(238, 237, 237);
@@ -43,10 +63,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-a {
-  text-decoration: none;
 }
 
 .nav {
@@ -154,7 +170,6 @@ span.nav-subtitle {
 }
 
 .reveal {
-  /* padding-top: 20px; */
   height: 420px;
 }
 
@@ -171,9 +186,7 @@ a.dropdown-item {
 }
 
 /* ================== 
-=====================
-=====LOGIN AREA======
-=====================
+=====LOGIN MODAL======
 =====================*/
 
 .login-container {
@@ -334,11 +347,8 @@ input[type="password"] {
 
 .internal-link {
   color: #5384e7;
-  /* text-decoration: underline; */
 }
-/* .internal-link-main{
-    letter-spacing: 5px;
-} */
+
 .internal-link:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -355,7 +365,6 @@ div.click-here {
   width: 250px;
   font-size: 20px;
   pointer-events: none;
-  /* animation: click-move linear 4s infinite alternate; */
   top: 55px;
   left: 25px;
   color: orangered;
@@ -624,8 +633,6 @@ div.blog-image {
   font-size: 16px;
   letter-spacing: 0.8px;
   max-width: 800px;
-  /* background-color: #0e172e; */
-  /* background-color: rgb(59, 59, 71); */
   background-color: rgb(77, 77, 77);
 }
 .speech-bubble p {
@@ -942,7 +949,6 @@ p.trainee-sign-off {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: linear-gradient(#7c7c7c, rgb(59, 59, 59)); */
   background-color: rgb(66, 66, 66);
 }
 
@@ -969,15 +975,6 @@ p.trainee-sign-off {
   font-family: "Ubuntu", sans-serif;
 }
 
-/* div.inner-contact-image{
-    box-shadow: 5px 5px 5px black;
-    border-radius: 3px;
-    width: 400px;
-    height: 250px;
-    max-width: 80%;
-    margin: auto;
-} */
-
 .flex-item {
   padding: 2em;
 }
@@ -999,16 +996,6 @@ div.read-more-lower {
   margin-top: 0px;
   margin-bottom: 15px;
 }
-/* .read-more-lower a{
-    background-color: #d3b073;
-    color: black;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
-} */
-/* .read-more-lower a:hover{
-    color: white;
-} */
 div.icon-text {
   font-size: 18px;
   text-transform: capitalize;
@@ -1133,19 +1120,6 @@ div.method-list {
   max-width: 800px;
 }
 
-/* div.contact-page-image{
-    width: 100%;
-    height: 80%;
-    min-width: 450px;
-}
-
-div.contact-page-image{
-    flex: 1;
-    padding: 0 15px;
-    text-align: center;
-    background-image: url('img/404.jpg');
-} */
-
 .contact-page-container a {
   color: rgb(70, 104, 168);
 }
@@ -1222,7 +1196,6 @@ blogs.HTML
 }
 .blog-pg-container {
   max-width: 1100px;
-  /* margin-left: 10%; */
   margin: auto;
   font-family: "Ubuntu", sans-serif;
   padding: 1.5em 1.5em 6em;
@@ -1293,7 +1266,7 @@ method.HTML
   padding: 1.3em 2em;
   color: white;
   font-weight: bolder;
-  border-radius: 25px;
+  border-radius: 3px;
   font-size: 18px;
   text-align: center;
   display: none;
@@ -1362,38 +1335,7 @@ p.sign-up-button:nth-child(2) {
   color: rgba(0, 103, 138, 0.932);
   text-decoration: underline;
 }
-/* .haskama-boxes{
-    margin-top: 2em;
-}
-.haskama-box{
-    font-size: 16px;
-    padding: 1em;
-    box-shadow: 1px 1px 5px rgb(153, 153, 153);
-    border-radius: 5px;
-    text-transform: uppercase;
-    line-height: 1.5;
-    text-align: center;
-    margin: 15px 10px;
-}
-.haskama-box:hover{
-    cursor: pointer;
-    box-shadow: 3px 3px 10px rgb(153, 153, 153);
-    transform: translateY(-5px);
-}
-.haskama-box:active{
-    transform: translateY(-4px);
-    box-shadow: 2px 2px 7px rgb(153, 153, 153);
-}
-.haskama-box p:nth-child(1){
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 0;
-    letter-spacing: 1px;
-    font-weight: 700;
-}
-.haskama-box p:nth-child(2){
-    margin-top: 0;
-    line-height: 1.3;
-} */
+
 .method-pg-testimonials,
 .home-pg-testimonials {
   background-color: rgb(250, 250, 250);
@@ -1403,20 +1345,16 @@ p.sign-up-button:nth-child(2) {
 .method-pg-testimonials {
   margin-top: 50px;
 }
-/* .method-pg-testimonials2{
-    padding-top: 4em;
-} */
+
 .home-pg-testimonials {
   margin-top: 0px;
   padding-top: 3em;
   padding-bottom: 5em;
 }
 .slider-container {
-  /* background-color: #fffaf2; */
   overflow: hidden;
   padding: 3em 1.8em;
   line-height: 1.5;
-  /* border: 2px solid var(--theme); */
   max-width: 1200px;
   margin: 0 15px;
 }
@@ -1426,8 +1364,7 @@ p.sign-up-button:nth-child(2) {
 .slider-container-white > div {
   color: rgb(46, 46, 46);
 }
-/* .single-item{
-} */
+
 .slider-container:hover {
   cursor: pointer;
 }
@@ -1450,7 +1387,6 @@ p.sign-up-button:nth-child(2) {
 }
 .person-quote {
   line-height: 1.5;
-  /* font-style: italic; */
   font-size: 20px;
 }
 .haskama-pdf {
@@ -1471,24 +1407,25 @@ p.sign-up-button:nth-child(2) {
 .fancy-sign-up-button:visited {
   max-width: 250px;
   margin: 3em auto;
-  padding: 0.5em 1.5em;
+  padding: 0.2rem 1.5em;
   text-align: center;
-  background-color: #b47a04;
-  /* box-shadow: 0 0 10px #573a01; */
+  background-color: #d1b171;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   color: white;
-  border-radius: 25px;
-  font-size: 20px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-/* @keyframes move-arrow{
-    from{left:0px};
-    to{left:200px};
-} */
+.fancy-sign-up-button:hover {
+  transform: scale(1.02);
+  filter: brightness(105%);
+}
+
 .fa-arrow-right {
   margin-left: 20px;
-  /* animation-name: move-arrow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;   */
 }
 
 /* training.html */
@@ -1497,7 +1434,6 @@ p.sign-up-button:nth-child(2) {
   font-size: 28px;
   letter-spacing: 2px;
   text-align: center;
-  /* background-color: rgb(245, 245, 245); */
   max-width: 1000px;
   margin: auto;
   padding: 0.5em;
@@ -1513,20 +1449,6 @@ p.sign-up-button:nth-child(2) {
 p.sign-up-training:hover {
   transform: none;
 }
-/* 
-.haskama-ad-page{
-    background-color: #f4f4f4;
-    padding: 3em 0 2.5em 0;
-} */
-/* .haskama-ad-page2{
-    padding: 2em 0 0 0;
-} */
-/* .haskama-ad-page p{
-    padding-bottom: 0;
-    line-height: 1.6;
-    padding-top: 1em;
-} */
-
 .sign-off {
   text-align: center;
 }
@@ -1586,10 +1508,6 @@ p.haskama-from {
 .ad-form-container {
   padding-top: 5.5em;
 }
-
-/* .ad-pg-footer{
-  background-color: #414247;
-} */
 
 /* ================= */
 /* webinar-for-teachers.html */
@@ -1697,30 +1615,56 @@ h2.join-course {
 /* ================= */
 .form-complete-container {
   background-color: rgb(255, 255, 255);
-  /* transform: skewY(-4deg); */
 }
 
 .form-complete {
   max-width: 1160px;
   margin: 0 auto;
   padding: 5em 1em 3em;
-  /* transform: skewY(4deg); */
 }
 .form-complete h3 {
   margin: 0;
 }
+
+.form-title {
+  max-width: 500px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  padding: 0 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.cant-schedule {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 1rem;
+  font-size: 22px;
+  line-height: 1.7;
+}
+.cant-schedule-title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
 .cta-btn-container {
   background-color: rgb(235, 235, 235);
   padding: 7em 1em 4rem;
   transform: skewY(-3deg);
-  margin-top: -250px;
+  margin-top: -130px;
 }
+.cta-btn-container-v2 {
+  margin-top: 0;
+}
+
 .cta-btns {
   transform: skewY(3deg);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  line-height: 1.7;
+  gap: 3rem;
 }
 
 .message-p {
@@ -1772,7 +1716,6 @@ i.fa-info-circle {
 .bookme-container {
   background-color: rgb(73, 73, 73);
   background-color: rgb(235, 235, 235);
-  /* transform: skewY(-4deg); */
   clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
   padding: 3em 1em 10rem;
   color: rgba(0, 0, 0, 0.7);
@@ -1783,7 +1726,6 @@ i.fa-info-circle {
   color: rgb(68, 68, 68);
 }
 .bookme-container div {
-  /* transform: skewY(4deg); */
   max-width: 1100px;
   margin: auto;
   line-height: 1.7;
@@ -2046,7 +1988,6 @@ display navlinks
   .main video {
     display: block;
     height: 300px;
-    /* border-radius: 7px; */
     margin-right: 20px;
     margin-left: 70px;
     margin-top: 50px;
@@ -2064,14 +2005,6 @@ display navlinks
     transform: scale(1.05);
     outline-offset: 0px;
   }
-  /* .experience-img {
-        position: absolute;
-        max-width: 150px;
-        max-height: 150px;
-        bottom: 5px;
-        left: 10px;
-        border: none !important;
-    } */
 
   .main-container {
     max-width: 58%;
@@ -2222,38 +2155,6 @@ BLOGS
   }
 }
 
-/*=========
- MEET RABBI ZOBIN
- ============*/
-/* @media only screen and (min-width: 700px){
-    .inner-contact-text{
-        order: 2;
-        max-width: 40%;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 5%;
-        padding: 0px;
-    }
-    div.inner-contact-image{
-        order: 1;
-        margin-left: auto;
-        align-self: center;
-        margin-bottom: 50px;
-    }
-    .inner-contact-area{
-        background-image: linear-gradient(to right, #396269, #242222);
-        padding-bottom: 250px;
-    }
-    div.read-more-lower{
-        margin-top: 0px;
-        margin-bottom: 05px;
-    }
-    div.contact-icons{
-        display: flex;
-        align-items: center;
-    }
-} */
-
 @media only screen and (min-width: 480px) {
   .inner-contact-text p {
     font-size: 18px;
@@ -2298,9 +2199,6 @@ TESTIMONIALS
   .testimonials h1 {
     font-size: 60px;
   }
-  .testimonials {
-    /* padding: 0.2em 2em; */
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -2310,18 +2208,13 @@ TESTIMONIALS
   }
   .speech-bubble-piece-left {
     display: block;
-    /* border-top-color: #0e172e; */
     border-top-color: rgb(77, 77, 77);
   }
   .speech-bubble-piece-right {
     display: block;
-    /* border-top-color: #0e172e; */
     border-top-color: rgb(77, 77, 77);
   }
-  /* .speech-bubble-piece-left-trainees,
-    .speech-bubble-piece-right-trainees{
-        border-top-color: rgb(255, 238, 206);
-    } */
+
   .speech1 {
     border-left: 10px solid #3269db;
   }
@@ -2421,7 +2314,7 @@ TESTIMONIALS
     font-size: 22px;
   }
   .person-quote {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 @media only screen and (min-width: 1260px) {
@@ -2442,15 +2335,6 @@ TESTIMONIALS
     padding: 2em 0 5em 0;
   }
 }
-/* @media only screen and (min-width: 670px){
-    .haskama-boxes{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .haskama-box{
-        width: 230px;
-    }
-} */
 
 /* ad.html */
 @media only screen and (min-width: 768px) {
